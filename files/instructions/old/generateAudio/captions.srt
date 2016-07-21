@@ -1,0 +1,1040 @@
+1
+00:00:00,159 --> 00:00:02,643
+Welcome to the Vernon Smith Experimental Economics 
+
+2
+00:00:02,643 --> 00:00:08,262
+Laboratory. Please carefully watch these video instructions 
+
+3
+00:00:08,262 --> 00:00:13,451
+and follow along on the paper copy at your desk. Experiment 
+
+4
+00:00:13,451 --> 00:00:19,059
+Overview. You are about to participate in an experiment 
+
+5
+00:00:19,059 --> 00:00:23,715
+in the economics of decision-making. If you listen 
+
+6
+00:00:23,715 --> 00:00:26,640
+carefully, you could earn a large amount of money, 
+
+7
+00:00:26,640 --> 00:00:30,738
+that will be paid to you in cash, in private, at the 
+
+8
+00:00:30,738 --> 00:00:34,779
+end of the experiment. It is important that you remain 
+
+9
+00:00:34,779 --> 00:00:39,922
+silent, and do not look at other peoples work. If you 
+
+10
+00:00:39,922 --> 00:00:43,358
+have any questions, or need any assistance of any kind, 
+
+11
+00:00:43,358 --> 00:00:46,806
+please raise your hand and an experimenter will help 
+
+12
+00:00:46,806 --> 00:00:51,775
+you out. During the experiment, do not talk, laugh, 
+
+13
+00:00:51,775 --> 00:00:55,606
+or exclaim out loud, and be sure to keep your eyes 
+
+14
+00:00:55,606 --> 00:01:00,494
+on your screen only. In addition, please turn off your 
+
+15
+00:01:00,494 --> 00:01:04,012
+cell phones, et cetera, and put them away during the 
+
+16
+00:01:04,012 --> 00:01:08,238
+experiment. Anybody that violates these rules will 
+
+17
+00:01:08,238 --> 00:01:12,011
+be asked to leave and will not be paid. We expect, 
+
+18
+00:01:12,011 --> 00:01:20,521
+and appreciate your cooperation. Agenda 1. We will 
+
+19
+00:01:20,521 --> 00:01:27,324
+first go over the instructions. 2. Then we will have 
+
+20
+00:01:27,324 --> 00:01:33,988
+a practice match to learn the interface. 3. There will 
+
+21
+00:01:33,988 --> 00:01:37,204
+be a quiz with 10 questions to make sure everyone understands 
+
+22
+00:01:37,204 --> 00:01:42,266
+the instructions. On the quiz, you will be able to 
+
+23
+00:01:42,266 --> 00:01:44,913
+earn up to 50 cents for each of 10 quiz questions, 
+
+24
+00:01:44,913 --> 00:01:49,998
+for a total of 5 dollars. If you answer the question 
+
+25
+00:01:49,998 --> 00:01:53,458
+correctly on your first attempt, you earn 50 cents. 
+
+26
+00:01:53,458 --> 00:01:57,695
+If you answer the question incorrectly on your first 
+
+27
+00:01:57,695 --> 00:02:01,352
+attempt, and correctly on your second attempt, then 
+
+28
+00:02:01,352 --> 00:02:05,659
+you earn 25 cents. If you don’t answer the question 
+
+29
+00:02:05,659 --> 00:02:09,003
+correctly on your first two attempts, you will earn 
+
+30
+00:02:09,003 --> 00:02:13,020
+nothing and the answer will be explained to you. You 
+
+31
+00:02:13,020 --> 00:02:15,841
+must still answer the question correctly to move on 
+
+32
+00:02:15,841 --> 00:02:22,795
+to the next question. 4. After the quiz, the experiment 
+
+33
+00:02:22,795 --> 00:02:27,718
+will begin. In the experiment you will be working with 
+
+34
+00:02:27,718 --> 00:02:32,036
+a fictitious currency called Francs. You will be paid 
+
+35
+00:02:32,036 --> 00:02:36,750
+in US Dollars at the end of the experiment. The exchange 
+
+36
+00:02:36,750 --> 00:02:44,099
+rate today is: 1,500 Francs = 1 US Dollar. Experiment 
+
+37
+00:02:44,099 --> 00:02:51,123
+Details This experiment consists of ten matches. At 
+
+38
+00:02:51,123 --> 00:02:54,234
+the beginning of each match, you will be paired randomly 
+
+39
+00:02:54,234 --> 00:02:58,565
+with one other participant. You will remain matched 
+
+40
+00:02:58,565 --> 00:03:01,084
+with this same participant until the end of the match, 
+
+41
+00:03:01,084 --> 00:03:04,044
+but then will be paired with another randomly selected 
+
+42
+00:03:04,044 --> 00:03:08,735
+participant in the following match. Each match will 
+
+43
+00:03:08,735 --> 00:03:11,521
+have the same structure, but may contain a different 
+
+44
+00:03:11,521 --> 00:03:16,525
+number of periods. You will remain anonymous throughout 
+
+45
+00:03:16,525 --> 00:03:21,424
+the experiment. You will not know the identity of the 
+
+46
+00:03:21,424 --> 00:03:24,083
+participant that you are paired with, and they will 
+
+47
+00:03:24,083 --> 00:03:28,866
+not know your identity. The choices made by you, and 
+
+48
+00:03:28,866 --> 00:03:31,560
+the participant you are paired with, have no effect 
+
+49
+00:03:31,560 --> 00:03:35,147
+on the payoffs of participants in other pairs, and 
+
+50
+00:03:35,147 --> 00:03:40,279
+vice versa. Therefore, your payoff in a given match 
+
+51
+00:03:40,279 --> 00:03:43,796
+is based solely on the choices made by you, and the 
+
+52
+00:03:43,796 --> 00:03:48,974
+participant that you are paired with. Next, Lets Look 
+
+53
+00:03:48,974 --> 00:03:54,315
+at the experimental Interface Specific Instructions 
+
+54
+00:03:54,315 --> 00:03:58,807
+for Each Period Your payoff in each period will depend 
+
+55
+00:03:58,807 --> 00:04:02,151
+on your choice, and the choice of the participant that 
+
+56
+00:04:02,151 --> 00:04:05,924
+you are paired with. You will choose one of two options, 
+
+57
+00:04:05,924 --> 00:04:10,905
+either W or Y. You will be able to see the payoffs 
+
+58
+00:04:10,905 --> 00:04:13,946
+for each combination of choices for you and the participant 
+
+59
+00:04:13,946 --> 00:04:18,346
+that you are paired with. These payoffs will remain 
+
+60
+00:04:18,346 --> 00:04:21,504
+the same throughout the entire experiment (all matches). 
+
+61
+00:04:21,504 --> 00:04:25,858
+The payoffs will be displayed in a table like this: 
+
+62
+00:04:25,858 --> 00:04:31,396
+In this example above, the rows are the following: 
+
+63
+00:04:31,396 --> 00:04:38,094
+Row #1 Your choice. (either W or Y in this example. 
+
+64
+00:04:38,094 --> 00:04:46,175
+) Row #2 Other’s choice. (either W or Y in this example. 
+
+65
+00:04:46,175 --> 00:04:57,158
+) Row #3 Your payoff. Row #4 Other’s payoff. Row 
+
+66
+00:04:57,158 --> 00:05:01,639
+#5 Total number of times that that combination has 
+
+67
+00:05:01,639 --> 00:05:07,014
+been played this match. For example, in the table above, 
+
+68
+00:05:07,014 --> 00:05:10,950
+if you choose W, and the participant you are paired 
+
+69
+00:05:10,950 --> 00:05:15,710
+with chooses Y you receive a payoff of 3, and the other 
+
+70
+00:05:15,710 --> 00:05:20,005
+participant receives a payoff of 4. This combination 
+
+71
+00:05:20,005 --> 00:05:25,404
+has occurred 19 times so far this match. In the table 
+
+72
+00:05:25,404 --> 00:05:29,688
+above, if you choose W, and the participant you are 
+
+73
+00:05:29,688 --> 00:05:33,426
+paired with chooses W, then you receive a payoff of 
+
+74
+00:05:33,426 --> 00:05:36,933
+7, and the other participant receives a payoff of 8. 
+
+75
+00:05:36,933 --> 00:05:42,168
+In the table above, if you choose Y, and the participant 
+
+76
+00:05:42,168 --> 00:05:46,185
+you are paired with chooses Y, then you receive a payoff 
+
+77
+00:05:46,185 --> 00:05:50,028
+of 1, and the other participant receives a payoff of 
+
+78
+00:05:50,028 --> 00:05:56,657
+2. History As the match pro gresses, you will see the 
+
+79
+00:05:56,657 --> 00:05:59,803
+history of play across the top of the screen, displayed 
+
+80
+00:05:59,803 --> 00:06:06,061
+like this: The history tells your choice (labeled My 
+
+81
+00:06:06,061 --> 00:06:08,824
+Choice), the choice of the participant you are paired 
+
+82
+00:06:08,824 --> 00:06:12,063
+with (labeled Other’s Choice), the current period, 
+
+83
+00:06:12,063 --> 00:06:16,637
+and the payoff for the current period. In the above 
+
+84
+00:06:16,637 --> 00:06:20,666
+example, you played W, and the participant you are 
+
+85
+00:06:20,666 --> 00:06:28,154
+paired with played Y in period 39. Rules Rather than 
+
+86
+00:06:28,154 --> 00:06:32,543
+directly making choices of W or Y will develop a set 
+
+87
+00:06:32,543 --> 00:06:35,631
+of rules which will automatically make choices 4 you. 
+
+88
+00:06:35,631 --> 00:06:40,124
+The set of rules will appear in the middle of the screen. 
+
+89
+00:06:40,124 --> 00:06:44,907
+You will be able to construct rules using the rule 
+
+90
+00:06:44,907 --> 00:06:49,876
+constructor at the bottom of the screen. A rule consists 
+
+91
+00:06:49,876 --> 00:06:55,228
+of two parts: Input Sequence sequence of choices by 
+
+92
+00:06:55,228 --> 00:06:59,338
+you and the participant you are paired with. Output 
+
+93
+00:06:59,338 --> 00:07:03,820
+choice to be made by you after the input sequence occurs. 
+
+94
+00:07:03,820 --> 00:07:09,880
+Some example rules are displayed below: For example, 
+
+95
+00:07:09,880 --> 00:07:17,379
+Rule #2 has an input sequence of YY ,WW ,YW, and an 
+
+96
+00:07:17,379 --> 00:07:21,454
+output of W. This means that if you have played Y-W-Y 
+
+97
+00:07:21,454 --> 00:07:25,588
+in the last three periods, and the participant that 
+
+98
+00:07:25,588 --> 00:07:29,593
+you are paired with has played Y-W-W, this rule will 
+
+99
+00:07:29,593 --> 00:07:33,819
+lead you to play W in the next period. The length of 
+
+100
+00:07:33,819 --> 00:07:36,454
+the rule is measured by the length of the input sequence. 
+
+101
+00:07:36,454 --> 00:07:44,233
+Therefore, rule #2 and rule #3 have a length of 3 rule 
+
+102
+00:07:44,233 --> 00:07:49,875
+#4 has a length of 2. There are several ways that you 
+
+103
+00:07:49,875 --> 00:07:53,869
+can modify your rules during the experiment. First, 
+
+104
+00:07:53,869 --> 00:07:57,189
+you can use the rule constructor in the bottom center 
+
+105
+00:07:57,189 --> 00:08:01,450
+of the screen. ] the plus button to add more columns 
+
+106
+00:08:01,450 --> 00:08:06,686
+or one of the minus buttons to subtract columns. on 
+
+107
+00:08:06,686 --> 00:08:11,016
+the question marks to fill in the boxes. When you click 
+
+108
+00:08:11,016 --> 00:08:14,708
+on a question mark, either a W or a Y will appear. 
+
+109
+00:08:14,708 --> 00:08:20,478
+If you click on a W, it will switch to a Y, and if 
+
+110
+00:08:20,478 --> 00:08:26,039
+you click on a Y, it will switch to a W. Once you have 
+
+111
+00:08:26,039 --> 00:08:28,733
+completely filled in the rule (leaving no question 
+
+112
+00:08:28,733 --> 00:08:32,634
+marks), the add rule button will appear, and the rule 
+
+113
+00:08:32,634 --> 00:08:38,438
+can be added to your set. Second, if you look at a 
+
+114
+00:08:38,438 --> 00:08:41,236
+rule in the set, you will notice a green copy button 
+
+115
+00:08:41,236 --> 00:08:46,809
+and a red delete button. If you press the copy button, 
+
+116
+00:08:46,809 --> 00:08:50,141
+it will copy the rule down to the constructor and you 
+
+117
+00:08:50,141 --> 00:08:54,077
+will be able to create a similar rule. If you press 
+
+118
+00:08:54,077 --> 00:08:56,747
+the red delete button it will delete the rule from 
+
+119
+00:08:56,747 --> 00:09:02,087
+the set. Since your rule set needs to make a single 
+
+120
+00:09:02,087 --> 00:09:05,872
+choice each period, it is not possible to have two 
+
+121
+00:09:05,872 --> 00:09:09,227
+different rules with the same input sequence, but with 
+
+122
+00:09:09,227 --> 00:09:13,325
+different outputs. If you create a rule that has the 
+
+123
+00:09:13,325 --> 00:09:16,553
+same input sequence but a different output, you will 
+
+124
+00:09:16,553 --> 00:09:19,072
+get an error that says “Conflicting rule in set,” 
+
+125
+00:09:19,072 --> 00:09:21,777
+and a button that says “Switch Rule” will appear. 
+
+126
+00:09:21,777 --> 00:09:26,189
+If you press this button, it will delete the conflicting 
+
+127
+00:09:26,189 --> 00:09:29,776
+rule from the rule set, and add the rule from the constructor. 
+
+128
+00:09:29,776 --> 00:09:35,546
+A rule of length n is said to fit the history, if the 
+
+129
+00:09:35,546 --> 00:09:38,716
+input sequence matches the last n periods of the history. 
+
+130
+00:09:38,716 --> 00:09:44,172
+For example, since the last three periods of play in 
+
+131
+00:09:44,172 --> 00:09:48,665
+the above history (periods 42 through 44) have been 
+
+132
+00:09:48,665 --> 00:09:54,644
+YY, WW, and YW, and that sequence is also the input 
+
+133
+00:09:54,644 --> 00:09:58,835
+for rule #2, then rule #2 is said to fit the history. 
+
+134
+00:09:58,835 --> 00:10:05,325
+given the above history, we can see that rule #4 fits 
+
+135
+00:10:05,325 --> 00:10:08,947
+the history, ]but rule #3 does not fit the history. 
+
+136
+00:10:08,947 --> 00:10:14,485
+] As play pro gresses you will develop a set of rules 
+
+137
+00:10:14,485 --> 00:10:18,897
+that will be used to make your choices. If more than 
+
+138
+00:10:18,897 --> 00:10:22,101
+one rule fits the history, then the rule with the longer 
+
+139
+00:10:22,101 --> 00:10:27,128
+length will determine the choice. For example, given 
+
+140
+00:10:27,128 --> 00:10:31,424
+the above history, since both rule #2 and rule #4 fit 
+
+141
+00:10:31,424 --> 00:10:34,953
+the history, rule #2 will be used to make your choice 
+
+142
+00:10:34,953 --> 00:10:40,990
+since it is longer. Therefore, given the history, and 
+
+143
+00:10:40,990 --> 00:10:44,229
+the three rules, your choice next period will be W, 
+
+144
+00:10:44,229 --> 00:10:50,580
+as prescribed by rule #2. If no rules fit the history, 
+
+145
+00:10:50,580 --> 00:10:55,363
+then your Default rule will be selected. The default 
+
+146
+00:10:55,363 --> 00:10:58,509
+rule will only be used when no rules fit the history. 
+
+147
+00:10:58,509 --> 00:11:04,384
+To select your default rule, select either W or Y in 
+
+148
+00:11:04,384 --> 00:11:09,422
+the bottom left of your screen. Additionally, you have 
+
+149
+00:11:09,422 --> 00:11:14,403
+to select the First Period rule. The first period rule 
+
+150
+00:11:14,403 --> 00:11:17,479
+will only be used in the first period of the match. 
+
+151
+00:11:17,479 --> 00:11:23,470
+To select your first period rule select either W, or 
+
+152
+00:11:23,470 --> 00:11:28,706
+Y, in the bottom left of your screen. Play will proceed 
+
+153
+00:11:28,706 --> 00:11:34,070
+automatically. Each period, before the choice is made, 
+
+154
+00:11:34,070 --> 00:11:36,821
+the rule that will be used to make the next choice 
+
+155
+00:11:36,821 --> 00:11:42,220
+will be highlighted. The corresponding sequence in 
+
+156
+00:11:42,220 --> 00:11:46,272
+the history will also be highlighted. After the choice 
+
+157
+00:11:46,272 --> 00:11:49,499
+has been made, the statistics for that rule will be 
+
+158
+00:11:49,499 --> 00:11:52,099
+updated, and the corresponding choice in the payoff 
+
+159
+00:11:52,099 --> 00:11:57,173
+table will also be highlighted. Lets look at another 
+
+160
+00:11:57,173 --> 00:12:06,182
+example. In the example above, Rule #4 and Rule #9 
+
+161
+00:12:06,182 --> 00:12:12,010
+both fit the history. However, rule #9 will be selected 
+
+162
+00:12:12,010 --> 00:12:17,687
+because it is longer. Therefore, W will be played in 
+
+163
+00:12:17,687 --> 00:12:22,389
+the next period. For the example above, there are several 
+
+164
+00:12:22,389 --> 00:12:25,744
+ways to make changes to the rule set in order for Y 
+
+165
+00:12:25,744 --> 00:12:37,888
+to be played. First, you can delete Rule #9. Second, 
+
+166
+00:12:37,888 --> 00:12:42,033
+you can add a longer rule that fits the history and 
+
+167
+00:12:42,033 --> 00:12:59,912
+has Y as the output. ] Number of Periods Per Match 
+
+168
+00:12:59,912 --> 00:13:03,557
+The number of periods in each match will be determined 
+
+169
+00:13:03,557 --> 00:13:09,316
+randomly, using the following procedure. At the end 
+
+170
+00:13:09,316 --> 00:13:12,868
+of each period, a number will be chosen randomly from 
+
+171
+00:13:12,868 --> 00:13:18,046
+the set of numbers 1, 2, 3, all the way up to, 18, 
+
+172
+00:13:18,046 --> 00:13:25,430
+19, 20, where each number is equally likely. If the 
+
+173
+00:13:25,430 --> 00:13:30,526
+number is 1, then the match will end. If the number 
+
+174
+00:13:30,526 --> 00:13:33,626
+is not 1, then there will be an additional period. 
+
+175
+00:13:33,626 --> 00:13:38,723
+The number will always be placed back into the set 
+
+176
+00:13:38,723 --> 00:13:43,669
+after it is drawn. Thus, in any period there is a 5% 
+
+177
+00:13:43,669 --> 00:13:48,556
+CHANCE that the match will end, and a 95% CHANCE that 
+
+178
+00:13:48,556 --> 00:13:53,003
+the match will have another period. Therefore, the 
+
+179
+00:13:53,003 --> 00:13:55,986
+expected number of periods in each match will be 20. 
+
+180
+00:13:55,986 --> 00:13:59,980
+You will not see the number selected from the set. 
+
+181
+00:13:59,980 --> 00:14:04,136
+To ensure that the length of the match is not dependent 
+
+182
+00:14:04,136 --> 00:14:07,410
+on your play, the number of periods for each match 
+
+183
+00:14:07,410 --> 00:14:09,744
+has been written on the board before the experiment, 
+
+184
+00:14:09,744 --> 00:14:12,553
+and will be uncovered at the end of the experiment. 
+
+185
+00:14:12,553 --> 00:14:16,710
+Since your choices will be determined automatically 
+
+186
+00:14:16,710 --> 00:14:20,460
+from your rule set, each period will last 10 seconds. 
+
+187
+00:14:20,460 --> 00:14:26,033
+Therefore, the game will progress automatically, even 
+
+188
+00:14:26,033 --> 00:14:30,305
+if you don’t do anything. Additional Information 
+
+189
+00:14:30,305 --> 00:14:35,274
+about Matches During matches 1 through 10, you will 
+
+190
+00:14:35,274 --> 00:14:37,793
+be able to construct the set of rules to make your 
+
+191
+00:14:37,793 --> 00:14:41,961
+choices. All of the rules in your set at the end of 
+
+192
+00:14:41,961 --> 00:14:44,817
+one match will remain in your set at the start of the 
+
+193
+00:14:44,817 --> 00:14:49,519
+next match. Before the first match, you will have 1 
+
+194
+00:14:49,519 --> 00:14:57,193
+ c construct your rules. Before every other match, 
+
+195
+00:14:57,193 --> 00:15:00,595
+you will have 2 minutes before play starts to edit 
+
+196
+00:15:00,595 --> 00:15:06,794
+your set of rules. Editing your set of rules In the 
+
+197
+00:15:06,794 --> 00:15:09,998
+experiment today, you will need to pay a cost to edit 
+
+198
+00:15:09,998 --> 00:15:15,606
+rules during the match. More specifically, Before each 
+
+199
+00:15:15,606 --> 00:15:19,205
+match starts: You can change your set of rules for 
+
+200
+00:15:19,205 --> 00:15:24,917
+free before the match starts. During the match: If 
+
+201
+00:15:24,917 --> 00:15:27,389
+you want to make changes to your set of rules during 
+
+202
+00:15:27,389 --> 00:15:30,303
+the match, you can click the “Unlock Rules” button. 
+
+203
+00:15:30,303 --> 00:15:34,692
+The cost of editing your rules during the match is 
+
+204
+00:15:34,692 --> 00:15:37,327
+0 points for clicking the “Unlock Rules” button, 
+
+205
+00:15:37,327 --> 00:15:40,404
+plus 1 point per second that you are editing the rules. 
+
+206
+00:15:40,404 --> 00:15:45,605
+While you are editing your rules, the cost will be 
+
+207
+00:15:45,605 --> 00:15:48,484
+displayed on the “Lock Rules” button, as well as 
+
+208
+00:15:48,484 --> 00:15:52,362
+at the top of the screen. Once you are done editing 
+
+209
+00:15:52,362 --> 00:15:55,195
+your rules, you may click the “Lock Rules” button, 
+
+210
+00:15:55,195 --> 00:15:58,445
+after which point you will no longer incur any costs. 
+
+211
+00:15:58,445 --> 00:16:05,017
+Payoffs At the end of the experiment, you will be paid 
+
+212
+00:16:05,017 --> 00:16:09,858
+in cash. Your payoff at the end of the experiment will 
+
+213
+00:16:09,858 --> 00:16:13,724
+be the sum of the payoffs for each period. Reminder: 
+
+214
+00:16:13,724 --> 00:16:18,844
+the exchange rate today is 1500 Francs equals one US 
+
+215
+00:16:18,844 --> 00:16:25,148
+dollar. Practice Match Next, you will be given the 
+
+216
+00:16:25,148 --> 00:16:28,364
+chance to participate in a practice match, to ensure 
+
+217
+00:16:28,364 --> 00:16:32,973
+that you are comfortable with the interface. It is 
+
+218
+00:16:32,973 --> 00:16:36,525
+important to note that in this practice match, you 
+
+219
+00:16:36,525 --> 00:16:39,416
+will NOT be paid for the choices made in the practice 
+
+220
+00:16:39,416 --> 00:16:45,499
+match. the payoffs are all listed as 0, so that you 
+
+221
+00:16:45,499 --> 00:16:47,845
+can focus on getting comfortable with the interface, 
+
+222
+00:16:47,845 --> 00:16:53,406
+rather than focusing on the payoffs. You are NOT matched 
+
+223
+00:16:53,406 --> 00:16:57,678
+with another participant. Your opponent for the practice 
+
+224
+00:16:57,678 --> 00:17:03,262
+match is a computer that is playing RANDOMLY. Starting 
+
+225
+00:17:03,262 --> 00:17:08,278
+Rules Prior to the start of the experiment, you will 
+
+226
+00:17:08,278 --> 00:17:10,983
+have 10 minutes to construct your starting set of rules. 
+
+227
+00:17:10,983 --> 00:17:15,464
+During that time, you will be presented with a split-screen 
+
+228
+00:17:15,464 --> 00:17:20,619
+view of the construction screen. In this view, you 
+
+229
+00:17:20,619 --> 00:17:23,208
+will have an opportunity to test what your rule set 
+
+230
+00:17:23,208 --> 00:17:25,831
+will select as an output for a variety of hypothetical 
+
+231
+00:17:25,831 --> 00:17:30,824
+histories. The split-screen will consist of two sides. 
+
+232
+00:17:30,824 --> 00:17:36,814
+The right side is the "starting rules" side. Rules 
+
+233
+00:17:36,814 --> 00:17:39,624
+added to this side will be added to your rule set at 
+
+234
+00:17:39,624 --> 00:17:43,687
+the start of the first match. The left side is the 
+
+235
+00:17:43,687 --> 00:17:47,983
+"hypothetical rules" side. Rules added to this side 
+
+236
+00:17:47,983 --> 00:17:51,071
+can be used to test to see what choices different combinations 
+
+237
+00:17:51,071 --> 00:17:56,191
+of rules will lead to. You will be able to move rules 
+
+238
+00:17:56,191 --> 00:17:59,221
+from the Hypothetical Rules side to the Starting Rules 
+
+239
+00:17:59,221 --> 00:18:03,935
+side by clicking the blue move button. To delete rules 
+
+240
+00:18:03,935 --> 00:18:06,640
+from the Starting Rules side you will need to click 
+
+241
+00:18:06,640 --> 00:18:10,982
+delete button. You will be able to see what your hypothetical 
+
+242
+00:18:10,982 --> 00:18:14,314
+and starting rule sets selects as a choice for next 
+
+243
+00:18:14,314 --> 00:18:17,263
+period for hypothetical histories that you construct. 
+
+244
+00:18:17,263 --> 00:18:22,661
+To construct a hypothetical history, you will need 
+
+245
+00:18:22,661 --> 00:18:26,643
+to click on the question marks in that history. Notice 
+
+246
+00:18:26,643 --> 00:18:29,197
+that you will be able to construct and store multiple 
+
+247
+00:18:29,197 --> 00:18:31,937
+histories of different lengths and different choice 
+
+248
+00:18:31,937 --> 00:18:34,956
+sequences at the same time by clicking the New button 
+
+249
+00:18:34,956 --> 00:18:37,870
+or the History number button at the top of the Hypothetical 
+
+250
+00:18:37,870 --> 00:18:43,651
+Rules side. For example, five periods of hypothetical 
+
+251
+00:18:43,651 --> 00:18:52,428
+History number 4 have been filled in. Another example, 
+
+252
+00:18:52,428 --> 00:18:57,142
+14 periods of hypothetical History number 3 have been 
+
+253
+00:18:57,142 --> 00:19:05,617
+filled in. In both examples, you can see what the Hypothetical 
+
+254
+00:19:05,617 --> 00:19:09,076
+Rules and the Starting Rules sets select as a choice 
+
+255
+00:19:09,076 --> 00:19:13,964
+for next period. You will be able to make changes to 
+
+256
+00:19:13,964 --> 00:19:16,820
+your Hypothetical Rules and your Starting Rules for 
+
+257
+00:19:16,820 --> 00:19:21,000
+the duration of the 10 minutes. After the ten minutes 
+
+258
+00:19:21,000 --> 00:19:24,471
+are up, rules that are on the Starting Rules side will 
+
+259
+00:19:24,471 --> 00:19:30,995
+be your starting rules for the experiment. Now that 
+
+260
+00:19:30,995 --> 00:19:34,432
+we have completed the instructions, the Practice match 
+

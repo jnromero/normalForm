@@ -1,0 +1,74 @@
+[[2]] Experimental Interface. [[slnc 500]]
+
+Next we will go over the experimental interface.  The experimental interface consists of five components: 
+
+1.[[slnc 500]] The payoff table is displayed at the top left of the screen.  The payoff table has your choices (the rows, P, Q and R), and the choices of the subject that you are matched with (the columns, S, T and V).  For any combination of choices for you and the subject that you are matched with, there is a payoff.  Your payoff is on the left, and the payoff for the subject that you are matched with is on the right.  For example, if you choose $P$ and the subject that you are matched with chooses $V$, then your payoff is 25 and the payoff for the subject that you are matched with is 10.
+2.[[slnc 500]] The summary of the current period is shown in the top right. 
+3.[[slnc 500]] The summary of all periods is shown below that.
+4.[[slnc 500]] The history of play is displayed in the bottom half of the screen.
+5.[[slnc 500]] Finally, the current status is displayed across the middle of the screen.  The current status tells you what to do at any point during the experiment.
+
+
+Specific Instructions for Each Period [[slnc 500]]
+
+At any point during a period, you will see one of three status messages:[[slnc 500]]
+
+{\bf Status \#1:}[[slnc 500]] Please select My Choice (P,Q,R) and your guess for Other's Choice (S,T,V). When you see this status message, you need to do two things. 
+\begin{enumerate} 
+\item Select a row for your choice (in this example either P, Q, or R).  Once you have selected a row, it will be outlined with the label ``My Choice''.  My choice will also be updated on the period summary.
+\item Select the column that you think the subject that you are matched with will select (in this example either S , T or V).  Once you have selected a column, it will be outlined with the label ``My Guess''.  My guess will also be updated on the period summary.
+\end{enumerate} 
+\end{itemize} 
+\item {\bf Status \#2:} Please wait for other subject to finish making their choices.
+\begin{itemize} 
+\item When you see this status message, please wait patiently for the subject that you are matched with to finish making their choices. 
+\item If the other subject makes their choices before you in a specific period, you might not see this status.
+\end{itemize} 
+\item {\bf Status \#3:} Click on the payoffs for this period (in green) in the game table to move to next period.
+\begin{itemize} 
+\item When you see this status message, all choices for the period have been made, and you can view the final results.  
+\item The column selected by the subject that you are matched with is highlighted and labeled ``Other's Choice''.  If your guess about their choice was correct, then the column will be highlighted in yellow.
+\item The entry of the payoff table that is at the intersection of the row that you selected and the column that the subject that you are matched with selected is highlighted in green.   
+\item This entry displays the payoffs for the current period.  You payoff for the period is displayed on the left and the payoff of the subject that you are matched with is displayed on the right.  
+
+
+
+\item At this point, the period summary has been updated to include the choice of the subject that you are matched with and the current payoffs for this period.  These choices have also been added to the history of play at the bottom of the screen.  
+\item  Finally, the overall summary has been updated to include the total payoffs including this period, as well as the number of correct guesses you have made about the choice of the subject that you are matched with.
+\item To move on to the next period, you need to click the payoffs for this period in the game table, which have been highlighted in green. 
+\end{itemize} 
+\end{itemize}
+
+
+
+
+
+\subsubsection*{Payoffs} 
+
+
+ \begin{itemize} 
+\item Your payoff at the end of the experiment will be the sum of the payoffs for each period.
+\item In addition, you may receive a bonus payoff if your raffle
+  ticket is randomly selected at the end of the match.  These bonus payoffs won't be displayed until the end of the experiment.  
+\item At the end of the experiment, your earnings in Francs will be converted into US Dollars and you will be paid in cash, in private.   
+\end{itemize} 
+
+
+
+[[5]] Next we will go over the experimental interface. [[slnc 500]]
+
+The experimental interface consists of five components: [[slnc 500]]
+[[2]]1. [[slnc 500]] The payoff table is displayed at the top left of the screen.  
+[[2]]2. [[slnc 500]] [[1]]The summary of the current period is shown in the top right. 
+[[2]]3. [[slnc 500]] The summary of all periods is shown below that.
+[[4]]4. [[slnc 500]] The history of play is displayed in the bottom half of the screen.
+[[3]]5. [[slnc 500]] Finally, the current status is displayed across the middle of the screen.  The current status tells you what to do at any point during the experiment.
+
+At any point in the game, you will see one of the following status messages: [[1]] Please wait for other subject to finish making their choices. [[1]] Please select My Choice (P,Q,R) and your guess for Other's Choice (S,T,V). [[1]] Click on the payoffs for this period (in green) in the game table to move to next period.
+
+
+In the bottom left, you will also be asked to guess what choice your partner will make in the current round.
+On the right side of the screen, you will see the history of the current match.  This shows the round, and you and your partner's choice, payoff and cumulative payoff after each round. 
+When you have made your choice and guess about your partner's choice, you will click confirm.  
+Once you click confirm, you will see the second screen, which summarizes your choice and guess.
+You will see this screen until your partner finalizes their choice and guess.

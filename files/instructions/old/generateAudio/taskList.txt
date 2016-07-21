@@ -1,0 +1,428 @@
+startAudio
+partial(changeBackgroundColor,"rgba(0,0,255,.1)")
+partial(placeText,"welcome1","Welcome To",250,400,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"test2","The Vernon Smith",675,400,"rgba(0,0,0,1)",4,"center","0px")
+partial(placeText,"test22","Experimental Economics Laboratory",750,400,"rgba(0,0,0,1)",6,"center","0px")
+drawLogo
+clearAll
+partial(changeBackgroundColor,"rgba(0,255,0,.1)")
+partial(placeText,"overview1","Experiment Overview",100,500,"rgba(0,100,0,1)",1,"center","0px")
+partial(placeText,"overview2","Economics Experiment.",300,400,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview3","Will get paid in cash at the end of the experiment.",450,400,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview4","Please remain silent.",600,400,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview5","Please raise your hand for help.",750,400,"rgba(0,0,0,1)",2,"center","0px")
+clearAll
+partial(changeBackgroundColor,"rgba(255,0,0,.1)")
+partial(placeText,"overview1","Experiment Overview",100,500,"rgba(100,0,0,1)",0,"center","0px")
+partial(placeText,"overview2","Do not talk, laugh or exclaim out loud.",300,400,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview3","Keep your eyes on your screen only.",450,400,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview4","Turn off cell phones, etc. and put them away.",600,400,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview5","We appreciate your cooperation.",750,400,"rgba(0,0,0,1)",2,"center","0px")
+clearAll
+partial(changeBackgroundColor,"rgba(0,0,255,.1)")
+partial(placeText,"overview1","Agenda",100,500,"rgba(0,0,100,1)",1,"center","0px")
+partial(placeText,"overview2","1. Instructions",200,400,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview3","2. Practice Match",300,400,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview4","3. Quiz (10 question for money)",400,400,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview5","$0.50 for first attempt",500,400,"rgba(0,0,0,1)",1,"left","300px")
+partial(placeText,"overview6","$0.25 for second attempt",600,400,"rgba(0,0,0,1)",1,"left","300px")
+partial(placeText,"overview7","$0.00 for third or more",700,400,"rgba(0,0,0,1)",1,"left","300px")
+partial(placeText,"overview8","4. Experiment",800,400,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview9","500 Francs = $1.00",900,400,"rgba(0,0,0,1)",1,"left","300px")
+clearAll
+partial(changeBackgroundColor,"rgba(0,255,0,.1)")
+partial(placeText,"overview1","Experiment Details",100,500,"rgba(0,100,0,1)",1,"center","0px")
+partial(placeText,"overview2","10 Matches.",225,400,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview3","Randomly paired with one other subject each match.",350,400,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview4","Randomly paired with a new subject at the start of next match.",475,400,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview5","Each match has a different number of periods.",600,400,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview6","You will remain anonymous.",725,400,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview7","Choice only affect you and participant you are paired with.",850,400,"rgba(0,0,0,1)",2,"center","0px")
+clearAll
+partial(drawInstructionDemo)
+partial(moveInstructions)
+toggleOverlay
+partial(growDiv,"gameDiv",3,"bottom right",.5)
+partial(highlightText,"gameTable_0_0","red",1.5,.5)
+partial(highlightText,"gameTable_0_0","black",1.25,.5)
+partial(highlightText,"gameTable_1_0","red",1.5,.5)
+partial(highlightText,"gameTable_1_0","black",1.25,.5)
+partial(highlightText,"gameTable_2_0","red",1.5,.5)
+partial(highlightText,"gameTable_2_0","black",1.25,.5)
+partial(highlightText,"gameTable_3_0","red",1.5,.5)
+partial(highlightText,"gameTable_3_0","black",1.25,.5)
+partial(highlightText,"gameTable_4_0","red",1.5,.5)
+partial(highlightText,"gameTable_4_0","black",1.25,.5)
+partial(highlightText,"gameTable_0_2","red",2,.5)
+partial(highlightText,"gameTable_1_2","red",2,.5)
+partial(highlightText,"gameTable_2_2","red",2,.5)
+partial(highlightText,"gameTable_3_2","red",2,.5)
+partial(highlightText,"gameTable_4_2","red",2,.5)
+partial(highlightText,"gameTable_0_2","black",1,.5)
+partial(highlightText,"gameTable_1_2","black",1,.5)
+partial(highlightText,"gameTable_2_2","black",1,.5)
+partial(highlightText,"gameTable_3_2","black",1,.5)
+partial(highlightText,"gameTable_4_2","black",1,.5)
+partial(highlightText,"gameTable_0_1","red",2,.5)
+partial(highlightText,"gameTable_1_1","red",2,.5)
+partial(highlightText,"gameTable_2_1","red",2,.5)
+partial(highlightText,"gameTable_3_1","red",2,.5)
+partial(highlightText,"gameTable_4_1","red",2,.5)
+partial(highlightText,"gameTable_0_1","black",1,.5)
+partial(highlightText,"gameTable_1_1","black",1,.5)
+partial(highlightText,"gameTable_2_1","black",1,.5)
+partial(highlightText,"gameTable_3_1","black",1,.5)
+partial(highlightText,"gameTable_4_1","black",1,.5)
+partial(highlightText,"gameTable_0_4","red",2,.5)
+partial(highlightText,"gameTable_1_4","red",2,.5)
+partial(highlightText,"gameTable_2_4","red",2,.5)
+partial(highlightText,"gameTable_3_4","red",2,.5)
+partial(highlightText,"gameTable_4_4","red",2,.5)
+partial(highlightText,"gameTable_0_4","black",1,.5)
+partial(highlightText,"gameTable_1_4","black",1,.5)
+partial(highlightText,"gameTable_2_4","black",1,.5)
+partial(highlightText,"gameTable_3_4","black",1,.5)
+partial(highlightText,"gameTable_4_4","black",1,.5)
+partial(growDiv,"gameDiv",3,"bottom right",.5)
+toggleOverlay
+partial(drawInstructionDemo)
+toggleOverlay
+partial(growDiv,"regular_history",1.02,"top center",.5)
+partial(highlightText,"regular_historyLabel_myChoice","red",1.5,.5)
+partial(highlightText,"regular_historyLabel_myChoice","black",1,.5)
+partial(highlightText,"regular_historyLabel_theirChoice","red",1.5,.5)
+partial(highlightText,"regular_historyLabel_theirChoice","black",1,.5)
+partial(highlightText,"regular_historyLabel_period","red",1.5,.5)
+partial(highlightText,"regular_historyLabel_period","black",1,.5)
+partial(highlightText,"regular_historyLabel_myPayoff","red",1.5,.5)
+partial(highlightText,"regular_historyLabel_myPayoff","black",1,.5)
+partial(highlightText,"regular_historyPeriodLabel_39","red",2,.5)
+partial(highlightText,"regular_history_square_39_0","red",2,.5)
+partial(highlightText,"regular_history_square_39_1","red",2,.5)
+partial(highlightText,"regular_historyPeriodLabel_39","black",1,.5)
+partial(highlightText,"regular_history_square_39_0","black",1.25,.5)
+partial(highlightText,"regular_history_square_39_1","black",1.25,.5)
+partial(growDiv,"regular_history",1.02,"top center",.5)
+toggleOverlay
+toggleOverlay
+partial(growDiv,"regularRuleList",1.02,"top center",.5)
+partial(growDiv,"regularRuleList",1.02,"top center",.5)
+partial(growDiv,"regularConstructorDiv",1.02,"top center",.5)
+partial(growDiv,"regularConstructorDiv",1.02,"top center",.5)
+partial(growDiv,"regularRuleList",1.02,"top center",.5)
+partial(growDiv,"regular_listEntry_12",2,"top center",.5)
+partial(highlightArea,"inputHighlight",310,205,430,515,15,"green")
+partial(deleteDiv,"inputHighlight")
+partial(highlightArea,"inputHighlight",110,110,430,815,15,"green")
+partial(deleteDiv,"inputHighlight")
+partial(growDiv,"regular_listEntry_12",2,"top center",.5)
+partial(growDiv,"regular_listEntry_2",2,"top center",.5)
+partial(highlightText,"square_0_0_2","red",1.75,.01)
+partial(highlightText,"square_0_1_2","red",1.75,.01)
+partial(highlightText,"square_0_0_2","black",1.25,.01)
+partial(highlightText,"square_0_1_2","black",1.25,.01)
+partial(highlightText,"square_1_0_2","red",1.75,.01)
+partial(highlightText,"square_1_1_2","red",1.75,.01)
+partial(highlightText,"square_1_0_2","black",1.25,.01)
+partial(highlightText,"square_1_1_2","black",1.25,.01)
+partial(highlightText,"square_2_0_2","red",1.75,.01)
+partial(highlightText,"square_2_1_2","red",1.75,.01)
+partial(highlightText,"square_2_0_2","black",1.25,.01)
+partial(highlightText,"square_2_1_2","black",1.25,.01)
+partial(highlightText,"square_3_0_2","red",1.75,.01)
+partial(highlightText,"square_3_0_2","black",1.25,.01)
+partial(highlightText,"square_0_0_2","red",1.75,.01)
+partial(highlightText,"square_1_0_2","red",1.75,.01)
+partial(highlightText,"square_2_0_2","red",1.75,.01)
+partial(highlightText,"square_0_0_2","black",1.25,.01)
+partial(highlightText,"square_1_0_2","black",1.25,.01)
+partial(highlightText,"square_2_0_2","black",1.25,.01)
+partial(highlightText,"square_0_1_2","red",1.75,.01)
+partial(highlightText,"square_1_1_2","red",1.75,.01)
+partial(highlightText,"square_2_1_2","red",1.75,.01)
+partial(highlightText,"square_0_1_2","black",1.25,.01)
+partial(highlightText,"square_1_1_2","black",1.25,.01)
+partial(highlightText,"square_2_1_2","black",1.25,.01)
+partial(highlightText,"square_3_0_2","red",1.75,.01)
+partial(highlightText,"square_3_0_2","black",1.25,.01)
+partial(growDiv,"regular_listEntry_2",2,"top center",.5)
+partial(growDiv,"regular_listEntry_2",1.75,"top right",.15)
+partial(growDiv,"regular_listEntry_3",1.75,"top left",.15)
+partial(growDiv,"regular_listEntry_2",1.75,"top right",.15)
+partial(growDiv,"regular_listEntry_3",1.75,"top left",.15)
+partial(growDiv,"regular_listEntry_4",1.75,"top right",.15)
+partial(growDiv,"regular_listEntry_4",1.75,"top right",.15)
+partial(growDiv,"regularRuleList",1.02,"top center",.5)
+toggleOverlay
+drawCursorOverlay
+partial(placeCursor,400,900)
+partial(moveCursorToDiv,"regular_plusConstructorButton",1)
+partial(clickCursor,0)
+partial(constructorPlusMinus,"+",-1,getRuleSet("regular"))+++150
+partial(moveCursorToDiv,"regular_plusConstructorButton",.3)+++200
+partial(clickCursor,0)+++350
+partial(constructorPlusMinus,"+",-1,getRuleSet("regular"))+++150
+partial(moveCursorToDiv,"regular_plusConstructorButton",.3)+++200
+partial(clickCursor,0)+++350
+partial(constructorPlusMinus,"+",-1,getRuleSet("regular"))+++150
+partial(moveCursorToDiv,"regular_plusConstructorButton",.3)+++200
+partial(clickCursor,0)+++350
+partial(constructorPlusMinus,"+",-1,getRuleSet("regular"))+++150
+partial(moveCursorToDiv,"regular_minusConstructorButton_0",.3)+++200
+partial(clickCursor,0)+++350
+partial(constructorPlusMinus,"-",0,getRuleSet("regular"))+++150
+partial(moveCursorToDiv,"regular_minusConstructorButton_0",.3)+++200
+partial(clickCursor,0)+++350
+partial(constructorPlusMinus,"-",0,getRuleSet("regular"))+++150
+partial(moveCursorToDiv,"square_0_0",.3)
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_0_0").className="wSquare square";}
+partial(moveCursorToDiv,"square_1_0",.3)+++300
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_1_0").className="ySquare square";}
+partial(moveCursorToDiv,"square_2_0",.3)+++300
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_2_0").className="wSquare square";}
+partial(moveCursorToDiv,"square_0_1",.3)+++300
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_0_1").className="ySquare square";}
+partial(moveCursorToDiv,"square_1_1",.3)+++300
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_1_1").className="wSquare square";}
+partial(moveCursorToDiv,"square_2_1",.3)+++300
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_2_1").className="ySquare square";}
+partial(moveCursorToDiv,"square_0_0",.3)
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_0_0").className="ySquare square";}
+partial(moveCursorToDiv,"square_1_0",.3)
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_1_0").className="wSquare square";}
+partial(moveCursorToDiv,"square_3_0",.3)
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_3_0").className="wSquare square";}
+function(){window.constructors["regular"]=[[1,1],[0,0],[1]];drawConstructorSubmitButton("regular");}
+partial(moveCursorToDiv,"square_3_0",.3)+++300
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_3_0").className="ySquare square";}
+partial(moveCursorToDiv,"constructorSubmitButton",.3)
+partial(clickCursor,0)+++350
+function(){window.ruleSets["regular"].push([[1,1],[0,0],[1,0],[1]]);window.ruleNumbers["regular"]=[0,2,3,4,6,7,8,9,12,13];window.ruleLastUsed["regular"]=[0,2,3,4,6,7,8,9,12,0];window.ruleFrequency["regular"]=[0,2,3,4,6,7,8,9,12,0];drawRules("regular");window.constructors["regular"]=[[-1,-1],[-1]];drawConstructor("regular");drawNextAction("regular");}
+partial(growDiv,"regular_listEntry_9",2,"top center",.5)
+partial(growDiv,"regular_listEntryCopyButton_9",3,"",.5)
+partial(growDiv,"regular_listEntryCopyButton_9",3,"",.5)
+partial(growDiv,"regular_listEntryDeleteButton_9",3,"",.5)
+partial(growDiv,"regular_listEntryDeleteButton_9",3,"",.5)
+partial(moveCursorToDiv,"regular_listEntryCopyButton_9",.3)
+partial(clickCursor,0)
+partial(setConstructor,[[0,0],[1]],"regular")+++150
+partial(moveCursorToDiv,"regular_listEntryDeleteButton_9",.3)
+partial(clickCursor,0)
+function(){window.ruleSets["regular"].splice(7, 1);window.ruleNumbers["regular"]=[0,2,3,4,6,7,8,9,13];window.ruleLastUsed["regular"]=[0,2,3,4,6,7,8,9,0];window.ruleFrequency["regular"]=[0,2,3,4,6,7,8,9,0];drawRules("regular");drawNextAction("regular");}
+partial(moveCursorToDiv,"regular_listEntryCopyButton_8",.3)
+partial(clickCursor,0)+++350
+partial(setConstructor,[[1,0],[1]],"regular")+++150
+partial(moveCursorToDiv,"square_1_0",.3)+++300
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_1_0").className="wSquare square";}
+function(){window.constructors["regular"]=[[1,0],[0]];drawConstructorSubmitButton("regular");}
+partial(moveCursorToDiv,"constructorSubmitButton",.3)
+partial(moveCursorToDiv,"switchRulesButton",.3)
+partial(clickCursor,0)
+function(){window.ruleSets["regular"].splice(6, 1);window.ruleSets["regular"].push([[1,0],[0]]);window.ruleNumbers["regular"]=[0,2,3,4,6,7,9,13,14];window.ruleLastUsed["regular"]=[0,2,3,4,6,7,8,9,0];window.ruleFrequency["regular"]=[0,2,3,4,6,7,8,9,0];drawRules("regular");window.constructors["regular"]=[[-1,-1],[-1]];drawConstructor("regular");drawNextAction("regular");}
+partial(highlightText,"regular_history_square_42_0","red",1.75,.01)
+partial(highlightText,"regular_history_square_42_1","red",1.75,.01)
+partial(highlightText,"regular_history_square_43_0","red",1.75,.01)
+partial(highlightText,"regular_history_square_43_1","red",1.75,.01)
+partial(highlightText,"regular_history_square_44_0","red",1.75,.01)
+partial(highlightText,"regular_history_square_44_1","red",1.75,.01)
+partial(highlightText,"square_0_0_2","red",1.75,.01)
+partial(highlightText,"square_1_0_2","red",1.75,.01)
+partial(highlightText,"square_2_0_2","red",1.75,.01)
+partial(highlightText,"square_0_1_2","red",1.75,.01)
+partial(highlightText,"square_1_1_2","red",1.75,.01)
+partial(highlightText,"square_2_1_2","red",1.75,.01)
+partial(highlightText,"regular_history_square_42_0","black",1.25,.01)
+partial(highlightText,"regular_history_square_42_1","black",1.25,.01)
+partial(highlightText,"regular_history_square_43_0","black",1.25,.01)
+partial(highlightText,"regular_history_square_43_1","black",1.25,.01)
+partial(highlightText,"regular_history_square_44_0","black",1.25,.01)
+partial(highlightText,"regular_history_square_44_1","black",1.25,.01)
+partial(highlightText,"square_0_0_2","black",1.25,.01)
+partial(highlightText,"square_1_0_2","black",1.25,.01)
+partial(highlightText,"square_2_0_2","black",1.25,.01)
+partial(highlightText,"square_0_1_2","black",1.25,.01)
+partial(highlightText,"square_1_1_2","black",1.25,.01)
+partial(highlightText,"square_2_1_2","black",1.25,.01)
+partial(highlightText,"regular_history_square_43_0","red",1.75,.01)
+partial(highlightText,"regular_history_square_43_1","red",1.75,.01)
+partial(highlightText,"regular_history_square_44_0","red",1.75,.01)
+partial(highlightText,"regular_history_square_44_1","red",1.75,.01)
+partial(highlightText,"square_0_0_4","red",1.75,.01)
+partial(highlightText,"square_1_0_4","red",1.75,.01)
+partial(highlightText,"square_0_1_4","red",1.75,.01)
+partial(highlightText,"square_1_1_4","red",1.75,.01)
+partial(highlightText,"regular_history_square_43_0","black",1.25,.01)
+partial(highlightText,"regular_history_square_43_1","black",1.25,.01)
+partial(highlightText,"regular_history_square_44_0","black",1.25,.01)
+partial(highlightText,"regular_history_square_44_1","black",1.25,.01)
+partial(highlightText,"square_0_0_4","black",1.25,.01)
+partial(highlightText,"square_1_0_4","black",1.25,.01)
+partial(highlightText,"square_0_1_4","black",1.25,.01)
+partial(highlightText,"square_1_1_4","black",1.25,.01)
+partial(highlightText,"regular_history_square_42_0","red",1.75,.01)
+partial(highlightText,"regular_history_square_42_1","red",1.75,.01)
+partial(highlightText,"regular_history_square_43_0","red",1.75,.01)
+partial(highlightText,"regular_history_square_43_1","red",1.75,.01)
+partial(highlightText,"regular_history_square_44_0","red",1.75,.01)
+partial(highlightText,"regular_history_square_44_1","red",1.75,.01)
+partial(highlightText,"square_0_0_3","red",1.75,.01)
+partial(highlightText,"square_1_0_3","red",1.75,.01)
+partial(highlightText,"square_2_0_3","red",1.75,.01)
+partial(highlightText,"square_0_1_3","red",1.75,.01)
+partial(highlightText,"square_1_1_3","red",1.75,.01)
+partial(highlightText,"square_2_1_3","red",1.75,.01)
+partial(highlightText,"regular_history_square_42_0","black",1.25,.01)
+partial(highlightText,"regular_history_square_42_1","black",1.25,.01)
+partial(highlightText,"regular_history_square_43_0","black",1.25,.01)
+partial(highlightText,"regular_history_square_43_1","black",1.25,.01)
+partial(highlightText,"regular_history_square_44_0","black",1.25,.01)
+partial(highlightText,"regular_history_square_44_1","black",1.25,.01)
+partial(highlightText,"square_0_0_3","black",1.25,.01)
+partial(highlightText,"square_1_0_3","black",1.25,.01)
+partial(highlightText,"square_2_0_3","black",1.25,.01)
+partial(highlightText,"square_0_1_3","black",1.25,.01)
+partial(highlightText,"square_1_1_3","black",1.25,.01)
+partial(highlightText,"square_2_1_3","black",1.25,.01)
+partial(growDiv,"regular_listEntry_2",2,"top center",.5)
+partial(growDiv,"regular_listEntry_4",2,"top center",.5)
+partial(growDiv,"regular_listEntry_4",2,"top center",.5)
+partial(growDiv,"regular_listEntry_2",2,"top center",.5)
+partial(growDiv,"regular_listEntry_0",2,"top center",.5)
+partial(growDiv,"regularDefaultDiv",2,"bottom left",.5)
+partial(growDiv,"regular_listEntry_0",2,"top center",.5)
+partial(growDiv,"regularDefaultDiv",2,"bottom left",.5)
+partial(growDiv,"regular_listEntry_firstPeriod",2,"top left",.5)
+partial(growDiv,"regularDefaultDiv",2,"bottom left",.5)
+partial(growDiv,"regular_listEntry_firstPeriod",2,"top left",.5)
+partial(growDiv,"regularDefaultDiv",2,"bottom left",.5)
+partial(growDiv,"regular_listEntry_2",2,"top center",.5)
+partial(growDiv,"regular_listEntry_2",2,"top center",.5)
+partial(growDiv,"regular_history",2,"top right",.5)
+partial(growDiv,"regular_history",2,"top right",.5)
+partial(highlightText,"regular_listEntryStats_2","red",2.25,.01)
+partial(highlightText,"regular_listEntryStats_2","black",1,.01)
+partial(highlightText,"gameTable_4_0","red",1.75,.5)
+partial(highlightText,"gameTable_4_1","red",1.75,.5)
+partial(highlightText,"gameTable_4_2","red",1.75,.5)
+partial(highlightText,"gameTable_4_3","red",1.75,.5)
+partial(highlightText,"gameTable_4_4","red",1.75,.5)
+partial(highlightText,"gameTable_4_0","black",1.25,.5)
+partial(highlightText,"gameTable_4_1","black",1.25,.5)
+partial(highlightText,"gameTable_4_2","black",1.25,.5)
+partial(highlightText,"gameTable_4_3","black",1.25,.5)
+partial(highlightText,"gameTable_4_4","black",1.25,.5)
+clearAll
+partial(drawInstructionDemo2)
+drawCursorOverlay
+partial(placeCursor,400,900)
+partial(moveCursorToDiv,"regular_listEntryDeleteButton_9",.3)
+partial(clickCursor,0)
+function(){window.ruleSets["regular"].splice(3, 1);window.ruleNumbers["regular"]=[0,4,7];window.ruleLastUsed["regular"]=[5,3,7];window.ruleFrequency["regular"]=[9,3,5];drawRules("regular");window.nextPeriodPlay=1;window.nextPeriodRuleLength=1;window.nextPeriodRule=4;drawNextAction("regular");}
+clearAll
+partial(drawInstructionDemo2)
+drawCursorOverlay
+partial(placeCursor,400,900)
+partial(moveCursorToDiv,"regular_plusConstructorButton",1)
+partial(clickCursor,0)
+partial(constructorPlusMinus,"+",-1,getRuleSet("regular"))+++150
+partial(moveCursorToDiv,"regular_plusConstructorButton",.3)+++200
+partial(clickCursor,0)+++350
+partial(constructorPlusMinus,"+",-1,getRuleSet("regular"))+++150
+partial(moveCursorToDiv,"square_0_0",.3)
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_0_0").className="wSquare square";}
+partial(moveCursorToDiv,"square_1_0",.3)+++300
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_1_0").className="ySquare square";}
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_1_0").className="wSquare square";}
+partial(moveCursorToDiv,"square_2_0",.3)+++300
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_2_0").className="wSquare square";}
+partial(moveCursorToDiv,"square_0_1",.3)+++300
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_0_1").className="ySquare square";}
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_0_1").className="wSquare square";}
+partial(moveCursorToDiv,"square_1_1",.3)+++300
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_1_1").className="wSquare square";}
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_1_1").className="ySquare square";}
+partial(moveCursorToDiv,"square_2_1",.3)+++300
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_2_1").className="ySquare square";}
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_2_1").className="wSquare square";}
+partial(moveCursorToDiv,"square_3_0",.3)
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_3_0").className="ySquare square";}
+function(){window.constructors["regular"]=[[1,1],[0,0],[1]];drawConstructorSubmitButton("regular");}
+partial(moveCursorToDiv,"square_3_0",.3)+++300
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_3_0").className="ySquare square";}
+partial(moveCursorToDiv,"constructorSubmitButton",.3)
+partial(clickCursor,0)+++350
+function(){window.ruleSets["regular"].push([[0,0],[0,1],[0,0],[1]]);window.ruleNumbers["regular"]=[0,4,7,9,10];window.ruleLastUsed["regular"]=[5,3,7,2,0];window.ruleFrequency["regular"]=[9,3,5,4,0];drawRules("regular");window.nextPeriodPlay=1;window.nextPeriodRuleLength=3;window.nextPeriodRule=10;drawNextAction("regular");}
+clearAll
+partial(changeBackgroundColor,"rgba(0,255,0,.1)")
+partial(placeText,"overview1","Number of Periods Per Match",100,500,"rgba(0,100,0,1)",1,"center","0px")
+partial(placeText,"overview2","Each Period 1 Number drawn from set",250,500,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview3","{1,2,3,...,18,19,20} (and replaced).",325,500,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview4","If Number is 1 - The Match Ends.",450,500,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview5","If Number is not 1 - There will be another period.",575,500,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview6","Expected number of periods is 20 (but may be different).",700,500,"rgba(0,0,0,1)",1,"center","0px")
+clearAll
+partial(changeBackgroundColor,"rgba(0,0,255,.1)")
+partial(placeText,"overview1","Additional Information about Matches",100,500,"rgba(0,0,100,1)",1,"center","0px")
+partial(placeText,"overview2","Rule remain in set after match",250,500,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview3","Before First Match:",400,500,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview4","1 minute to look at payoffs.",500,300,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview5","10 minutes to construct rules.",600,300,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview6","Before Every Other Match:",750,500,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview7","2 minutes to construct rules.",850,300,"rgba(0,0,0,1)",1,"center","0px")
+clearAll
+partial(drawInstructionDemo3)
+drawCursorOverlay
+partial(placeCursor,400,400)
+partial(moveCursorToDiv,"lockRulesButton",1)
+partial(clickCursor,0)+++1050
+function(){deleteDiv("rulesLocked");drawLockButton();window.constructors["regular"]=[[-1,-1],[-1]];window.rulesUnlocked=1;window.unlockedTimeUpdate=(new Date()).getTime();window.currentUnlockedTime=0;updateUnlockTime();}+++150
+partial(moveCursorToDiv,"square_0_0",.3)
+partial(clickCursor,0)
+function(){document.getElementById("square_0_0").className="wSquare square";}
+partial(moveCursorToDiv,"square_1_0",.3)+++300
+partial(clickCursor,0)+++350
+function(){document.getElementById("square_1_0").className="ySquare square";}
+partial(moveCursorToDiv,"constructorSubmitButton",.3)
+partial(clickCursor,0)+++350
+function(){window.ruleSets["regular"].push([[0,1],[1,0],[1]]);window.ruleNumbers["regular"]=[0,4,7,9,10];window.ruleLastUsed["regular"]=[5,3,7,2,0];window.ruleFrequency["regular"]=[9,3,5,4,0];drawRules("regular");window.nextPeriodPlay=0;window.nextPeriodRuleLength=2;window.nextPeriodRule=9;drawNextAction("regular");}
+partial(moveCursorToDiv,"lockRulesButton",.3)
+partial(clickCursor,0)+++350
+function(){drawLock();window.rulesUnlocked=0;drawUnlockButton();}+++150
+clearAll
+partial(changeBackgroundColor,"rgba(255,0,0,.1)")
+partial(placeText,"overview1","Payoffs",100,500,"rgba(100,0,0,1)",1,"center","0px")
+partial(placeText,"overview2","At end of experiment you will be paid in cash.",250,500,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview3","Your payoff is the sum of all points.",400,500,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview4","Reminder: 500 Francs = $1.00 USD.",650,500,"rgba(0,0,0,1)",1,"center","0px")
+clearAll
+partial(changeBackgroundColor,"rgba(0,255,0,.1)")
+partial(placeText,"overview1","Practice Match",100,500,"rgba(0,100,0,1)",1,"center","0px")
+partial(placeText,"overview2","You will NOT be paid for practice match.",250,500,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview3","The payoffs are all listed as 0.",450,500,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview4","You are matched with a computer that is playing RANDOMLY.",650,500,"rgba(0,0,0,1)",1,"center","0px")
+clearAll
+drawHypotheticalForInstructions1
+drawHypotheticalForInstructions2

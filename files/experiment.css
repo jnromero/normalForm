@@ -1,0 +1,778 @@
+
+
+
+
+
+#historyLabels {
+    position:absolute;
+    top:550px;
+    left:80%;
+    width:15%;    
+    height:300px;    
+    background-color:rgba(255,255,0,0);
+}
+
+
+#historyDiv {
+    position:absolute;
+    top:550px;
+    left:5%;
+    width:90%;    
+    height:300px;    
+    background-color:rgba(255,255,224,1);
+    overflow:scroll;
+    direction:rtl;
+    box-shadow: 10px 10px 50px rgba(0,0,0,.1);
+    font-size: 150%;
+}
+
+#historyDivIn {
+    position:absolute;
+    width:100%;    
+    height:100%;    
+    background-color:rgba(255,255,0,0);
+}
+
+
+
+.historyLabel {
+    position:absolute;
+    top:550px;
+    right:10%;
+    width:80%;    
+    height:40px;    
+    background-color:rgba(255,255,230,1);
+    margin: 0 auto;
+    overflow-y:hidden;
+    line-height: 40px;
+    text-align: center;
+    box-shadow: 10px 10px 50px rgba(0,0,0,.1);
+    font-size: 150%;
+}
+
+
+
+.historyEntry {
+    position:absolute;
+    width:50px;    
+    height:40px;    
+    background-color:rgba(255,255,255,0);
+    margin: 0 auto;
+    overflow-y:hidden;
+    line-height: 40px;
+    text-align: center;
+    /*box-shadow: 10px 10px 50px rgba(0,0,0,.1);*/
+    font-size: 150%;
+}
+
+
+
+
+
+.gameTableRowLabel {
+    position:absolute;
+    width: 95px;
+    height: 190px;
+    line-height: 200px;
+    text-align: center;
+    font-size:200%;
+}
+
+@keyframes pulsate {
+    0%   { transform: scale(1); }
+    50% { transform: scale(.9); }
+    100%   { transform: scale(1); }
+}
+
+
+@keyframes zoom {
+    0%   { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100%   { transform: scale(1); }
+}
+
+
+.gameTableItem{
+    background-color:rgba(244,255,244,1);
+    box-shadow: 5px 5px 30px black;
+    box-shadow: 10px 10px 50px rgba(0,0,0,.2);
+}
+
+.gameTableColLabel{
+    position:absolute;
+    width: 190px;
+    height: 95px;
+    line-height: 100px;
+    text-align: center;
+    font-size:200%;
+}
+
+.active {}
+
+/*.active {
+    animation: pulsate 1s infinite;
+    animation-timing-function: ease-out;
+}*/
+
+.active:hover{
+    transform:scale(1.2);
+    z-index:4;
+    }
+
+
+.gameTableEntry {
+    position:absolute;
+    width: 190px;
+    height: 190px;
+}
+
+
+
+.gameTableEntryPay1 {
+    position:absolute;
+    width: 100px;
+    height: 200px;
+    color:black;
+    font-size:200%;
+    line-height: 200px;
+    text-align: center;
+}
+
+
+.gameTableEntryPay2 {
+    position:absolute;
+    left:100px;
+    width: 100px;
+    height: 200px;
+    color:black;
+    font-size:200%;
+    line-height: 200px;
+    text-align: center;
+}
+
+
+#gameDiv {
+    position:absolute;
+    top:25px;
+    left:25px;
+    background-color:rgba(255,255,255,0);
+    padding:0px;
+    width: 780px;
+    margin: 0 auto;
+    height:780px;
+    overflow:hidden;
+    font-size: 200%;
+    transform: scale(.6);
+    transform-origin: top left;
+}
+
+#statusBar {
+    position:absolute;
+    top:450px;
+    left:0px;
+    background-color:rgba(225,255,225,1);
+    padding:0px;
+    width: 90%;
+    margin: 0 auto;
+    height:75px;
+    overflow:hidden;
+    font-size: 200%;
+    line-height: 75px;
+            margin-left:5%;
+            margin-right:5%;
+
+    text-align: center;
+    box-shadow: 10px 10px 50px rgba(0,0,0,.2);
+    border-left:100px solid transparent;
+    border-right:100px solid transparent;
+}
+
+
+.selectedColumnDiv {
+    position:absolute;
+    top:20px;
+    left:320px;
+    padding:0px;
+    width: 200px;
+    margin: 0 auto;
+    height:750px;
+    overflow:hidden;
+    font-size: 100%;
+    box-sizing: border-box;
+    border:5px solid red;
+    text-align: center;
+    line-height: 150px;
+}
+
+.selectedColumnLabel{
+    left:0px;
+    height:50px;
+    position:absolute;
+    width: 200px;
+    top:700px;
+    line-height: 50px;
+}
+
+
+
+
+
+
+#selectedRowDiv {
+    position:absolute;
+    top:0px;
+    left:300px;
+    padding:0px;
+    width: 200px;
+    margin: 0 auto;
+    height:750px;
+    overflow:hidden;
+    font-size: 100%;
+    box-sizing: border-box;
+    border:5px solid blue;
+    text-align: center;
+    line-height: 1450px;
+    transform:rotate(270deg);
+}
+
+#selectedRowLabel{
+    left:0px;
+    height:50px;
+    position:absolute;
+    width: 200px;
+    top:700px;
+    line-height: 50px;
+}
+
+
+#questionsDiv {
+    position:absolute;
+    top:25px;
+    left:45%;
+    background-color:rgba(255,255,200,1);
+    padding:0px;
+    width: 750px;
+    margin: 0 auto;
+    height:400px;
+    overflow:hidden;
+    font-size: 150%;
+    box-shadow: 10px 10px 50px rgba(0,0,0,.2);
+}
+
+
+#periodSummaryLabel{
+    position:absolute;
+    background-color:rgba(255,255,255,0);
+    padding:0px;
+    width: 750px;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 150%;
+    line-height: 50px;
+    color:rgba(0,155,0,1);
+    text-align: center;
+    top:0px;
+}
+
+
+#summaryLabel{
+    position:absolute;
+    background-color:rgba(255,255,255,0);
+    padding:0px;
+    width: 750px;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 150%;
+    line-height: 50px;
+    color:rgba(0,155,0,1);
+    text-align: center;
+    top:225px;
+}
+
+#totalPayoffMineLabel{
+    position:absolute;
+    background-color:rgba(255,255,255,0);
+    padding:0px;
+    width: 250px;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 100%;
+    line-height: 50px;
+    color:rgba(255,0,0,1);
+    text-align: right;
+    top:275px;
+    left:0px;
+}
+
+#totalPayoffMine{
+    position:absolute;
+    background-color:rgba(255,255,255,0);
+    padding:0px;
+    width: 100px;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 150%;
+    line-height: 50px;
+    color:rgba(0,0,0,1);
+    text-align: left;
+    top:275px;
+    left:275px;
+}
+
+
+#totalPayoffLabel{
+    position:absolute;
+    background-color:rgba(255,255,255,0);
+    padding:0px;
+    width: 250px;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 100%;
+    line-height: 50px;
+    color:rgba(255,0,0,1);
+    text-align: right;
+    top:325px;
+    left:300px;
+}
+
+#totalPayoff{
+    position:absolute;
+    background-color:rgba(255,255,255,0);
+    padding:0px;
+    width: 100px;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 150%;
+    line-height: 50px;
+    color:rgba(0,0,0,1);
+    text-align: left;
+    top:325px;
+    left:575px;
+}
+
+
+
+#totalPayoffOthers{
+    position:absolute;
+    background-color:rgba(255,255,255,0);
+    padding:0px;
+    width: 100px;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 150%;
+    line-height: 50px;
+    color:rgba(0,0,0,1);
+    text-align: left;
+    top:325px;
+    left:275px;
+}
+
+
+
+#totalPayoffOthersLabel{
+    position:absolute;
+    background-color:rgba(255,255,255,0);
+    padding:0px;
+    width: 250px;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 100%;
+    line-height: 50px;
+    color:rgba(255,0,0,1);
+    text-align: right;
+    top:325px;
+    left:0px;
+}
+
+
+
+#correctGuesses{
+    position:absolute;
+    background-color:rgba(255,255,255,0);
+    padding:0px;
+    width: 100px;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 150%;
+    line-height: 50px;
+    color:rgba(0,0,0,1);
+    text-align: left;
+    top:275px;
+    left:575px;
+}
+
+
+
+#correctGuessesLabel{
+    position:absolute;
+    background-color:rgba(255,255,255,0);
+    padding:0px;
+    width: 250px;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 100%;
+    line-height: 50px;
+    color:rgba(255,0,0,1);
+    text-align: right;
+    top:275px;
+    left:300px;
+}
+
+
+
+
+.summaryEntry{
+    position:absolute;
+    background-color:rgba(255,255,255,0);
+    padding:0px;
+    width: 200px;
+    margin: 0 auto;
+    height:150px;
+    overflow:hidden;
+    font-size: 100%;
+    line-height: 50px;
+    top:50px;
+}
+
+
+.summaryEntryLabel{
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color:rgba(255,255,5,0);
+    padding:0px;
+    width: 200px;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 125%;
+    line-height: 50px;
+    text-align: center;
+    color:red;
+}
+
+
+.summaryEntryEntry{
+    position:absolute;
+    top:50px;
+    left:0px;
+    background-color:rgba(0,255,5,0);
+    padding:0px;
+    width: 200px;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 150%;
+    line-height: 50px;
+    text-align: center;
+    color: black;
+}
+
+.summary {
+    position:absolute;
+    left:50px;
+    background-color:rgba(255,255,5,1);
+    padding:0px;
+    width: 650px;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 100%;
+    line-height: 50px;
+}
+
+
+
+
+/*#summaryPayoffLabel {
+    text-align: center;
+    color:red;
+    font-size: 125%;
+    left:550px;
+    top:200px;
+    width: 650px;
+    height: 50px;
+}
+
+
+#summaryPayoffs {
+    text-align: center;
+    font-size: 150%;
+    left:50px;
+    top:250px;
+    width: 650px;
+    height: 50px;
+*/}
+
+
+
+/*#summaryOtherChoiceGuess {
+    text-align: center;
+    font-size: 150%;
+    left:50px;
+    top:300px;
+    width: 200px;
+    height: 50px;
+}
+*/
+
+/*#summaryOtherChoiceActual {
+    text-align: center;
+    font-size: 150%;
+    left:50px;
+    top:250px;
+    width: 200px;
+    height: 50px;
+}
+
+
+#summaryOtherChoiceLabel {
+    text-align: center;
+    color:red;
+    font-size: 125%;
+
+    left:50px;
+    top:200px;
+    width: 200px;
+    height: 50px;
+}
+*/
+#summary3 {
+    top:200px;
+}
+
+#summary4 {
+    text-align: center;
+    color:red;
+    font-size: 125%;
+    top:275px;
+}
+
+#summary5 {
+    top:350px;
+}
+
+#myChoice{
+    color:red;
+}
+
+#otherGuess{
+    color:red;
+}
+
+
+
+
+
+#topRow {
+    position:absolute;
+    top:100px;
+    left:0px;
+    padding:0px;
+    width: 500px;
+    margin: 0 auto;
+    height:200px;
+    overflow:hidden;
+    font-size: 100%;
+    box-sizing: border-box;
+    border:1px solid red;
+}
+
+
+
+
+#bottomRow {
+    position:absolute;
+    top:300px;
+    left:0px;
+    padding:0px;
+    width: 500px;
+    margin: 0 auto;
+    height:200px;
+    overflow:hidden;
+    font-size: 100%;
+    box-sizing: border-box;
+    border:1px solid red;
+}
+
+
+#leftCol {
+    position:absolute;
+    top:0px;
+    left:100px;
+    padding:0px;
+    width: 200px;
+    margin: 0 auto;
+    height:500px;
+    overflow:hidden;
+    font-size: 100%;
+    box-sizing: border-box;
+    border:1px solid red;
+}
+#rightCol {
+    position:absolute;
+    top:0px;
+    left:300px;
+    padding:0px;
+    width: 200px;
+    margin: 0 auto;
+    height:500px;
+    overflow:hidden;
+    font-size: 100%;
+    box-sizing: border-box;
+    border:1px solid red;
+}
+
+
+#nameSelect{ 
+    position:absolute;
+    top:150px;
+    left:200px;
+    padding:0px;
+    width: 400px;
+    margin: 0 auto;
+    height:100%;
+    overflow:hidden;
+    font-size: 200%;
+    box-sizing: border-box;
+    border:0px solid red;
+}
+#nameSelect button{
+    background-color: rgba(0,255,0,.1);
+    display: inline-block;
+    width:190px;
+    height:50px;
+    box-sizing: border-box;
+    border:2px solid red;
+}
+
+
+#deskSelect{ 
+    position:absolute;
+    top:150px;
+    left:700px;
+    padding:0px;
+    width: 650px;
+    margin: 0 auto;
+    height:100%;
+    overflow:hidden;
+    font-size: 200%;
+    box-sizing: border-box;
+    border:0px solid red;
+}
+
+#deskSelect button{
+    background-color: rgba(255,0,0,.1);
+    display: inline-block;
+    width:75px;
+    height:50px;
+    box-sizing: border-box;
+    border:2px solid red;
+}
+
+
+
+#nameSelectTitle{
+    position:absolute;
+    top:50px;
+    left:0px;
+    padding:0px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 200%;
+    box-sizing: border-box;
+    border:0px solid red;
+}
+
+#currentNameSelected{
+    position:absolute;
+    top:675px;
+    left:800px;
+    padding:0px;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 200%;
+    box-sizing: border-box;
+    border:0px solid red;
+}
+
+
+#currentDeskSelected{
+    position:absolute;
+    top:750px;
+    left:700px;
+    padding:0px;
+    width: 650px;
+    text-align: center;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 200%;
+    box-sizing: border-box;
+    border:0px solid red;
+}
+
+
+#submitNameButton{
+    background-color: rgba(0,0,255,.1);
+    position:absolute;
+    bottom:50px;
+    right:50px;
+    padding:0px;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    height:100px;
+    overflow:hidden;
+    font-size: 200%;
+    box-sizing: border-box;
+    border:0px solid red;
+}
+
+
+#consentButton{
+    background-color: rgba(0,0,255,.1);
+    position:absolute;
+    bottom:350px;
+    right:450px;
+    padding:0px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    height:100px;
+    overflow:hidden;
+    font-size: 200%;
+    box-sizing: border-box;
+    border:0px solid red;
+}
+
+#currentConsent{
+    position:absolute;
+    top:600px;
+    left:700px;
+    padding:0px;
+    width: 650px;
+    text-align: center;
+    margin: 0 auto;
+    height:50px;
+    overflow:hidden;
+    font-size: 200%;
+    box-sizing: border-box;
+    border:0px solid red;
+}

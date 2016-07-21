@@ -1,0 +1,11 @@
+#mainDivOverlay {
+    position:absolute;
+    display: block;
+    background-color:rgba(0,0,0,.7);
+    z-index:2;
+    left: 0px;
+    top:0px;
+    width:1280px;    
+    height:1024px;    
+    overflow-y:hidden;
+}

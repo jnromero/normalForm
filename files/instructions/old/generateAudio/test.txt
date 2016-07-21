@@ -1,0 +1,22 @@
+Starting Rules [[slnc 500]]
+
+Prior to the start of the experiment, you will have 10 minutes to construct your starting set of rules. 
+During that time, you will be presented with a split-screen view of the construction screen. 
+In this view, you will have an opportunity to test what your rule set will select as an output for a variety of hypothetical histories.
+The split-screen will consist of two sides.  The right side is the "starting rules" side.  Rules added to this side will be added to your rule set at the start of the first match.  The left side is the "hypothetical rules" side.  Rules added to this side can be used to test to see what choices different combinations of rules will lead to.
+
+You will be able to move rules from the Hypothetical Rules side to the Starting Rules side by clicking the blue move button. To delete rules from the Starting Rules side you will need to click delete button.
+
+You will be able to see what your hypothetical and starting rule sets selects as a choice for next period for hypothetical histories that you construct. To construct a hypothetical history, you will need to click on the question marks in that history. 
+Notice that you will be able to construct and store multiple histories of different lengths and different choice sequences at the same time by clicking the New button or the History number button at the top of the Hypothetical Rules side. 
+
+For example, five periods of hypothetical History number 4 have been filled in. 
+
+Another example, 14 periods of hypothetical History number 3 have been filled in.
+
+In both examples, you can see what the Hypothetical Rules and the Starting Rules sets select as a choice for next period.
+
+You will be able to make changes to your Hypothetical Rules and your Starting Rules for the duration of the 10 minutes. After the ten minutes are up, rules that are on the Starting Rules side will be your starting rules for the experiment.
+
+
+
