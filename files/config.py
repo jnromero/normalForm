@@ -6,9 +6,8 @@ scriptPath=os.path.dirname(os.path.realpath(__file__))
 
 def defaultSettings(location,configFile,serverStartString):
 	config={}
-	config['favicon']="common/"
 
-	config['packageFolder']="/common/"
+	config['packageFolder']="/steep/"
 	config['currentExperiment']="/normalForm/20160712/"
 	# config['instructionsFolder']="/files/instructions/"
 	# config['instructionsTexFile']="/latex/instructions.tex"
@@ -63,6 +62,8 @@ def defaultSettings(location,configFile,serverStartString):
 	config=setOtherFileLocations(config,serverStartString)
 	writeJavascriptConfigFile(config,configFile)
 	return config
+
+
 
 
 

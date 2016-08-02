@@ -3,7 +3,6 @@ import time
 import json
 import random
 import math
-import functions
 from operator import itemgetter
 import os
 from twisted.internet import reactor
