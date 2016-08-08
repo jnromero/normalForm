@@ -1,3 +1,4 @@
+from __future__ import print_function
 import sys
 import time
 import json
@@ -29,11 +30,11 @@ class experimentClass():
    # - list of all subjects at self.data['subjectIDs']
 
    def setParameters(self):
-      print "!!!!!!SET PARAMETERS!!!!!!!!"
+      print("!!!!!!SET PARAMETERS!!!!!!!!")
       filename=self.currentExperimentPath+'/parameters/files/20160502-02-matching.pickle'
       # print filename
       #filename=self.currentExperimentPath+'/parameters/matchingData.pickle'
-      print filename
+      print(filename)
       file = open(filename,'rb')
       self.data['matchingData']=pickle.load(file)
       file.close() 
@@ -106,7 +107,7 @@ class experimentClass():
 
       totalSubjects=len(self.data['subjectIDs'])
       if totalSubjects<8:
-         print "NOT ENOUGH SUBJECTS"
+         print("NOT ENOUGH SUBJECTS")
       else:
          thisData=self.data['matchingData'][totalSubjects]
          newData={}
@@ -157,7 +158,7 @@ class experimentClass():
          # self.data['supergameLengths'][1]=2
          # self.data['supergameLengths'][2]=2
          # self.data['supergameLengths'][2]=2
-         print "matching set!!!!!!!"
+         print("matching set!!!!!!!")
 
 
 
@@ -217,11 +218,11 @@ class experimentClass():
       self.taskDone(message)
       toDelete=[]
       for sid in self.data['subjectIDs']:
-         print sid,self.data[sid].name
+         print(sid,self.data[sid].name)
          if self.data[sid].name=="default":
             toDelete.append(sid)
       for sid in toDelete:
-         print "deleting....",sid
+         print("deleting subject .... %s"%(sid))
          self.deleteSubject(sid)
 
    def getNames(self,message,client):
@@ -283,7 +284,7 @@ class experimentClass():
       #self.data['matching'],self.data['roles']=functions.makeMatches(self.data['subjectIDs'],self.data['groupSize'],self.data['totalMatches'])
       self.currentMatch=-1
       self.startMatch()
-      print "Starting Experiment!"
+      print("Starting Experiment!")
 
    def startMatch(self):
       self.currentMatch=self.currentMatch+1
@@ -306,7 +307,6 @@ class experimentClass():
       #allMembers including myself
       allMembers=self.data['matching'][self.currentMatch][sid]+[sid]
       complete=True
-      print "sdfs",self.data['matching'][self.currentMatch][sid]
       if self.data['matching'][self.currentMatch][sid]==["randomPlayer"]:
          if self.data[sid].status["stage"]=="bothSelected":
             complete=True
@@ -323,7 +323,7 @@ class experimentClass():
       sid=client.subjectID
       self.data[sid].status['stage']="matchOverConfirmed"
       self.getStatus(sid)
-      print self.data[sid].status
+      print(self.data[sid].status)
       self.updateStatus(sid)
       self.checkIfMatchFinished()
 
@@ -343,13 +343,13 @@ class experimentClass():
          if self.data[sid].status['stage']!="matchOverConfirmed":
             complete=False
             break
-      print self.currentMatch,self.data['totalMatches']
+      print(self.currentMatch,self.data['totalMatches'])
       if complete:
          self.getBonusPayment()
          if self.currentMatch+1<self.data['totalMatches']:
             self.startMatch()
          else:
-            print "FINSISHING"
+            print("FINSISHING")
             #self.finishExperiment()
             self.startQuestionnaire()
 
@@ -475,7 +475,7 @@ class experimentClass():
 
 
       for match in range(3):
-         print self.currentMatch
+         print(self.currentMatch)
          class StopHere(Exception): pass
          try:
             for period in range(self.data['supergameLengths'][self.currentMatch]-1):
@@ -494,9 +494,8 @@ class experimentClass():
             for k in range(10):
                self.confirmMatchOver({"type":"confirmMatchOver"},fakeClient("test%s"%(k)))
          except StopHere:
-            print "%s"%(self.data['test0'].status)
+            print("%s"%(self.data['test0'].status))
             raw_input() 
-      print "HEY!"   
 
    def displayDemo(self,viewType,subjectID):
       if viewType=="quiz":
@@ -557,7 +556,7 @@ class monitorClass():
          for sid in self.data['subjectIDs']:
             sortedSubs.append([self.data[sid].desk,sid])
          sortedSubs.sort()
-         print sortedSubs
+         print(sortedSubs)
          for k in sortedSubs:
             subjectID=k[1]
             this=[]
@@ -577,8 +576,8 @@ class monitorClass():
             this.append("$5+%.02f+%s=%.02f"%(totalPay,self.data[subjectID].bonusPay,totalPay+self.data[subjectID].bonusPay+5))
             table.append(this)
       except Exception as thisExept: 
-         print "can't get table at this time because:"
-         print thisExept
+         print("can't get table at this time because:")
+         print(thisExept)
       return table,titles
    
    def monitorTasks(self):
