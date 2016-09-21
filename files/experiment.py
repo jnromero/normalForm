@@ -31,19 +31,6 @@ class experimentClass():
 
    def setParameters(self):
       print("!!!!!!SET PARAMETERS!!!!!!!!")
-      filename=self.currentExperimentPath+'/parameters/files/20160502-02-matching.pickle'
-      # print filename
-      #filename=self.currentExperimentPath+'/parameters/matchingData.pickle'
-      print(filename)
-      file = open(filename,'rb')
-      self.data['matchingData']=pickle.load(file)
-      file.close() 
-      #self.data['matchingData'][totalSubjects][subject][match]['game']
-      #game
-      #group
-      #self.data['matchingData']['supergameLengths']
-      #game=self.data['matchingData'][totalSubjects][subject][match]['game']
-      #self.data['matchingData']['games'][game]
 
       self.data['doneWithQuiz']=[]
       self.data['instructionsRunning']=0
@@ -52,12 +39,6 @@ class experimentClass():
       self.data['exchangeRate']=float(1)/1000#dollars per point.  So 0.05 if 5 cents per point.
       self.data['groupSize']=2
       self.data['totalMatches']=4
-
-      self.data['supergameLengths']={}
-      self.data['supergameLengths'][0]=2
-      self.data['supergameLengths'][1]=2
-      self.data['supergameLengths'][2]=2
-      self.data['supergameLengths'][3]=2
 
       self.data['rowColors']={1:"rgba(228,26,28,1)",2:"rgba(55,126,184,1)",3:"rgba(77,175,74,1)"}
       self.data['colColors']={1:"rgba(152,78,163,1)",2:"rgba(255,127,0,1)",3:"rgba(200,200,51,1)"}
@@ -97,93 +78,53 @@ class experimentClass():
 
 
    def setMatchings(self):
-      #self.data['matchingData'][totalSubjects][subject][match]['game']
-      #game
-      #group
-      #self.data['matchingData']['supergameLengths']
-      #game=self.data['matchingData'][totalSubjects][subject][match]['game']
-      #self.data['matchingData']['games'][game]
-
-
       totalSubjects=len(self.data['subjectIDs'])
-      if totalSubjects<8:
-         print("NOT ENOUGH SUBJECTS")
-      else:
-         thisData=self.data['matchingData'][totalSubjects]
-         newData={}
-         for k in range(len(self.data['subjectIDs'])):
-            sid=self.data['subjectIDs'][k]
-            newData[sid]=thisData[k]
+      if totalSubjects%2==1:
+         print("WARNING: ODD NUMBER OF PLAYERS.  Random player created.")
+         #add Random player if odd subjects
+         self.data['subjectIDs'].append("randomPlayer")
 
+      self.data['supergameLengths']={0:20,1:20,2:20,3:20}
 
+      rawPays={}
+      rawPays[0]={1:{1:[1,8],2:[2,7]},2:{1:[3,6],2:[4,5]}}
+      rawPays[1]={1:{1:[1,8],2:[2,7]},2:{1:[3,6],2:[4,5]}}
+      rawPays[2]={1:{1:[1,8],2:[2,7]},2:{1:[3,6],2:[4,5]}}
+      rawPays[3]={1:{1:[1,8],2:[2,7]},2:{1:[3,6],2:[4,5]}}
 
-         self.data['pays']={}
-         self.data['roles']={}
-         self.data['matching']={}
-
-         groups={}
-         for sid in newData:
-            for match in newData[sid]:
-               if match not in self.data['pays']:
-                  self.data['pays'][match]={}
-               if match not in self.data['roles']:
-                  self.data['roles'][match]={}
-               thisGroup=newData[sid][match]['groups']
-               thisGame=newData[sid][match]['game']
-               thisRole=int(newData[sid][match]['roles'])
-               rawPays=self.data['matchingData']['games'][thisGame]
-               self.data['roles'][match][sid]=thisRole
-               if thisRole==0:
-                  self.data['pays'][match][sid]=rawPays
-               elif thisRole==1:
-                  self.data['pays'][match][sid]=self.otherPlayersPayoffs(rawPays)
-
-               if match not in groups:
-                  groups[match]={}
-               if thisGroup not in groups[match]:
-                  groups[match][thisGroup]=[]
-               groups[match][thisGroup].append(sid)
-
-         for match in groups:
-            self.data['matching'][match]={}
-            for group in groups[match]:
-               for sid in groups[match][group]:
-                  allMembers=groups[match][group]
-                  self.data['matching'][match][sid]=[x for x in allMembers if x!=sid]#allother memebers
-
-
-         self.data['supergameLengths']=self.data['matchingData']['supergameLengths']
-         # self.data['supergameLengths']={}
-         # self.data['supergameLengths'][0]=2
-         # self.data['supergameLengths'][1]=2
-         # self.data['supergameLengths'][2]=2
-         # self.data['supergameLengths'][2]=2
-         print("matching set!!!!!!!")
-
-
-
-   def getRolePayoffs(self):
       self.data['pays']={}
-      self.data['pays'][0]=self.data['rawPays']
-      newPays={}
-      for c1 in self.data['rawPays']:
-         for c2 in self.data['rawPays'][c1]:
-            this=self.data['rawPays'][c1][c2]
-            if c2 not in newPays:
-               newPays[c2]={}
-            newPays[c2][c1]=[this[1],this[0]]
-      self.data['pays'][1]=newPays
+      self.data['matching']={}
+      for match in range(self.data['totalMatches']):
+         self.data['pays'][match]={}
+         self.data['matching'][match]={}
+         thisMatchSubjects=self.data['subjectIDs'][:]
+         random.shuffle(thisMatchSubjects)
+         for k in range(len(thisMatchSubjects)/2):
+            player1=thisMatchSubjects[2*k]
+            player2=thisMatchSubjects[2*k+1]
+            self.data['pays'][match][player1]=self.rawPayoffsToRolePayoffs(rawPays[match],0)
+            self.data['pays'][match][player2]=self.rawPayoffsToRolePayoffs(rawPays[match],1)
+            
+            self.data['matching'][match][player1]=[player2]
+            self.data['matching'][match][player2]=[player1]
+
+      print("matching set!!!!!!!")
 
 
-   def otherPlayersPayoffs(self,pays):
-      newPays={}
-      for c1 in pays:
-         for c2 in pays[c1]:
-            this=pays[c1][c2]
-            if c2 not in newPays:
-               newPays[c2]={}
-            newPays[c2][c1]=[this[1],this[0]]
-      return newPays
+
+   def rawPayoffsToRolePayoffs(self,pays,role):
+      if role==0:
+         paysOut=pays
+      elif role==1:
+         newPays={}
+         for c1 in pays:
+            for c2 in pays[c1]:
+               this=pays[c1][c2]
+               if c2 not in newPays:
+                  newPays[c2]={}
+               newPays[c2][c1]=[this[1],this[0]]
+         paysOut=newPays
+      return paysOut
 
 
 
@@ -281,7 +222,6 @@ class experimentClass():
    def startExperiment(self,message,client):
       self.data['experimentRunning']=1
       self.taskDone(message)
-      #self.data['matching'],self.data['roles']=functions.makeMatches(self.data['subjectIDs'],self.data['groupSize'],self.data['totalMatches'])
       self.currentMatch=-1
       self.startMatch()
       print("Starting Experiment!")
@@ -588,18 +528,18 @@ class monitorClass():
       this=thisPath.find("/experiments/")
       thisPath=thisPath[this:]
 
-      msg={}
-      msg['type']='getNames'
-      msg['title']='Get Names'
-      msg['status']=''
-      taskList.append(msg)
+      # msg={}
+      # msg['type']='getNames'
+      # msg['title']='Get Names'
+      # msg['status']=''
+      # taskList.append(msg)
 
 
-      msg={}
-      msg['type']='gotNames'
-      msg['title']='Got Names'
-      msg['status']=''
-      taskList.append(msg)
+      # msg={}
+      # msg['type']='gotNames'
+      # msg['title']='Got Names'
+      # msg['status']=''
+      # taskList.append(msg)
 
 
       msg={}
@@ -640,11 +580,11 @@ class monitorClass():
       taskList.append(msg)
 
 
-      msg={}
-      msg['type']='makeReceipt'
-      msg['title']='Make Receipt'
-      msg['status']=''
-      taskList.append(msg)
+      # msg={}
+      # msg['type']='makeReceipt'
+      # msg['title']='Make Receipt'
+      # msg['status']=''
+      # taskList.append(msg)
 
       for k in range(len(taskList)):
          taskList[k]['index']=k
