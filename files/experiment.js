@@ -2,7 +2,6 @@ mainDiv = createDiv("mainDiv");
 $("body").prepend(mainDiv);
 
 function parameters(message){
-    console.log(message);
     window['rowColors']=message['rowColors'];
     window['colColors']=message['colColors'];
     window['pays']=message['pays'];
@@ -12,35 +11,13 @@ function parameters(message){
     window['numberOfCols']=message['numberOfCols'];
 }
 
-window.partials={} 
-window.partials["selectCol1"] = partial(selectColumn,1,1);
-window.partials["selectCol2"] = partial(selectColumn,2,1);
-window.partials["selectCol3"] = partial(selectColumn,3,1);
-window.partials["selectRow1"] = partial(selectRow,1,1);
-window.partials["selectRow2"] = partial(selectRow,2,1);
-window.partials["selectRow3"] = partial(selectRow,3,1);
-
-
 //
 // Draw interface
 //
 
-function genericScreen(message){
-    var generic = document.createElement("div");
-    generic.id = "genericScreen";
-    var genericScreenInside = document.createElement("div");
-    genericScreenInside.id = "genericScreenInside";
-    var genericScreenText = document.createElement("div");
-    genericScreenText.id = "genericScreenText";
-    $("#mainDiv").append(generic);
-    generic.appendChild(genericScreenInside);
-    genericScreenInside.appendChild(genericScreenText);
-    document.getElementById("genericScreenText").innerHTML=message;
-}
-
 function drawStatus(){
-    statusBar=createDiv("statusBar");
-    theirChoices="(";
+    var statusBar=createAndAddDiv("statusBar","mainDiv");
+    var theirChoices="(";
     for(var col in window.colActions){
         theirChoices=theirChoices+window.colActions[col]+", "
     }
@@ -53,115 +30,148 @@ function drawStatus(){
     }
     myChoices=myChoices.substring(0, myChoices.length - 2)+")";
 
-
     statusBar.innerHTML="Please select \"My Choice\" "+myChoices+" and your guess for \"Other's Choice\" "+theirChoices+".";
-    $("#mainDiv").append(statusBar);
 }
 
 function drawGame(){
     //Create Game div
-    gameDiv=createDiv("gameDiv");
+    var gameDiv = createAndAddDiv("gameDiv","mainDiv")
     for(var col in window.colActions){
-        var gameTableColLabel = document.createElement("div");
+        var gameTableColLabel = createAndAddDiv("gameTableColLabel_"+col,"gameDiv");
         gameTableColLabel.className="gameTableItem gameTableColLabel active";
-        gameTableColLabel.id="gameTableColLabel_"+col;
         gameTableColLabel.innerHTML=window.colActions[col];
         gameTableColLabel.style.left=120+200*(col-1)+5+"px";
         gameTableColLabel.style.top="25px";
         gameTableColLabel.style.color=window.colColors[col];
-        gameTableColLabel.addEventListener("click",window.partials["selectCol"+col]);
-        gameDiv.appendChild(gameTableColLabel);
     }
 
+    if(thisStatus['colSelected']=="No"){
+        for(var col in window.colActions){
+            clickButton("once","gameTableColLabel_"+col,makeSelection,"col",col);
+        }
+    }
+    else{
+        summaryOthersChoiceEntryGuess=document.getElementById("summaryOthersChoiceEntryGuess");
+        summaryOthersChoiceEntryGuess.innerHTML=window.colActions[thisStatus['colSelected']] +" (guess)";
+        summaryOthersChoiceEntryGuess.style.color=window.colColors[thisStatus['colSelected']];
+    
+        selectedColumn=createAndAddDiv("selectedColumnDiv","gameDiv");
+        selectedColumn.className="selectedColumnDiv";
+        selectedColumn.style.left=-80+200*thisStatus['colSelected']+"px";
+        selectedColumn.style.color=window.colColors[thisStatus['colSelected']];
+        selectedColumn.style.borderColor=window.colColors[thisStatus['colSelected']];
+
+        selectedColumnLabel=createAndAddDiv("selectedColumnLabel","selectedColumnDiv");
+        selectedColumnLabel.className="selectedColumnLabel";
+        selectedColumnLabel.innerHTML="My Guess";
+
+        selectedColumn.style.height=(200*window.numberOfRows+150)+"px";
+        selectedColumnLabel.style.top=(200*window.numberOfRows+100)+"px";
+        for(col=1;col<=window.numberOfCols;col++){
+            document.getElementById("gameTableColLabel_"+col).className="gameTableItem gameTableColLabel";
+        }
+    }
 
     for(var row in window.rowActions){
-        var gameTableRowLabel = document.createElement("div");
+        var gameTableRowLabel = createAndAddDiv("gameTableRowLabel_"+row,"gameDiv");
         gameTableRowLabel.className="gameTableItem gameTableRowLabel active";
-        gameTableRowLabel.id="gameTableRowLabel_"+row;
         gameTableRowLabel.innerHTML=window.rowActions[row];
         gameTableRowLabel.style.left="25px";
         gameTableRowLabel.style.top=120+200*(row-1)+5+"px";
         gameTableRowLabel.style.color=window.rowColors[row];
-        gameTableRowLabel.addEventListener("click",window.partials["selectRow"+row]);
-        gameDiv.appendChild(gameTableRowLabel);
     }
 
 
+    if(thisStatus['rowSelected']=="No"){
+        for(var row in window.rowActions){
+            clickButton("once","gameTableRowLabel_"+row,makeSelection,"row",row);
+        }
+    }
+    else{
+        summaryMyChoiceEntry=document.getElementById("summaryMyChoiceEntry");
+        summaryMyChoiceEntry.innerHTML=window.rowActions[thisStatus['rowSelected']];
+        summaryMyChoiceEntry.style.color=window.rowColors[thisStatus['rowSelected']];
+        selectedRow=createAndAddDiv("selectedRowDiv","gameDiv");
+        selectedRow.style.color=window.rowColors[thisStatus['rowSelected']];
+        selectedRow.style.borderColor=window.rowColors[thisStatus['rowSelected']];
+
+        selectedRowLabel=createAndAddDiv("selectedRowLabel",'selectedRowDiv');
+        selectedRowLabel.innerHTML="My Choice";
+
+        window.numberOfCols=Object.keys(window.colActions).length;
+        selectedRow.style.top=-55-100*window.numberOfCols+200*thisStatus['rowSelected']+"px";
+        selectedRow.style.left=window.numberOfCols*100+"px";
+
+        selectedRow.style.height=(200*window.numberOfCols+150)+"px";
+        selectedRowLabel.style.top=(200*window.numberOfCols+100)+"px";
+
+        document.getElementById("historyEntry_"+window.currentPeriod+"_1").innerHTML=window.rowActions[thisStatus['rowSelected']];
+        document.getElementById("historyEntry_"+window.currentPeriod+"_1").style.color=window.rowColors[thisStatus['rowSelected']];
+        for(row=1;row<=window.numberOfRows;row++){
+            document.getElementById("gameTableRowLabel_"+row).className="gameTableItem gameTableRowLabel";
+        }
+    }
 
     gameDiv.style.top=((3-window.numberOfRows)*50+25)+"px";
-    gameDiv.style.left=((3-window.numberOfCols)*50+175)+"px";;
+    gameDiv.style.left=((3-window.numberOfCols)*50+175)+"px";
 
     for(var row in window.rowActions){
         for(var col in window.colActions){
-            var testEntry = document.createElement("div");
+
+            var testEntry = createAndAddDiv("gameTableEntry_"+row+"_"+col,"gameDiv");
             testEntry.className="gameTableItem gameTableEntry";
-            testEntry.id="gameTableEntry_"+row+"_"+col;
             testEntry.style.left=120+200*(col-1)+5+"px";
             testEntry.style.top=120+200*(row-1)+5+"px";
 
-            var testEntryPay = document.createElement("div");
-            testEntryPay.className="gameTableEntryPay1";
-            testEntryPay.innerHTML=pays[row][col][0];
-            testEntryPay.style.color=window.rowColors[row];
-            testEntry.appendChild(testEntryPay);
+            var testEntryPay1 = createAndAddDiv("gameTableEntryPay1_"+row+"_"+col,"gameTableEntry_"+row+"_"+col);
+            testEntryPay1.className="gameTableEntryPay1";
+            testEntryPay1.innerHTML=pays[row][col][0];
+            testEntryPay1.style.color=window.rowColors[row];
 
-            var testEntryPay = document.createElement("div");
-            testEntryPay.className="gameTableEntryPay2";
-            testEntryPay.innerHTML=pays[row][col][1];
-            testEntryPay.style.color=window.colColors[col];
-            testEntry.appendChild(testEntryPay);
-
-            gameDiv.appendChild(testEntry);
+            var testEntryPay2 = createAndAddDiv("gameTableEntryPay2_"+row+"_"+col,"gameTableEntry_"+row+"_"+col);
+            testEntryPay2.className="gameTableEntryPay2";
+            testEntryPay2.innerHTML=pays[row][col][1];
+            testEntryPay2.style.color=window.colColors[col];
        }
     }
-    $("#mainDiv").append(gameDiv);
-
-    //document.getElementById("gameTableEntry_2_2").style.border="10px solid red";
 }
+
+
 
 function drawHistory(){
     //Create Game div
-    historyLabels=createDiv("historyLabels");
-    historyDiv=createDiv("historyDiv");
-    historyDivIn=createDiv("historyDivIn");
-    historyDiv.appendChild(historyDivIn)
-
-    historyLabelPeriod=createDiv("historyLabelPeriod");
+    historyDiv=createAndAddDiv("historyDiv","mainDiv");
+    historyDivIn=createAndAddDiv("historyDivIn","historyDiv");
+    historyLabels=createAndAddDiv("historyLabels","mainDiv");
+    
+    historyLabelPeriod=createAndAddDiv("historyLabelPeriod","historyLabels");
     historyLabelPeriod.className="historyLabel";
     historyLabelPeriod.style.top="10px";
     historyLabelPeriod.innerHTML="Period";
-    historyLabels.appendChild(historyLabelPeriod)
 
-
-    historyLabelMyChoice=createDiv("historyLabelMyChoice");
+    historyLabelMyChoice=createAndAddDiv("historyLabelMyChoice","historyLabels");
     historyLabelMyChoice.className="historyLabel";
     historyLabelMyChoice.style.top="70px";
     historyLabelMyChoice.innerHTML="My Choice";
-    historyLabels.appendChild(historyLabelMyChoice)
 
-    historyLabelOthersChoice=createDiv("historyLabelOthersChoice");
+    historyLabelOthersChoice=createAndAddDiv("historyLabelOthersChoice","historyLabels");
     historyLabelOthersChoice.className="historyLabel";
     historyLabelOthersChoice.style.top="130px";
     historyLabelOthersChoice.innerHTML="Other's Choice";
-    historyLabels.appendChild(historyLabelOthersChoice)
 
-    historyLabelMyPayoff=createDiv("historyLabelMyPayoff");
+    historyLabelMyPayoff=createAndAddDiv("historyLabelMyPayoff","historyLabels");
     historyLabelMyPayoff.className="historyLabel";
     historyLabelMyPayoff.style.top="190px";
     historyLabelMyPayoff.innerHTML="My Payoff";
-    historyLabels.appendChild(historyLabelMyPayoff)
 
-    historyLabelOthersPayoff=createDiv("historyLabelOthersPayoff");
+    historyLabelOthersPayoff=createAndAddDiv("historyLabelOthersPayoff","historyLabels");
     historyLabelOthersPayoff.className="historyLabel";
     historyLabelOthersPayoff.style.top="250px";
     historyLabelOthersPayoff.innerHTML="Other's Payoff";
-    historyLabels.appendChild(historyLabelOthersPayoff)
-
-
 
     for(period=window.currentPeriod;period>0;period--){
         for(row=0;row<5;row++){
-            historyEntry=createDiv("historyEntry_"+period+"_"+row);
+            historyEntry=createAndAddDiv("historyEntry_"+period+"_"+row,"historyDivIn");
             historyEntry.className="historyEntry";
             historyEntry.style.top=10+row*60+"px";
             historyEntry.style.left=-100+(period)*75+"px";
@@ -176,7 +186,6 @@ function drawHistory(){
                 thisChoice=window.historyOfPlay[period-1][1];
                 historyEntry.innerHTML=window.colActions[thisChoice];
                 historyEntry.style.color=window.colColors[thisChoice]
-                //pays[1][1]=[30,30]
             }
 
             else if(row==3){
@@ -193,8 +202,6 @@ function drawHistory(){
                 historyEntry.innerHTML=theirPay;
                 historyEntry.style.color=window.colColors[theirChoice]
             }
-
-            historyDivIn.appendChild(historyEntry)
         }
     }
     historyDivIn.style.width=75*(window.currentPeriod+3)+"px";
@@ -204,117 +211,92 @@ function drawHistory(){
 
 function drawPeriodSummary(){
     //Create Game div
-    questionsDiv=createDiv("questionsDiv");
 
-    summaryLabel=createDiv("periodSummaryLabel");
-    summaryLabel.innerHTML="Period "+window.currentPeriod+" Summary:";
-    questionsDiv.appendChild(summaryLabel)
+    matchNumberTitle=createAndAddDiv("matchNumberTitle","mainDiv");
+    matchNumberTitle.innerHTML="Match #"+(window.currentMatch+1)+" out of 5";
+
+    questionsDiv=createAndAddDiv("questionsDiv","mainDiv");
+
+    periodSummaryLabel=createAndAddDiv("periodSummaryLabel","questionsDiv");
+    periodSummaryLabel.innerHTML="Period "+window.currentPeriod+" Summary:";
     
-
-    summaryLabel=createDiv("summaryLabel");
+    summaryLabel=createAndAddDiv("summaryLabel","questionsDiv");
     summaryLabel.innerHTML="Overall Summary:";
-    questionsDiv.appendChild(summaryLabel)
 
-    summaryLabel=createDiv("totalPayoffMineLabel");
-    summaryLabel.innerHTML="My Match Payoff:";
-    questionsDiv.appendChild(summaryLabel)
+    totalPayoffMineLabel=createAndAddDiv("totalPayoffMineLabel","questionsDiv");
+    totalPayoffMineLabel.innerHTML="My Match Payoff:";
 
-    summaryLabel=createDiv("totalPayoffMine");
-    summaryLabel.innerHTML=window.myMatchPay;
-    questionsDiv.appendChild(summaryLabel)
+    totalPayoffMine=createAndAddDiv("totalPayoffMine","questionsDiv");
+    totalPayoffMine.innerHTML=window.myMatchPay;
 
-    summaryLabel=createDiv("totalPayoffOthersLabel");
-    summaryLabel.innerHTML="Other's Match Payoff:";
-    questionsDiv.appendChild(summaryLabel)
+    totalPayoffOthersLabel=createAndAddDiv("totalPayoffOthersLabel","questionsDiv");
+    totalPayoffOthersLabel.innerHTML="Other's Match Payoff:";
 
-    summaryLabel=createDiv("totalPayoffOthers");
-    summaryLabel.innerHTML=window.theirMatchPay;
-    questionsDiv.appendChild(summaryLabel)
+    totalPayoffOthers=createAndAddDiv("totalPayoffOthers","questionsDiv");
+    totalPayoffOthers.innerHTML=window.theirMatchPay;
 
+    correctGuessesLabel=createAndAddDiv("correctGuessesLabel","questionsDiv");
+    correctGuessesLabel.innerHTML="Correct Guesses:";
 
-    summaryLabel=createDiv("correctGuessesLabel");
-    summaryLabel.innerHTML="Correct Guesses:";
-    questionsDiv.appendChild(summaryLabel)
+    correctGuessesDiv=createAndAddDiv("correctGuesses","questionsDiv");
+    correctGuessesDiv.innerHTML=window.correctGuesses;
 
-    summaryLabel=createDiv("correctGuesses");
-    summaryLabel.innerHTML=window.correctGuesses;
-    questionsDiv.appendChild(summaryLabel)
+    totalPayoffLabel=createAndAddDiv("totalPayoffLabel","questionsDiv");
+    totalPayoffLabel.innerHTML="My Total Payoff:";
 
+    totalPayoff=createAndAddDiv("totalPayoff","questionsDiv");
+    totalPayoff.innerHTML=window.myTotalPay;
 
-    summaryLabel=createDiv("totalPayoffLabel");
-    summaryLabel.innerHTML="My Total Payoff:";
-    questionsDiv.appendChild(summaryLabel)
-
-    summaryLabel=createDiv("totalPayoff");
-    summaryLabel.innerHTML=window.myTotalPay;
-    questionsDiv.appendChild(summaryLabel)
-
-
-    summaryMyChoice=createDiv("summaryMyChoice");
+    summaryMyChoice=createAndAddDiv("summaryMyChoice","questionsDiv");
     summaryMyChoice.className="summaryEntry";
     summaryMyChoice.style.left="50px";
-    summaryMyChoiceLabel=createDiv("summaryMyChoiceLabel");
+
+    summaryMyChoiceLabel=createAndAddDiv("summaryMyChoiceLabel","summaryMyChoice");
     summaryMyChoiceLabel.innerHTML="My Choice:";
     summaryMyChoiceLabel.className="summaryEntryLabel";
-    summaryMyChoiceEntry=createDiv("summaryMyChoiceEntry");
+
+    summaryMyChoiceEntry=createAndAddDiv("summaryMyChoiceEntry","summaryMyChoice");
     summaryMyChoiceEntry.innerHTML="?";
     summaryMyChoiceEntry.style.lineHeight="100px";
     summaryMyChoiceEntry.style.height="100px";
     summaryMyChoiceEntry.className="summaryEntryEntry";
-    summaryMyChoice.appendChild(summaryMyChoiceLabel)
-    summaryMyChoice.appendChild(summaryMyChoiceEntry)
-    questionsDiv.appendChild(summaryMyChoice)
 
+    summaryOtherChoice=createAndAddDiv("summaryOtherChoice","questionsDiv");
+    summaryOtherChoice.className="summaryEntry";
+    summaryOtherChoice.style.left="275px";
 
-    summaryMyChoice=createDiv("summaryOtherChoice");
-    summaryMyChoice.className="summaryEntry";
-    summaryMyChoice.style.left="275px";
+    summaryOthersChoiceLabel=createAndAddDiv("summaryOthersChoiceLabel","summaryOtherChoice");
+    summaryOthersChoiceLabel.innerHTML="Other's Choice:";
+    summaryOthersChoiceLabel.className="summaryEntryLabel";
 
-    summaryMyChoiceLabel=createDiv("summaryOthersChoiceLabel");
-    summaryMyChoiceLabel.innerHTML="Other's Choice:";
-    summaryMyChoiceLabel.className="summaryEntryLabel";
-    summaryMyChoice.appendChild(summaryMyChoiceLabel)
+    summaryOthersChoiceEntryGuess=createAndAddDiv("summaryOthersChoiceEntryGuess","summaryOtherChoice");
+    summaryOthersChoiceEntryGuess.innerHTML="? (guess)";
+    summaryOthersChoiceEntryGuess.className="summaryEntryEntry";
 
-    summaryMyChoiceEntry=createDiv("summaryOthersChoiceEntryGuess");
-    summaryMyChoiceEntry.innerHTML="? (guess)";
-    summaryMyChoiceEntry.className="summaryEntryEntry";
-    summaryMyChoice.appendChild(summaryMyChoiceEntry)
-
-    summaryMyChoiceEntry=createDiv("summaryOthersChoiceEntryActual");
-    summaryMyChoiceEntry.style.top="100px";
-    summaryMyChoiceEntry.innerHTML="? (actual)";
-    summaryMyChoiceEntry.className="summaryEntryEntry";
-    summaryMyChoice.appendChild(summaryMyChoiceEntry)
-
-    questionsDiv.appendChild(summaryMyChoice)
+    summaryOthersChoiceEntryActual=createAndAddDiv("summaryOthersChoiceEntryActual","summaryOtherChoice");
+    summaryOthersChoiceEntryActual.style.top="100px";
+    summaryOthersChoiceEntryActual.innerHTML="? (actual)";
+    summaryOthersChoiceEntryActual.className="summaryEntryEntry";
 
 
 
+    summaryPayoffs=createAndAddDiv("summaryPayoffs","questionsDiv");
+    summaryPayoffs.className="summaryEntry";
+    summaryPayoffs.style.left="500px";
 
-    summaryMyChoice=createDiv("summaryPayoffs");
-    summaryMyChoice.className="summaryEntry";
-    summaryMyChoice.style.left="500px";
+    summaryPayoffsLabel=createAndAddDiv("summaryPayoffsLabel","summaryPayoffs");
+    summaryPayoffsLabel.innerHTML="Payoffs:";
+    summaryPayoffsLabel.className="summaryEntryLabel";
 
-    summaryMyChoiceLabel=createDiv("summaryPayoffsLabel");
-    summaryMyChoiceLabel.innerHTML="Payoffs:";
-    summaryMyChoiceLabel.className="summaryEntryLabel";
-    summaryMyChoice.appendChild(summaryMyChoiceLabel)
+    summaryPayoffsEntryMine=createAndAddDiv("summaryPayoffsEntryMine","summaryPayoffs");
+    summaryPayoffsEntryMine.innerHTML="? (mine)";
+    summaryPayoffsEntryMine.className="summaryEntryEntry";
 
-    summaryMyChoiceEntry=createDiv("summaryPayoffsEntryMine");
-    summaryMyChoiceEntry.innerHTML="? (mine)";
-    summaryMyChoiceEntry.className="summaryEntryEntry";
-    summaryMyChoice.appendChild(summaryMyChoiceEntry)
+    summaryPayoffsEntryOthers=createAndAddDiv("summaryPayoffsEntryOthers","summaryPayoffs");
+    summaryPayoffsEntryOthers.style.top="100px";
+    summaryPayoffsEntryOthers.innerHTML="? (other's)";
+    summaryPayoffsEntryOthers.className="summaryEntryEntry";
 
-    summaryMyChoiceEntry=createDiv("summaryPayoffsEntryOthers");
-    summaryMyChoiceEntry.style.top="100px";
-    summaryMyChoiceEntry.innerHTML="? (other's)";
-    summaryMyChoiceEntry.className="summaryEntryEntry";
-    summaryMyChoice.appendChild(summaryMyChoiceEntry)
-
-    questionsDiv.appendChild(summaryMyChoice)
-
-
-    $("#mainDiv").append(questionsDiv);
 }
 
 
@@ -322,68 +304,14 @@ function drawPeriodSummary(){
 // // // // // // // // // // //  Actions // // // // // // // // // // 
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
 
-function selectColumn(col,send){
-    summaryOthersChoiceEntryGuess=document.getElementById("summaryOthersChoiceEntryGuess");
-    summaryOthersChoiceEntryGuess.innerHTML=window.colActions[col] +" (guess)";
-    summaryOthersChoiceEntryGuess.style.color=window.colColors[col];
-    selectedColumn=createDiv("selectedColumnDiv");
-    selectedColumn.className="selectedColumnDiv";
-    selectedColumn.style.left=-80+200*col+"px";
-    selectedColumn.style.color=window.colColors[col];
-    selectedColumn.style.borderColor=window.colColors[col];
-
-    selectedColumnLabel=createDiv("selectedColumnLabel");
-    selectedColumnLabel.className="selectedColumnLabel";
-    selectedColumnLabel.innerHTML="My Guess";
-    selectedColumn.appendChild(selectedColumnLabel);
-
-    selectedColumn.style.height=(200*window.numberOfRows+150)+"px";
-    selectedColumnLabel.style.top=(200*window.numberOfRows+100)+"px";
-
-    $("#gameDiv").append(selectedColumn);
-    if(send==1){
-        var message={"type":"makeChoice","col":col};
-        sendMessage(message);
-    }
-    for(col=1;col<=window.numberOfCols;col++){
-        document.getElementById("gameTableColLabel_"+col).className="gameTableItem gameTableColLabel";
-        document.getElementById("gameTableColLabel_"+col).removeEventListener("click",window.partials["selectCol"+col]);
-    }
-
+function makeSelection(args){
+    var rowOrColumn=args[0];
+    var value=args[1];
+    var message={"type":"makeChoice","selectionType":rowOrColumn,"value":value};
+    sendMessage(message);
 }
 
-function selectRow(row,send){
-    summaryOthersChoiceEntryGuess=document.getElementById("summaryMyChoiceEntry");
-    summaryOthersChoiceEntryGuess.innerHTML=window.rowActions[row];
-    summaryOthersChoiceEntryGuess.style.color=window.rowColors[row];
-    selectedRow=createDiv("selectedRowDiv");
-    selectedRow.style.color=window.rowColors[row];
-    selectedRow.style.borderColor=window.rowColors[row];
 
-
-    selectedRowLabel=createDiv("selectedRowLabel");
-    selectedRowLabel.innerHTML="My Choice";
-    selectedRow.appendChild(selectedRowLabel);
-
-    window.numberOfCols=Object.keys(window.colActions).length;
-    selectedRow.style.top=-55-100*window.numberOfCols+200*row+"px";
-    selectedRow.style.left=window.numberOfCols*100+"px";
-
-    selectedRow.style.height=(200*window.numberOfCols+150)+"px";
-    selectedRowLabel.style.top=(200*window.numberOfCols+100)+"px";
-
-    $("#gameDiv").append(selectedRow);
-    document.getElementById("historyEntry_"+window.currentPeriod+"_1").innerHTML=window.rowActions[row];
-    document.getElementById("historyEntry_"+window.currentPeriod+"_1").style.color=window.rowColors[row];
-    if(send==1){
-        var message={"type":"makeChoice","row":row};
-        sendMessage(message);
-    }
-    for(row=1;row<=window.numberOfRows;row++){
-        document.getElementById("gameTableRowLabel_"+row).className="gameTableItem gameTableRowLabel";
-        document.getElementById("gameTableRowLabel_"+row).removeEventListener("click",window.partials["selectRow"+row]);
-    }
-}
 
 // // // // // // // // // // // // // // // // // // // // // // // // // // // // // // 
 // // // // // // // // // // //  Messages // // // // // // // // // // 
@@ -394,19 +322,19 @@ function updateStatus(msg){
 }
 
 function finishPeriod(send){
-    othersChoice=window.state['othersChoice'];
-    myGuess=window.state['col'];
-    myChoice=window.state['row'];
+    var othersChoice=window.state['othersChoice'];
+    var myGuess=window.state['colSelected'];
+    var myChoice=window.state['rowSelected'];
 
-    if(othersChoice==window.state['col']){
+    if(othersChoice==myGuess){
         deleteDiv("selectedColumnDiv");
         deleteDiv("selectedColumnLabel");
-        selectedColumn=createDiv("selectedColumnDivBoth");
+        selectedColumn=createAndAddDiv("selectedColumnDivBoth","gameDiv");
         selectedColumn.style.color="rgba(255,255,0,1)";
         selectedColumn.style.borderColor="yellow";
     }
     else{
-        selectedColumn=createDiv("selectedColumnDiv2");
+        selectedColumn=createAndAddDiv("selectedColumnDiv2","gameDiv");
         selectedColumn.style.color=window.colColors[othersChoice];
         selectedColumn.style.borderColor=window.colColors[othersChoice];
     }
@@ -422,13 +350,9 @@ function finishPeriod(send){
     selectedColumn.style.height=(200*window.numberOfRows+150)+"px";
     selectedColumnLabel.style.top=(200*window.numberOfRows+100)+"px";
 
-    $("#gameDiv").append(selectedColumn);
-
-
     summaryOthersChoiceEntryGuess=document.getElementById("summaryOthersChoiceEntryActual");
     summaryOthersChoiceEntryGuess.innerHTML=window.colActions[othersChoice] +" (actual)";
     summaryOthersChoiceEntryGuess.style.color=window.colColors[othersChoice];
-
 
     document.getElementById("summaryPayoffsEntryMine").innerHTML=window.pays[myChoice][othersChoice][0]+" (mine)";
     document.getElementById("summaryPayoffsEntryMine").style.color=window.rowColors[myChoice];
@@ -446,20 +370,13 @@ function finishPeriod(send){
     document.getElementById("gameTableEntry_"+myChoice+"_"+othersChoice).style.backgroundColor="rgba(220,255,220,1)";
 
     if(send==1){
-        var pf = partial(function(){
-            var message={"type":"nextPeriod"};
-            sendMessage(message);
-        });
-        document.getElementById("gameTableEntry_"+myChoice+"_"+othersChoice).addEventListener("click",pf);
+        clickButton("once","gameTableEntry_"+myChoice+"_"+othersChoice,runServerFunction,"nextPeriod");
         document.getElementById("statusBar").innerHTML="Click on the payoffs for this period (in green) in the game table to move to next period.";
     }
     if(send==2){
-        var pf = partial(function(){
-            var message={"type":"confirmMatchOver"};
-            sendMessage(message);
-        });
-        document.getElementById("statusBar").addEventListener("click",pf);
+        clickButton("once","statusBar",runServerFunction,"confirmMatchOver");
         document.getElementById("statusBar").innerHTML="Match Over! Click here to continue.";
+        document.getElementById("statusBar").className="highlightStatus";
     }
     if(send==3){
         document.getElementById("statusBar").innerHTML="Match Over! Please wait for the other subjects to finish.";
@@ -477,66 +394,20 @@ window.currentPeriod=0;
 window.correctGuesses=14;
 
 
-
-// function nextPeriodMessage(){
-//     window.currentPeriod=window.historyOfPlay.length+1;
-//     clearAll();
-//     drawGame();
-//     drawHistory();
-//     drawStatus();
-//     drawPeriodSummary();
-// }
-
-function reconnecting(msg){
-    console.log(window.state);
-    statusManager();
+function runServerFunction(args){
+    var message={"type":args[0]};
+    sendMessage(message);
 }
-
-
-function getNames(htmlIN){
-    $("#mainDiv").append(htmlIN);
-}
-
-function setName(name){
-    document.getElementById("currentNameSelected").innerHTML="Name: "+name;
-    window.myName=name;
-}
-
-function setDesk(desk){
-    document.getElementById("currentDeskSelected").innerHTML="Desk: "+desk;
-    window.myDesk=desk;
-}
-
-function setConsent(constent){
-    document.getElementById("currentConsent").innerHTML="Consent Form Signed and Dated: "+constent;
-    window.myConsent=constent;
-}
-
-
 
 function confirmAction(m){
   var confirmed = confirm(m);
   return confirmed;
 }
 
-function submitNames(){
-    // var confirmation=confirmAction("Are you sure you a??");
-    // if(confirmation){
-    //   var message={"type":"quizAnswer","answer":window.currentConstructor,"questionType":3};
-    //   sock.send(JSON.stringify(message));
-    // }
-    if(window.myName==undefined || window.myDesk==undefined || window.myConsent==undefined){
-        alert("You must fill out name, desk and constent. Please raise your hand if you have any questions.");
-    }
-    else{
-        var message={"type":"submitName","name":window.myName,"desk":window.myDesk};
-        sendMessage(message);
-    }
-}
-
 
 
 function statusManager(){
+  console.log(window.state);
   thisStatus=window.state;
   window.currentPeriod=thisStatus['period']+1;
   window.currentMatch=thisStatus['match'];
@@ -546,71 +417,49 @@ function statusManager(){
   window.theirMatchPay=thisStatus['theirMatchPay'];
   window.myTotalPay=thisStatus['myTotalPay'];
 
-  console.log(window.state);
   if(thisStatus[0]==-1){
     message="Loading...";
     genericScreen(message);
   }
   else if(thisStatus["page"]=="generic"){
-    clearAll();
     genericScreen(thisStatus["message"]);
   }
   else if(thisStatus["page"]=="getName"){
-    clearAll();
     getNames(thisStatus["html"]);
   }
   else if(thisStatus["page"]=="quiz"){//quiz
-    console.log("ddraw quiz",window.state);
     //drawQuizMessage();
   }
   else if(thisStatus["page"]=="game"){//quiz
-    clearAll();
-    drawGame();
-    drawHistory();
-    drawStatus();
+    clearAllInstructions();
     drawPeriodSummary();
-    if(thisStatus["page"]=="noChoices"){
-        "do nothings";
-    }
-    else if(thisStatus["stage"]=="rowSelected"){
-        selectRow(thisStatus['row'],0);
-    }
-    else if(thisStatus["stage"]=="colSelected"){
-        partial(selectColumn,thisStatus['col'],0)();
-    }
-    else if(thisStatus["stage"]=="bothSelected"){
-        partial(selectRow,thisStatus['row'],0)();
-        partial(selectColumn,thisStatus['col'],0)();
+    drawHistory();
+    drawGame();
+    drawStatus();
+    if(thisStatus["stage"]=="bothSelected"){
         document.getElementById("statusBar").innerHTML="Please wait for the other subject to finish making their choices.";
     }
     else if(thisStatus["stage"]=="periodSummary"){
-        partial(selectRow,thisStatus['row'],0)();
-        partial(selectColumn,thisStatus['col'],0)();
         finishPeriod(1);
     }
     else if(thisStatus["stage"]=="matchOver"){
-        partial(selectRow,thisStatus['row'],0)();
-        partial(selectColumn,thisStatus['col'],0)();
         finishPeriod(2);
     }
     else if(thisStatus["stage"]=="matchOverConfirmed"){
-        partial(selectRow,thisStatus['row'],0)();
-        partial(selectColumn,thisStatus['col'],0)();
         finishPeriod(3);
     }
-    else if(thisStatus["stage"]=="experimentSummary"){
-        partial(selectRow,thisStatus['row'],0)();
-        partial(selectColumn,thisStatus['col'],0)();
+  }
+    else if(thisStatus["page"]=="experimentSummary"){
         finishPeriod(0);
         document.getElementById("statusBar").innerHTML=thisStatus["summary"];
     }
-  }
+
     else if(thisStatus["page"]=="questionnaire"){
-        console.log("sdfsdf");
         pay=thisStatus["payment"];
         sid=thisStatus["subjectID"];
         showQuestionnaire(sid,pay);
     }
+
 }
 
 

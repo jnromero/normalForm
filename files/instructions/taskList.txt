@@ -1,0 +1,164 @@
+
+//Intro Slide
+partial(changeBackgroundColor,"rgba(0,0,255,.1)")
+partial(placeText,"welcome1","Welcome To",150,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"test2","The Economic Science",625,300,"rgba(0,0,0,1)",4,"center","0px")
+partial(placeText,"test22","Laboratory",700,300,"rgba(0,0,0,1)",6,"center","0px")
+drawLogoESL
+
+
+
+//Welcome Slide
+clearAll
+partial(changeBackgroundColor,"rgba(0,255,0,.1)")
+partial(placeText,"overview1","Welcome",50,400,"rgba(0,100,0,1)",1,"center","0px")
+partial(placeText,"overview2","Economics Experiment.",200,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview3","Will get paid in cash at the end of the experiment.",350,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview4","Please remain silent.",500,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview5","Please raise your hand for help.",650,300,"rgba(0,0,0,1)",2,"center","0px")
+
+
+
+//Welcome Slide 2
+clearAll
+partial(changeBackgroundColor,"rgba(255,0,0,.1)")
+partial(placeText,"overview1","Welcome",50,400,"rgba(100,0,0,1)",0,"center","0px")
+partial(placeText,"overview2","Do not talk, laugh or exclaim out loud.",200,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview3","Keep your eyes on your screen only.",350,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview4","Turn off cell phones, etc. and put them away.",500,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview5","We appreciate your cooperation.",650,300,"rgba(0,0,0,1)",2,"center","0px")
+
+
+//Agenda
+clearAll
+partial(changeBackgroundColor,"rgba(0,0,255,.1)")
+partial(placeText,"overview1","Agenda",50,400,"rgba(0,0,100,1)",1,"center","0px")
+partial(placeText,"overview2","1. Instructions",150,300,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview3","2. Quiz",275,300,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview4","3. Experiment",400,300,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview5","4. Three Additional Tasks",525,300,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview6","5. Survey",650,300,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview7","6. Payment",775,300,"rgba(0,0,0,1)",2,"left","200px")
+
+
+//Experiment overview
+clearAll
+partial(changeBackgroundColor,"rgba(255,0,0,.1)")
+partial(placeText,"overview1","Experiment Overview",50,400,"rgba(100,0,0,1)",1,"center","0px")
+partial(placeText,"overview2","Matched in pairs",200,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview3","Your choice affects your payoff",350,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview4","Your choice affects their payoff",500,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview5","Their choice affects your payoff",650,300,"rgba(0,0,0,1)",2,"center","0px")
+
+
+
+//Experiment details
+clearAll
+partial(changeBackgroundColor,"rgba(0,255,0,.1)")
+partial(placeText,"overview1","Experiment Details",50,400,"rgba(0,100,0,1)",1,"center","0px")
+partial(placeText,"overview2","Exchange Rate: 20 Francs = $1",175,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview3","5 Matches (may have different # of periods)",300,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview4","At beginning of each match, randomly matched with another subject",425,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview5","Your identity is anonymous",550,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview6","Matched with same subject for entire match",675,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview7","Randomly matched with another subject (anonymous)",800,300,"rgba(0,0,0,1)",2,"center","0px")
+clearAll
+
+//Experiment interface
+partial(runServerFunction,['initializeInstructionsInterface'])
+nextPeriod
+drawCursorOverlay
+partial(placeCursor,500,500)
+toggleOverlay
+
+//Show Game Table
+partial(growDiv,"gameDiv",.9,"top left",.5)
+partial(startMouseSequence,[["moveToDiv",500,"gameTableRowLabel_1"]],0)
+partial(startMouseSequence,[["moveToDiv",500,"gameTableRowLabel_2"]],0)
+partial(startMouseSequence,[["moveToDiv",500,"gameTableColLabel_1"]],0)
+partial(startMouseSequence,[["moveToDiv",500,"gameTableColLabel_2"]],0)
+partial(startMouseSequence,[["moveToDiv",500,"gameTableRowLabel_2"]],0)
+partial(startMouseSequence,[["moveToDiv",500,"gameTableColLabel_1"]],0)
+partial(startMouseSequence,[["moveToDiv",400,"gameTableEntry_2_1"]],0)
+partial(growDiv,"gameDiv",.9,"top left",.5)
+
+
+//Show PAyoff Summary
+partial(growDiv,"questionsDiv",1.2,"top right",.5)
+partial(startMouseSequence,[["moveToDiv",400,"periodSummaryLabel"]],0)
+partial(startMouseSequence,[["moveToDiv",400,"summaryLabel"]],0)
+partial(growDiv,"questionsDiv",1.2,"top right",.5)
+
+
+//Show History
+partial(growDiv,"historyDiv",1,"bottom center",.5)
+partial(growDiv,"historyLabels",1,"bottom center",.5)
+partial(startMouseSequence,[["moveToDiv",400,"historyDiv"]],0)
+partial(growDiv,"historyDiv",1,"bottom center",.5)
+partial(growDiv,"historyLabels",1,"bottom center",.5)
+
+//Show StatusBar status#1
+partial(growDiv,"statusBar",1,"bottom center",.5)
+partial(startMouseSequence,[["moveToDiv",400,"statusBar"]],0)
+toggleOverlay
+
+//Make Row choice
+partial(startMouseSequence,[["moveToDiv",400,"gameTableRowLabel_1"],["click",400,partial(runServerFunction,['instructionsSelectRow1'])]],0)
+partial(startMouseSequence,[["moveToDiv",400,"summaryMyChoiceEntry"]],0)
+
+
+//Make Col choice
+partial(startMouseSequence,[["moveToDiv",400,"gameTableColLabel_2"],["click",400,partial(runServerFunction,['instructionsSelectCol1'])]],0)
+partial(startMouseSequence,[["moveToDiv",400,"summaryOthersChoiceEntryGuess"]],0)
+partial(startMouseSequence,[["moveToDiv",400,"statusBar"]],0)
+partial(runServerFunction,['instructionsFinishPeriod'])
+partial(finishPeriod,4)
+partial(startMouseSequence,[["moveToDiv",400,"selectedColumnDiv2"]],0)
+partial(startMouseSequence,[["moveToDiv",400,"gameTableEntry_1_1"]],0)
+partial(startMouseSequence,[["moveToDiv",400,"summaryOthersChoiceEntryActual"]],0)
+partial(startMouseSequence,[["moveToDiv",400,"summaryPayoffs"]],0)
+partial(startMouseSequence,[["moveToDiv",400,"historyEntry_20_0"]],0)
+partial(startMouseSequence,[["moveToDiv",400,"summaryLabel"]],0)
+partial(startMouseSequence,[["moveToDiv",400,"totalPayoffMineLabel"]],0)
+partial(startMouseSequence,[["moveToDiv",400,"correctGuessesLabel"]],0)
+partial(startMouseSequence,[["moveToDiv",400,"gameTableEntry_1_1"]],0)
+partial(startMouseSequence,[["click",400,partial(runServerFunction,['instructionsMovetoNextPeriod'])]],0)
+partial(deleteDiv,"cursorOverlay")
+clearAll
+partial(changeBackgroundColor,"rgba(0,255,0,.1)")
+partial(placeText,"overview1","Number of Periods Per Match",50,400,"rgba(0,100,0,1)",1,"center","0px")
+partial(placeText,"overview2","Each Period 1 Number drawn from set",150,300,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview3","{1,2,3,...,98,99,100} (and replaced).",250,300,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview4","If Number is 1 - The match ends.",350,300,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview5","If Number is not 1 - There match will continue.",450,300,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview6","Expected number of periods is 100 (but may be different).",550,300,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview7","This procedure has been performed on the computer,",650,300,"rgba(0,0,0,1)",1,"center","0px")
+partial(placeText,"overview8","before the experiment.",725,300,"rgba(0,0,0,1)",1,"center","0px")
+clearAll
+partial(changeBackgroundColor,"rgba(255,0,0,.1)")
+partial(placeText,"overview1","Payoffs",50,400,"rgba(100,0,0,1)",1,"center","0px")
+partial(placeText,"overview2","Your payment will contain the following:",150,300,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview3","1. $5 Show up fee",250,300,"rgba(0,0,0,1)",2,"left","250px")
+partial(placeText,"overview4","2. Payment from randomly selected block of 30 periods",350,300,"rgba(0,0,0,1)",2,"left","250px")
+partial(placeText,"overview5","3. Bonus payment for raffle tickets",450,300,"rgba(0,0,0,1)",2,"left","250px")
+partial(placeText,"overview6","4. Payment for Three Additional Tasks",550,300,"rgba(0,0,0,1)",2,"left","250px")
+partial(placeText,"overview7","Francs converted to dollars at the end.",650,300,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview8","Paid in cash, in private.",750,300,"rgba(0,0,0,1)",2,"left","200px")
+clearAll
+partial(changeBackgroundColor,"rgba(0,0,255,.1)")
+partial(placeText,"overview1","Random Block of 30 Periods",50,400,"rgba(0,0,100,1)",1,"center","0px")
+partial(placeText,"overview2","Randomly select 1 period",200,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview3","Block contains that period, and following 29",300,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview4","Block can span multiple matches.",400,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview5","If period is at end, then block loops to 1st period.",500,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview6","Each period equally likely to be paid.",600,300,"rgba(0,0,0,1)",2,"center","0px")
+partial(placeText,"overview7","Random period pre-selected, written on board.",700,300,"rgba(0,0,0,1)",2,"center","0px")
+clearAll
+partial(changeBackgroundColor,"rgba(255,0,0,.1)")
+partial(placeText,"overview1","Random Block of 30 Periods: Examples",50,400,"rgba(100,0,0,1)",1,"center","0px")
+partial(placeText,"overview2","Randomly selected period: Match #4 Period #14",200,300,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview3","Block: Match #4 P14-P43",300,300,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview4","Randomly selected period: Match #2 Period #91",450,300,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview5","Block: Match #2 P91-P100 and Match #3 P1-P20",550,300,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview6","Randomly selected period: Match #5 Period #81",700,300,"rgba(0,0,0,1)",2,"left","200px")
+partial(placeText,"overview7","Block: Match #5 P81-P85 and Match #1 P1-P25",800,300,"rgba(0,0,0,1)",2,"left","200px")

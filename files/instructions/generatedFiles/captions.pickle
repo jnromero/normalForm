@@ -1,0 +1,1112 @@
+(lp0
+(lp1
+S'  Welcome  to   the   Economic  Science   Laboratory. '
+p2
+aF1.854
+aF1.861
+aa(lp3
+S' Please  carefully  watch  these  video  instructions '
+p4
+aF4.024
+aF5.885
+aa(lp5
+S' and  follow  along  on  the  paper  copy  at  your '
+p6
+aF3.0470000000000006
+aF8.932
+aa(lp7
+S' desk.   Welcome  You  are  about  to  participate '
+p8
+aF4.837
+aF13.769
+aa(lp9
+S' in  an   experiment  in  the  economics  of  decision-making. '
+p10
+aF2.7509999999999994
+aF16.52
+aa(lp11
+S' If  you  listen  carefully,   you  could  earn  a '
+p12
+aF4.128
+aF20.648
+aa(lp13
+S' large  amount  of  money,  that  will  be  paid  to '
+p14
+aF2.373000000000001
+aF23.021
+aa(lp15
+S' you  in  cash,  in  private,  at  the  end  of  the '
+p16
+aF2.678000000000001
+aF25.699
+aa(lp17
+S' experiment.  It  is  important   that  you  remain '
+p18
+aF3.3309999999999995
+aF29.03
+aa(lp19
+S" silent,  and  do  not  look  at  other  people\\'s  work. "
+p20
+aF2.5969999999999978
+aF31.627
+aa(lp21
+S' If  you  have  any  questions,  or  need  any  assistance '
+p22
+aF3.669999999999998
+aF35.297
+aa(lp23
+S' of  any  kind,   please  raise  your  hand  and  an '
+p24
+aF2.422000000000004
+aF37.719
+aa(lp25
+S' experimenter  will  help  you  out.   During  the '
+p26
+aF3.5249999999999986
+aF41.244
+aa(lp27
+S' experiment,   do  not  talk,  laugh  or  exclaim  out '
+p28
+aF3.0690000000000026
+aF44.313
+aa(lp29
+S' loud  and  be  sure  to   keep  your  eyes  on  your '
+p30
+aF2.245999999999995
+aF46.559
+aa(lp31
+S' screen  only.  In  addition,   please  turn  off  your '
+p32
+aF4.014000000000003
+aF50.573
+aa(lp33
+S' cell  phones,  etc.  and  put  them  away  during '
+p34
+aF3.6880000000000024
+aF54.261
+aa(lp35
+S' the  experiment.  Anybody  that  violates  these  rules '
+p36
+aF4.147999999999996
+aF58.409
+aa(lp37
+S' will  be  asked  to  leave  and  will  not  be  paid. '
+p38
+aF1.983000000000004
+aF60.392
+aa(lp39
+S'  We  expect,  and  appreciate  your  cooperation. '
+p40
+aF3.1229999999999976
+aF63.515
+aa(lp41
+S'  Agenda   1.  Instructions.   2.  Quiz  (to  make '
+p42
+aF11.798999999999992
+aF75.314
+aa(lp43
+S' sure  everyone  understands  the  instructions).  The '
+p44
+aF4.327000000000012
+aF79.641
+aa(lp45
+S' quiz  will  consist  of  12  questions.  The  experiment '
+p46
+aF3.7009999999999934
+aF83.342
+aa(lp47
+S' will  not  begin  until  everyone  has  correctly '
+p48
+aF2.6569999999999965
+aF85.999
+aa(lp49
+S' answered  all  questions.   3.  Experiment.   4.  Three '
+p50
+aF9.201999999999998
+aF95.201
+aa(lp51
+S' additional  tasks.   5.  Survey.  After  you  have '
+p52
+aF7.249000000000009
+aF102.45
+aa(lp53
+S' completed  the  experiment,  you  will  be  asked '
+p54
+aF2.319999999999993
+aF104.77
+aa(lp55
+S' to  answer  several  survey  questions  using  the '
+p56
+aF2.3730000000000047
+aF107.143
+aa(lp57
+S' computer.   6.  Payment.  After  everyone  has  finished '
+p58
+aF7.257999999999996
+aF114.401
+aa(lp59
+S' the  survey,  you  will  be  paid  in  cash.   Experiment '
+p60
+aF4.2760000000000105
+aF118.677
+aa(lp61
+S' Overview  In  the  experiment  today  you  will  be '
+p62
+aF4.040999999999997
+aF122.718
+aa(lp63
+S'  matched  into  pairs,  and  will  be  asked  to  make '
+p64
+aF2.298000000000002
+aF125.016
+aa(lp65
+S' choices.  The  choices  made  by  you  may   affect '
+p66
+aF3.2439999999999856
+aF128.26
+aa(lp67
+S' both  your  payoff,  as  well  as   the  payoff  of '
+p68
+aF2.592000000000013
+aF130.852
+aa(lp69
+S' the  subject  that  you  are  matched  with.  Similarly, '
+p70
+aF2.9919999999999902
+aF133.844
+aa(lp71
+S' the  choices  of  the  subject  that  you  are  matched '
+p72
+aF3.0090000000000146
+aF136.853
+aa(lp73
+S' with  may   affect  their  payoff  and  your  payoff. '
+p74
+aF1.9979999999999905
+aF138.851
+aa(lp75
+S'  Experiment  Details  In  the  experiment  today, '
+p76
+aF5.2520000000000095
+aF144.103
+aa(lp77
+S' you  will  be  working  with  a  fictitious  currency '
+p78
+aF2.6709999999999923
+aF146.774
+aa(lp79
+S' called  Francs.  You  will  be  paid  in  US  Dollars '
+p80
+aF3.4180000000000064
+aF150.192
+aa(lp81
+S' at  the  end  of  the  experiment.   Exchange  rate '
+p82
+aF3.9429999999999836
+aF154.135
+aa(lp83
+S' :  20  Francs  equals  1  dollar.  This  experiment '
+p84
+aF4.319000000000017
+aF158.454
+aa(lp85
+S' consists  of   five  matches,  each  of  which  may '
+p86
+aF3.0279999999999916
+aF161.482
+aa(lp87
+S' have  a  different  number  of  periods,  and  may '
+p88
+aF2.38900000000001
+aF163.871
+aa(lp89
+S' have  different  payoffs.  At  the  beginning  of '
+p90
+aF3.625
+aF167.496
+aa(lp91
+S' each  match,   you  will  be  matched  with  one  other '
+p92
+aF2.0279999999999916
+aF169.524
+aa(lp93
+S' subject  that  you  have  not  been  matched  with '
+p94
+aF2.0190000000000055
+aF171.543
+aa(lp95
+S' before.  The  random  pairing  will  ensure  that '
+p96
+aF3.3669999999999902
+aF174.91
+aa(lp97
+S' if  you  have  been  paired  with  another  participant '
+p98
+aF1.9560000000000173
+aF176.866
+aa(lp99
+S' before,  then  you  will  never  be  paired  with '
+p100
+aF2.657999999999987
+aF179.524
+aa(lp101
+S' this  same  participant  in  another  match  again. '
+p102
+aF2.288000000000011
+aF181.812
+aa(lp103
+S' You  will  remain   anonymous  throughout  the  experiment. '
+p104
+aF3.3969999999999914
+aF185.209
+aa(lp105
+S' You  will  not  know  the  identity  of  the  subject '
+p106
+aF3.7439999999999998
+aF188.953
+aa(lp107
+S' that  you  are  matched  with,  and  the  subject '
+p108
+aF1.7680000000000007
+aF190.721
+aa(lp109
+S' that  you  are  matched  with  will  not  know  your '
+p110
+aF1.88900000000001
+aF192.61
+aa(lp111
+S' identity.  The  choices  made  by  you,  and  the '
+p112
+aF3.938999999999993
+aF196.549
+aa(lp113
+S' subject  that  you  are  matched  with,  have  no '
+p114
+aF1.992999999999995
+aF198.542
+aa(lp115
+S' effect  on  the  payoffs  of  other  pairs  of  subjects, '
+p116
+aF2.4729999999999848
+aF201.015
+aa(lp117
+S' and  vice  versa.  You  will  remain  matched  with '
+p118
+aF3.723000000000013
+aF204.738
+aa(lp119
+S' this   same  subject  until  the  end  of  the  match. '
+p120
+aF2.1709999999999923
+aF206.909
+aa(lp121
+S' After  you  and  the  subject  that  you  are  matched '
+p122
+aF3.531000000000006
+aF210.44
+aa(lp123
+S' with  have  finished  the  match,  please  wait  quietly '
+p124
+aF2.169000000000011
+aF212.609
+aa(lp125
+S' for  all  pairs  to  finish  their  match.  Once  all '
+p126
+aF4.022999999999996
+aF216.632
+aa(lp127
+S' pairs  have  finished  their  match,  you  will  be '
+p128
+aF2.3969999999999914
+aF219.029
+aa(lp129
+S'  randomly  rematched  with  another  subject  that '
+p130
+aF2.3100000000000023
+aF221.339
+aa(lp131
+S' you  have  not  been  matched  with  yet,  and  the '
+p132
+aF1.9439999999999884
+aF223.283
+aa(lp133
+S' next  match  will  begin.   Experimental  Interface '
+p134
+aF3.959000000000003
+aF227.242
+aa(lp135
+S' Next,  we  will  go  over  the  experimental  interface. '
+p136
+aF3.8710000000000093
+aF231.113
+aa(lp137
+S' The  experimental  interface  consists  of  five  components: '
+p138
+aF4.278999999999996
+aF235.392
+aa(lp139
+S' 1.   The  payoff  table  is  displayed  at  the  top '
+p140
+aF5.716000000000008
+aF241.108
+aa(lp141
+S' left  of  the  screen.  The  payoff  table  has  your '
+p142
+aF3.674999999999983
+aF244.783
+aa(lp143
+S' choices  (the  rows,   U,  and   D),  and  the  choices '
+p144
+aF4.606999999999999
+aF249.39
+aa(lp145
+S' of  the  subject  that  you  are  matched  with  (the '
+p146
+aF2.9310000000000116
+aF252.321
+aa(lp147
+S' columns,   L,  and   R).  For  any  combination  of '
+p148
+aF5.22799999999998
+aF257.549
+aa(lp149
+S' choices  for  you  and  the  subject  that  you  are '
+p150
+aF2.083000000000027
+aF259.632
+aa(lp151
+S' matched  with,  there  is  a  payoff.  Your  payoff '
+p152
+aF3.146000000000015
+aF262.778
+aa(lp153
+S' is  on  the  left,  and  the  payoff  for  the  subject '
+p154
+aF2.5509999999999877
+aF265.329
+aa(lp155
+S' that  you  are  matched  with  is  on  the  right. '
+p156
+aF1.877999999999986
+aF267.207
+aa(lp157
+S' For  example,  if  you   choose  D,  and  the  subject '
+p158
+aF4.138000000000034
+aF271.345
+aa(lp159
+S' that  you  are  matched  with   chooses  L,   then '
+p160
+aF2.4139999999999873
+aF273.759
+aa(lp161
+S' your  payoff  is  6,  and   the  payoff  for  the '
+p162
+aF2.7749999999999773
+aF276.534
+aa(lp163
+S' subject  that  you  are  matched  with  is  3.  The '
+p164
+aF3.208000000000027
+aF279.742
+aa(lp165
+S' payoff  table  in  the  experiment  today  will  be '
+p166
+aF2.6689999999999827
+aF282.411
+aa(lp167
+S' different  than  the  one  displayed  here.  In  addition, '
+p168
+aF3.3170000000000073
+aF285.728
+aa(lp169
+S' the  payoffs  will  remain  the  same  for  all  periods '
+p170
+aF2.6999999999999886
+aF288.428
+aa(lp171
+S' in  a  single  match,  but  may  change  in  different '
+p172
+aF2.5439999999999827
+aF290.972
+aa(lp173
+S' matches.  2.   The  summary  of  the  current  period '
+p174
+aF5.799000000000035
+aF296.771
+aa(lp175
+S' is  shown  in  the  top  right.  3.   The  summary '
+p176
+aF5.269999999999982
+aF302.041
+aa(lp177
+S' of  all  periods  is  shown  below  that.  4.   The '
+p178
+aF5.913000000000011
+aF307.954
+aa(lp179
+S' history  of  play  is  displayed  in  the  bottom '
+p180
+aF2.274000000000001
+aF310.228
+aa(lp181
+S' half  of  the  screen.  5.   Finally,  the  current '
+p182
+aF5.8139999999999645
+aF316.042
+aa(lp183
+S' status  is  displayed  across  the  middle  of  the '
+p184
+aF2.8310000000000173
+aF318.873
+aa(lp185
+S' screen.  The  current  status  tells  you  what  to '
+p186
+aF3.069000000000017
+aF321.942
+aa(lp187
+S' do  at  any  point  during  the  experiment.   Specific '
+p188
+aF4.048999999999978
+aF325.991
+aa(lp189
+S' Instructions  for  Each  Period  At  any  point  during '
+p190
+aF3.646000000000015
+aF329.637
+aa(lp191
+S' a  period,  you  will  see  one  of  three  status '
+p192
+aF2.519999999999982
+aF332.157
+aa(lp193
+S' messages:  Status  #1:  Please  select  My  Choice '
+p194
+aF4.939000000000021
+aF337.096
+aa(lp195
+S" (U,D)  and  your  guess  for  Other\\'s  Choice  (L,R). "
+p196
+aF5.093999999999994
+aF342.19
+aa(lp197
+S' When  you  see  this  status  message,  you  need '
+p198
+aF4.911000000000001
+aF347.101
+aa(lp199
+S' to  do  two  things.  1.  Select  a  row  for  your '
+p200
+aF5.798999999999978
+aF352.9
+aa(lp201
+S' choice  (in  this  example  either  U,  or  D).   Once '
+p202
+aF5.098000000000013
+aF357.998
+aa(lp203
+S' you  have  selected  a  row,  it  will  be  outlined, '
+p204
+aF2.492999999999995
+aF360.491
+aa(lp205
+S" and  the  label  \\'My  Choice\\'  will  be  added.   My "
+p206
+aF3.73599999999999
+aF364.227
+aa(lp207
+S' choice  will  also  be  updated  on  the  period  summary. '
+p208
+aF2.390000000000043
+aF366.617
+aa(lp209
+S' 2.  Select  the  column  that  you  think  the  subject '
+p210
+aF5.548999999999978
+aF372.166
+aa(lp211
+S' that  you  are  matched  with  will  select  (in  this '
+p212
+aF2.8149999999999977
+aF374.981
+aa(lp213
+S' example  either  L,  or  R).   Once  you  have  selected '
+p214
+aF4.2169999999999845
+aF379.198
+aa(lp215
+S' a  column,  it  will  be  outlined,  and  the  label '
+p216
+aF3.024000000000001
+aF382.222
+aa(lp217
+S" \\'My  Guess\\'  will  be  added.   My  guess  will  also "
+p218
+aF3.055000000000007
+aF385.277
+aa(lp219
+S' be  updated  on  the  period  summary.  If  you  correctly '
+p220
+aF3.8520000000000323
+aF389.129
+aa(lp221
+S' guess  the  choice  of  the  subject  that  you  are '
+p222
+aF2.176999999999964
+aF391.306
+aa(lp223
+S' matched  with  in  a  given  period,  then  you  will '
+p224
+aF2.369000000000028
+aF393.675
+aa(lp225
+S' earn  a  raffle  ticket.  At  the  end  of  the  experiment, '
+p226
+aF3.4069999999999823
+aF397.082
+aa(lp227
+S' one  raffle  ticket  will  be  randomly  selected, '
+p228
+aF2.8799999999999955
+aF399.962
+aa(lp229
+S' and  the  winner  will  receive  a  bonus  of  5  dollars. '
+p230
+aF3.105000000000018
+aF403.067
+aa(lp231
+S' Therefore,  the  more  correct  guesses  you  make, '
+p232
+aF4.290999999999997
+aF407.358
+aa(lp233
+S' the  more  likely  you  are  to  win  the  5  dollars '
+p234
+aF2.5319999999999823
+aF409.89
+aa(lp235
+S' bonus.   Status  #2:  Please  wait  for  the  other '
+p236
+aF4.713999999999999
+aF414.604
+aa(lp237
+S' subject  to  finish  making  their  choices.  When '
+p238
+aF3.515000000000043
+aF418.119
+aa(lp239
+S' you  see  this  status  message,  please  wait  patiently '
+p240
+aF2.416999999999973
+aF420.536
+aa(lp241
+S' for  the  subject  that  you  are  matched  with  to '
+p242
+aF2.6510000000000105
+aF423.187
+aa(lp243
+S' finish  making  their  choices.  If  the  other  subject '
+p244
+aF3.709000000000003
+aF426.896
+aa(lp245
+S' makes  their  choices  before  you  in  a  specific '
+p246
+aF2.0949999999999704
+aF428.991
+aa(lp247
+S' period,  you  might  not  see  this  status.   Status '
+p248
+aF4.237000000000023
+aF433.228
+aa(lp249
+S' #3:  Click  on  the  payoffs  for  this  period  (in '
+p250
+aF4.63900000000001
+aF437.867
+aa(lp251
+S' green)  in  the  game  table  to  move  to  next  period. '
+p252
+aF3.1549999999999727
+aF441.022
+aa(lp253
+S' When  you  see  this  status  message,  all  choices '
+p254
+aF3.9540000000000077
+aF444.976
+aa(lp255
+S' for  the  period  have  been  made,  and  you  can '
+p256
+aF2.7490000000000236
+aF447.725
+aa(lp257
+S' view  the  final  results.   The  column  selected '
+p258
+aF3.31899999999996
+aF451.044
+aa(lp259
+S' by  the  subject  that  you  are  matched  with  is '
+p260
+aF2.3810000000000286
+aF453.425
+aa(lp261
+S" highlighted  and  labeled  \\'Other\\'s  Choice\\'.  If "
+p262
+aF3.1829999999999927
+aF456.608
+aa(lp263
+S' your  guess  about  their  choice  was  correct,  then '
+p264
+aF2.3999999999999773
+aF459.008
+aa(lp265
+S' the  column  will  be  highlighted  in  yellow.   The '
+p266
+aF3.3319999999999936
+aF462.34
+aa(lp267
+S' entry  of  the  payoff  table  that  is  at  the  intersection '
+p268
+aF2.3740000000000236
+aF464.714
+aa(lp269
+S' of  the  row  that  you  selected,  and  the  column '
+p270
+aF2.7450000000000045
+aF467.459
+aa(lp271
+S' that  the  subject  that  you  are  matched  with '
+p272
+aF1.8559999999999945
+aF469.315
+aa(lp273
+S' selected,  is  highlighted  in  green.  This  entry '
+p274
+aF3.5470000000000255
+aF472.862
+aa(lp275
+S' displays  the  payoffs  for  the  current  period. '
+p276
+aF2.20799999999997
+aF475.07
+aa(lp277
+S' Your  payoff  for  the  period  is  displayed  on '
+p278
+aF4.021000000000015
+aF479.091
+aa(lp279
+S' the  left,  and  the  payoff  of  the  subject  that '
+p280
+aF2.3870000000000005
+aF481.478
+aa(lp281
+S' you  are  matched  with  is  displayed  on  the  right. '
+p282
+aF1.9850000000000136
+aF483.463
+aa(lp283
+S' At  this  point,  the  period  summary  has  been '
+p284
+aF3.7659999999999627
+aF487.229
+aa(lp285
+S' updated  to  include   the  choice  of  the  subject '
+p286
+aF2.0330000000000155
+aF489.262
+aa(lp287
+S' that  you  are  matched  with,   and  the  current '
+p288
+aF1.8530000000000086
+aF491.115
+aa(lp289
+S' payoffs  for  this  period.  These  choices  have '
+p290
+aF3.447999999999979
+aF494.563
+aa(lp291
+S' also  been  added  to  the   history  of  play  at '
+p292
+aF2.4920000000000186
+aF497.055
+aa(lp293
+S' the  bottom  of  the  screen.  Finally,   the  overall '
+p294
+aF3.58299999999997
+aF500.638
+aa(lp295
+S' summary  has  been  updated  to  include   the  total '
+p296
+aF2.626000000000033
+aF503.264
+aa(lp297
+S' payoffs  including  this  period,  as  well  as   the '
+p298
+aF2.711999999999989
+aF505.976
+aa(lp299
+S' number  of  correct  guesses  you  have  made  about '
+p300
+aF2.1850000000000023
+aF508.161
+aa(lp301
+S' the  choice  of  the  subject  that  you  are  matched '
+p302
+aF2.1859999999999786
+aF510.347
+aa(lp303
+S' with.   To  move  on  to  the  next  period,  you '
+p304
+aF3.3619999999999663
+aF513.709
+aa(lp305
+S' need  to  click  the  payoffs  for  this  period  in '
+p306
+aF2.2770000000000437
+aF515.986
+aa(lp307
+S' the  game  table,  which  have  been  highlighted '
+p308
+aF1.725999999999999
+aF517.712
+aa(lp309
+S' in   green.   Number  of  Periods  Per  Match  The '
+p310
+aF7.986999999999966
+aF525.699
+aa(lp311
+S' number  of  periods  in  each  match  will  be  determined '
+p312
+aF2.133000000000038
+aF527.832
+aa(lp313
+S' randomly  using  the  following  procedure.  At  the '
+p314
+aF4.039999999999964
+aF531.872
+aa(lp315
+S' end  of  each  period,   a  number  will  be  chosen '
+p316
+aF2.4500000000000455
+aF534.322
+aa(lp317
+S' randomly  from  the  set  of  numbers   {1,2,3,  up '
+p318
+aF4.643000000000029
+aF538.965
+aa(lp319
+S' to,  98,  99,  100},  where  each  number  is  equally '
+p320
+aF4.822000000000003
+aF543.787
+aa(lp321
+S' likely.   If  the  number  is  1,  then  the  match '
+p322
+aF4.168999999999983
+aF547.956
+aa(lp323
+S' will  end.   If  the  number  is  not  1,  then  the '
+p324
+aF3.879000000000019
+aF551.835
+aa(lp325
+S' match  will  continue.  The  number  will  always '
+p326
+aF3.328999999999951
+aF555.164
+aa(lp327
+S' be  placed  back  into  the  set  after  it  is  drawn. '
+p328
+aF2.4840000000000373
+aF557.648
+aa(lp329
+S' Thus,  in  any  period  there  is  a  1  percent  CHANCE '
+p330
+aF4.442000000000007
+aF562.09
+aa(lp331
+S' that  the  match  will  end,  and  a  99  percent '
+p332
+aF2.3059999999999263
+aF564.396
+aa(lp333
+S' CHANCE  that  the  match  will  have  another  period. '
+p334
+aF2.0670000000000073
+aF566.463
+aa(lp335
+S' Therefore,   the  expected  number  of  periods  in '
+p336
+aF4.5
+aF570.963
+aa(lp337
+S' each  match  will  be  100.   This  procedure  has '
+p338
+aF3.4050000000000864
+aF574.368
+aa(lp339
+S' been  performed  on  the  computer  before  the  experiment. '
+p340
+aF2.2509999999999764
+aF576.619
+aa(lp341
+S' Therefore,  you  will  not  see  the  number  selected '
+p342
+aF4.112999999999943
+aF580.732
+aa(lp343
+S' from  {1,2,3,  up  to,  98,  99,  100}.  To  ensure '
+p344
+aF8.144999999999982
+aF588.877
+aa(lp345
+S' that  the  length  of  the  match  is  not  dependent '
+p346
+aF2.011000000000081
+aF590.888
+aa(lp347
+S' on  your  play,  the  number  of  periods  for  each '
+p348
+aF2.7889999999999873
+aF593.677
+aa(lp349
+S' match  has  been  written  on  the  board  before '
+p350
+aF1.606999999999971
+aF595.284
+aa(lp351
+S' the  experiment,  and  will  be  uncovered  at  the '
+p352
+aF2.54200000000003
+aF597.826
+aa(lp353
+S' end  of  the  experiment.   Payoffs   Your  payment '
+p354
+aF4.4249999999999545
+aF602.251
+aa(lp355
+S' at  the  end  of  the  experiment  will  contain  the '
+p356
+aF2.4840000000000373
+aF604.735
+aa(lp357
+S' following:   1.  The  5  dollars  show  up  fee.   2. '
+p358
+aF6.505999999999972
+aF611.241
+aa(lp359
+S' Payment  for  a  randomly  selected  block  of  30 '
+p360
+aF4.512000000000057
+aF615.753
+aa(lp361
+S' periods.   3.  A  bonus  payment  of  5  dollars  if '
+p362
+aF5.997999999999934
+aF621.751
+aa(lp363
+S' one  of  your  raffle  tickets  is  randomly  selected '
+p364
+aF2.211999999999989
+aF623.963
+aa(lp365
+S' at  the  end  of  the  experiment.   4.  Payment  for '
+p366
+aF6.076000000000022
+aF630.039
+aa(lp367
+S' the  additional  tasks  after  the  main  experiment. '
+p368
+aF2.0750000000000455
+aF632.114
+aa(lp369
+S' At  the  end  of  the  experiment,   your  earnings '
+p370
+aF3.9599999999999227
+aF636.074
+aa(lp371
+S' in  Francs  will  be  converted  into  US  Dollars '
+p372
+aF2.600999999999999
+aF638.675
+aa(lp373
+S' and  you  will  be   paid  in  cash,  in  private. '
+p374
+aF2.34800000000007
+aF641.023
+aa(lp375
+S'  The  randomly  selected  block  of  30  periods  will '
+p376
+aF4.2029999999999745
+aF645.226
+aa(lp377
+S' be  determined  as  follows:   One  period  from  the '
+p378
+aF3.13900000000001
+aF648.365
+aa(lp379
+S' experiment  will  be  selected  at  random.   The '
+p380
+aF3.731999999999971
+aF652.097
+aa(lp381
+S' block  of  30  periods  will  contain  this  period, '
+p382
+aF2.2060000000000173
+aF654.303
+aa(lp383
+S' and  the  following  29  periods.   The  block  of '
+p384
+aF4.442000000000007
+aF658.745
+aa(lp385
+S' 30  periods  may  span  multiple  matches.   If  the '
+p386
+aF4.104000000000042
+aF662.849
+aa(lp387
+S' randomly  selected  period  is  one  of  the  last '
+p388
+aF2.4269999999999072
+aF665.276
+aa(lp389
+S' 29  periods  of  the  experiment,  then  the  block '
+p390
+aF2.812000000000012
+aF668.088
+aa(lp391
+S' will  loop  around  to  the  first  period  of  the '
+p392
+aF2.2649999999999864
+aF670.353
+aa(lp393
+S' experiment,  and  continue  from  there.   Therefore, '
+p394
+aF3.657000000000039
+aF674.01
+aa(lp395
+S' the  chance  of  getting  paid  in  every  period '
+p396
+aF2.6970000000000027
+aF676.707
+aa(lp397
+S' of  the  experiment  is  the  same.  Each  choice '
+p398
+aF3.491999999999962
+aF680.199
+aa(lp399
+S' you  make  is  therefore  important  because  it  has '
+p400
+aF2.312000000000012
+aF682.511
+aa(lp401
+S' a  chance  of  determining  the  amount  of  money '
+p402
+aF2.312999999999988
+aF684.824
+aa(lp403
+S' you  earn.   The  randomly  selected  period  has '
+p404
+aF3.7340000000000373
+aF688.558
+aa(lp405
+S' been  drawn  before  the  experiment.  To  ensure '
+p406
+aF3.1660000000000537
+aF691.724
+aa(lp407
+S' that  the  randomly  selected  period  is  not  dependent '
+p408
+aF2.8589999999999236
+aF694.583
+aa(lp409
+S' on  your  choices,  it  has  been  written  on  the '
+p410
+aF2.769999999999982
+aF697.353
+aa(lp411
+S' board,  and  will  be  uncovered  at  the  end  of '
+p412
+aF1.9850000000000136
+aF699.338
+aa(lp413
+S' the  experiment.   Here  are  some  examples:  First, '
+p414
+aF4.25
+aF703.588
+aa(lp415
+S' a  regular  example.   If  the  random  period  is '
+p416
+aF4.633000000000038
+aF708.221
+aa(lp417
+S' period  14  of  match  number  4,   then  the  block '
+p418
+aF2.8980000000000246
+aF711.119
+aa(lp419
+S' will  contain  periods  14  through  43  of  match '
+p420
+aF3.1689999999999827
+aF714.288
+aa(lp421
+S' number  4.  Next,  and  example  that  spans  multiple '
+p422
+aF4.265999999999963
+aF718.554
+aa(lp423
+S' matches.   If  match  number  2  has  100  periods, '
+p424
+aF4.2000000000000455
+aF722.754
+aa(lp425
+S' and  the  randomly  selected  period  is  period  91 '
+p426
+aF3.63900000000001
+aF726.393
+aa(lp427
+S' of  match  number  2,   then  the  block  will  contain '
+p428
+aF2.4939999999999145
+aF728.887
+aa(lp429
+S' periods  91  through  100  of  match  number  2,  and '
+p430
+aF3.6060000000001082
+aF732.493
+aa(lp431
+S' periods  1  through  20  of  match  number  3.  Finally, '
+p432
+aF4.0779999999999745
+aF736.571
+aa(lp433
+S' an  example  that  loops  around  to  the  beginning. '
+p434
+aF2.7060000000000173
+aF739.277
+aa(lp435
+S'  If  match  number  5  has  85  periods,  and  the '
+p436
+aF4.814999999999941
+aF744.092
+aa(lp437
+S' randomly  selected  period  is  period  81  of  match '
+p438
+aF3.4850000000000136
+aF747.577
+aa(lp439
+S' number  5,   then  the  block  will  contain  periods '
+p440
+aF2.2590000000000146
+aF749.836
+aa(lp441
+S' 81  through  85  of  match  number  5,  and  periods '
+p442
+aF3.7549999999999955
+aF753.591
+aa(lp443
+S' 1  through  25  of  match  number  1. '
+p444
+aF3.716000000000008
+aF757.307
+aa.

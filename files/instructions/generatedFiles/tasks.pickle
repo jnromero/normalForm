@@ -1,0 +1,642 @@
+(lp0
+(lp1
+S'clearAllInstructions'
+p2
+aF0.007
+aI0
+aa(lp3
+S'partial(changeBackgroundColor,"rgba(0,0,255,.1)")'
+p4
+aF0.0
+aF0.007
+aa(lp5
+S'partial(placeText,"welcome1","Welcome To",150,300,"rgba(0,0,0,1)",2,"center","0px")'
+p6
+aF0.5559999999999999
+aF0.007
+aa(lp7
+S'partial(placeText,"test2","The Economic Science",625,300,"rgba(0,0,0,1)",4,"center","0px")'
+p8
+aF0.18600000000000005
+aF0.563
+aa(lp9
+S'partial(placeText,"test22","Laboratory",700,300,"rgba(0,0,0,1)",6,"center","0px")'
+p10
+aF1.112
+aF0.749
+aa(lp11
+S'drawLogoESL'
+p12
+aF9.857999999999999
+aF1.861
+aa(lp13
+S'clearAll'
+p14
+aF0.0
+aF11.719
+aa(lp15
+S'partial(changeBackgroundColor,"rgba(0,255,0,.1)")'
+p16
+aF0.0
+aF11.719
+aa(lp17
+S'partial(placeText,"overview1","Welcome",50,400,"rgba(0,100,0,1)",1,"center","0px")'
+p18
+aF3.021000000000001
+aF11.719
+aa(lp19
+S'partial(placeText,"overview2","Economics Experiment.",200,300,"rgba(0,0,0,1)",2,"center","0px")'
+p20
+aF5.363000000000001
+aF14.74
+aa(lp21
+S'partial(placeText,"overview3","Will get paid in cash at the end of the experiment.",350,300,"rgba(0,0,0,1)",2,"center","0px")'
+p22
+aF8.552
+aF20.103
+aa(lp23
+S'partial(placeText,"overview4","Please remain silent.",500,300,"rgba(0,0,0,1)",2,"center","0px")'
+p24
+aF8.082999999999998
+aF28.655
+aa(lp25
+S'partial(placeText,"overview5","Please raise your hand for help.",650,300,"rgba(0,0,0,1)",2,"center","0px")'
+p26
+aF4.131
+aF36.738
+aa(lp27
+S'clearAll'
+p28
+aF0.0
+aF40.869
+aa(lp29
+S'partial(changeBackgroundColor,"rgba(255,0,0,.1)")'
+p30
+aF0.0
+aF40.869
+aa(lp31
+S'partial(placeText,"overview1","Welcome",50,400,"rgba(100,0,0,1)",0,"center","0px")'
+p32
+aF1.5080000000000027
+aF40.869
+aa(lp33
+S'partial(placeText,"overview2","Do not talk, laugh or exclaim out loud.",200,300,"rgba(0,0,0,1)",2,"center","0px")'
+p34
+aF3.283999999999999
+aF42.377
+aa(lp35
+S'partial(placeText,"overview3","Keep your eyes on your screen only.",350,300,"rgba(0,0,0,1)",2,"center","0px")'
+p36
+aF4.042000000000002
+aF45.661
+aa(lp37
+S'partial(placeText,"overview4","Turn off cell phones, etc. and put them away.",500,300,"rgba(0,0,0,1)",2,"center","0px")'
+p38
+aF12.043999999999997
+aF49.703
+aa(lp39
+S'partial(placeText,"overview5","We appreciate your cooperation.",650,300,"rgba(0,0,0,1)",2,"center","0px")'
+p40
+aF4.275000000000006
+aF61.747
+aa(lp41
+S'clearAll'
+p42
+aF0.0
+aF66.022
+aa(lp43
+S'partial(changeBackgroundColor,"rgba(0,0,255,.1)")'
+p44
+aF0.0
+aF66.022
+aa(lp45
+S'partial(placeText,"overview1","Agenda",50,400,"rgba(0,0,100,1)",1,"center","0px")'
+p46
+aF1.2459999999999951
+aF66.022
+aa(lp47
+S'partial(placeText,"overview2","1. Instructions",150,300,"rgba(0,0,0,1)",2,"left","200px")'
+p48
+aF4.2690000000000055
+aF67.268
+aa(lp49
+S'partial(placeText,"overview3","2. Quiz",275,300,"rgba(0,0,0,1)",2,"left","200px")'
+p50
+aF17.236999999999995
+aF71.537
+aa(lp51
+S'partial(placeText,"overview4","3. Experiment",400,300,"rgba(0,0,0,1)",2,"left","200px")'
+p52
+aF4.1569999999999965
+aF88.774
+aa(lp53
+S'partial(placeText,"overview5","4. Three Additional Tasks",525,300,"rgba(0,0,0,1)",2,"left","200px")'
+p54
+aF4.942999999999998
+aF92.931
+aa(lp55
+S'partial(placeText,"overview6","5. Survey",650,300,"rgba(0,0,0,1)",2,"left","200px")'
+p56
+aF11.233000000000004
+aF97.874
+aa(lp57
+S'partial(placeText,"overview7","6. Payment",775,300,"rgba(0,0,0,1)",2,"left","200px")'
+p58
+aF9.570000000000007
+aF109.107
+aa(lp59
+S'clearAll'
+p60
+aF0.0
+aF118.677
+aa(lp61
+S'partial(changeBackgroundColor,"rgba(255,0,0,.1)")'
+p62
+aF0.0
+aF118.677
+aa(lp63
+S'partial(placeText,"overview1","Experiment Overview",50,400,"rgba(100,0,0,1)",1,"center","0px")'
+p64
+aF4.244
+aF118.677
+aa(lp65
+S'partial(placeText,"overview2","Matched in pairs",200,300,"rgba(0,0,0,1)",2,"center","0px")'
+p66
+aF5.33799999999998
+aF122.921
+aa(lp67
+S'partial(placeText,"overview3","Your choice affects your payoff",350,300,"rgba(0,0,0,1)",2,"center","0px")'
+p68
+aF1.997000000000014
+aF128.259
+aa(lp69
+S'partial(placeText,"overview4","Your choice affects their payoff",500,300,"rgba(0,0,0,1)",2,"center","0px")'
+p70
+aF7.195999999999998
+aF130.256
+aa(lp71
+S'partial(placeText,"overview5","Their choice affects your payoff",650,300,"rgba(0,0,0,1)",2,"center","0px")'
+p72
+aF3.4890000000000043
+aF137.452
+aa(lp73
+S'clearAll'
+p74
+aF0.0
+aF140.941
+aa(lp75
+S'partial(changeBackgroundColor,"rgba(0,255,0,.1)")'
+p76
+aF0.0
+aF140.941
+aa(lp77
+S'partial(placeText,"overview1","Experiment Details",50,400,"rgba(0,100,0,1)",1,"center","0px")'
+p78
+aF12.552999999999997
+aF140.941
+aa(lp79
+S'partial(placeText,"overview2","Exchange Rate: 20 Francs = $1",175,300,"rgba(0,0,0,1)",2,"center","0px")'
+p80
+aF6.598000000000013
+aF153.494
+aa(lp81
+S'partial(placeText,"overview3","5 Matches (may have different # of periods)",300,300,"rgba(0,0,0,1)",2,"center","0px")'
+p82
+aF8.220999999999975
+aF160.092
+aa(lp83
+S'partial(placeText,"overview4","At beginning of each match, randomly matched with another subject",425,300,"rgba(0,0,0,1)",2,"center","0px")'
+p84
+aF15.733000000000004
+aF168.313
+aa(lp85
+S'partial(placeText,"overview5","Your identity is anonymous",550,300,"rgba(0,0,0,1)",2,"center","0px")'
+p86
+aF21.087000000000018
+aF184.046
+aa(lp87
+S'partial(placeText,"overview6","Matched with same subject for entire match",675,300,"rgba(0,0,0,1)",2,"center","0px")'
+p88
+aF14.087999999999994
+aF205.133
+aa(lp89
+S'partial(placeText,"overview7","Randomly matched with another subject (anonymous)",800,300,"rgba(0,0,0,1)",2,"center","0px")'
+p90
+aF7.075999999999993
+aF219.221
+aa(lp91
+S'clearAll'
+p92
+aF0.0
+aF226.297
+aa(lp93
+S"partial(runServerFunction,['initializeInstructionsInterface'])"
+p94
+aF0.0
+aF226.297
+aa(lp95
+S'nextPeriod'
+p96
+aF0.0
+aF226.297
+aa(lp97
+S'drawCursorOverlay'
+p98
+aF12.549000000000007
+aF226.297
+aa(lp99
+S'partial(placeCursor,500,500)'
+p100
+aF0.0
+aF238.846
+aa(lp101
+S'toggleOverlay'
+p102
+aF0.0
+aF238.846
+aa(lp103
+S'partial(growDiv,"gameDiv",.9,"top left",.5)'
+p104
+aF8.224999999999994
+aF238.846
+aa(lp105
+S'partial(startMouseSequence,[["moveToDiv",500,"gameTableRowLabel_1"]],0)'
+p106
+aF0.9509999999999934
+aF247.071
+aa(lp107
+S'partial(startMouseSequence,[["moveToDiv",500,"gameTableRowLabel_2"]],0)'
+p108
+aF5.3440000000000225
+aF248.022
+aa(lp109
+S'partial(startMouseSequence,[["moveToDiv",500,"gameTableColLabel_1"]],0)'
+p110
+aF0.900999999999982
+aF253.366
+aa(lp111
+S'partial(startMouseSequence,[["moveToDiv",500,"gameTableColLabel_2"]],0)'
+p112
+aF15.935999999999979
+aF254.267
+aa(lp113
+S'partial(startMouseSequence,[["moveToDiv",500,"gameTableRowLabel_2"]],0)'
+p114
+aF2.7070000000000505
+aF270.203
+aa(lp115
+S'partial(startMouseSequence,[["moveToDiv",500,"gameTableColLabel_1"]],0)'
+p116
+aF0.8489999999999895
+aF272.91
+aa(lp117
+S'partial(startMouseSequence,[["moveToDiv",400,"gameTableEntry_2_1"]],0)'
+p118
+aF1.968999999999994
+aF273.759
+aa(lp119
+S'partial(growDiv,"gameDiv",.9,"top left",.5)'
+p120
+aF19.567999999999984
+aF275.728
+aa(lp121
+S'partial(growDiv,"questionsDiv",1.2,"top right",.5)'
+p122
+aF0.0
+aF295.296
+aa(lp123
+S'partial(startMouseSequence,[["moveToDiv",400,"periodSummaryLabel"]],0)'
+p124
+aF0.0
+aF295.296
+aa(lp125
+S'partial(startMouseSequence,[["moveToDiv",400,"summaryLabel"]],0)'
+p126
+aF6.557000000000016
+aF295.296
+aa(lp127
+S'partial(growDiv,"questionsDiv",1.2,"top right",.5)'
+p128
+aF6.100999999999999
+aF301.853
+aa(lp129
+S'partial(growDiv,"historyDiv",1,"bottom center",.5)'
+p130
+aF0.0
+aF307.954
+aa(lp131
+S'partial(growDiv,"historyLabels",1,"bottom center",.5)'
+p132
+aF0.0
+aF307.954
+aa(lp133
+S'partial(startMouseSequence,[["moveToDiv",400,"historyDiv"]],0)'
+p134
+aF0.0
+aF307.954
+aa(lp135
+S'partial(growDiv,"historyDiv",1,"bottom center",.5)'
+p136
+aF7.007999999999981
+aF307.954
+aa(lp137
+S'partial(growDiv,"historyLabels",1,"bottom center",.5)'
+p138
+aF0.0
+aF314.962
+aa(lp139
+S'partial(growDiv,"statusBar",1,"bottom center",.5)'
+p140
+aF0.0
+aF314.962
+aa(lp141
+S'partial(startMouseSequence,[["moveToDiv",400,"statusBar"]],0)'
+p142
+aF0.0
+aF314.962
+aa(lp143
+S'toggleOverlay'
+p144
+aF11.028999999999996
+aF314.962
+aa(lp145
+S'partial(startMouseSequence,[["moveToDiv",400,"gameTableRowLabel_1"],["click",400,partial(runServerFunction,[\'instructionsSelectRow1\'])]],0)'
+p146
+aF0.0
+aF325.991
+aa(lp147
+S'partial(startMouseSequence,[["moveToDiv",400,"summaryMyChoiceEntry"]],0)'
+p148
+aF32.007000000000005
+aF325.991
+aa(lp149
+S'partial(startMouseSequence,[["moveToDiv",400,"gameTableColLabel_2"],["click",400,partial(runServerFunction,[\'instructionsSelectCol1\'])]],0)'
+p150
+aF6.228999999999985
+aF357.998
+aa(lp151
+S'partial(startMouseSequence,[["moveToDiv",400,"summaryOthersChoiceEntryGuess"]],0)'
+p152
+aF14.393000000000029
+aF364.227
+aa(lp153
+S'partial(startMouseSequence,[["moveToDiv",400,"statusBar"]],0)'
+p154
+aF6.163000000000011
+aF378.62
+aa(lp155
+S"partial(runServerFunction,['instructionsFinishPeriod'])"
+p156
+aF27.128999999999962
+aF384.783
+aa(lp157
+S'partial(finishPeriod,4)'
+p158
+aF21.31600000000003
+aF411.912
+aa(lp159
+S'partial(startMouseSequence,[["moveToDiv",400,"selectedColumnDiv2"]],0)'
+p160
+aF17.221000000000004
+aF433.228
+aa(lp161
+S'partial(startMouseSequence,[["moveToDiv",400,"gameTableEntry_1_1"]],0)'
+p162
+aF11.890999999999963
+aF450.449
+aa(lp163
+S'partial(startMouseSequence,[["moveToDiv",400,"summaryOthersChoiceEntryActual"]],0)'
+p164
+aF26.18300000000005
+aF462.34
+aa(lp165
+S'partial(startMouseSequence,[["moveToDiv",400,"summaryPayoffs"]],0)'
+p166
+aF2.217999999999961
+aF488.523
+aa(lp167
+S'partial(startMouseSequence,[["moveToDiv",400,"historyEntry_20_0"]],0)'
+p168
+aF5.3559999999999945
+aF490.741
+aa(lp169
+S'partial(startMouseSequence,[["moveToDiv",400,"summaryLabel"]],0)'
+p170
+aF4.366000000000042
+aF496.097
+aa(lp171
+S'partial(startMouseSequence,[["moveToDiv",400,"totalPayoffMineLabel"]],0)'
+p172
+aF2.6259999999999764
+aF500.463
+aa(lp173
+S'partial(startMouseSequence,[["moveToDiv",400,"correctGuessesLabel"]],0)'
+p174
+aF2.8870000000000005
+aF503.089
+aa(lp175
+S'partial(startMouseSequence,[["moveToDiv",400,"gameTableEntry_1_1"]],0)'
+p176
+aF5.9529999999999745
+aF505.976
+aa(lp177
+S'partial(startMouseSequence,[["click",400,partial(runServerFunction,[\'instructionsMovetoNextPeriod\'])]],0)'
+p178
+aF6.593000000000075
+aF511.929
+aa(lp179
+S'partial(deleteDiv,"cursorOverlay")'
+p180
+aF4.8559999999999945
+aF518.522
+aa(lp181
+S'clearAll'
+p182
+aF0.0
+aF523.378
+aa(lp183
+S'partial(changeBackgroundColor,"rgba(0,255,0,.1)")'
+p184
+aF0.0
+aF523.378
+aa(lp185
+S'partial(placeText,"overview1","Number of Periods Per Match",50,400,"rgba(0,100,0,1)",1,"center","0px")'
+p186
+aF9.93999999999994
+aF523.378
+aa(lp187
+S'partial(placeText,"overview2","Each Period 1 Number drawn from set",150,300,"rgba(0,0,0,1)",1,"center","0px")'
+p188
+aF3.2129999999999654
+aF533.318
+aa(lp189
+S'partial(placeText,"overview3","{1,2,3,...,98,99,100} (and replaced).",250,300,"rgba(0,0,0,1)",1,"center","0px")'
+p190
+aF9.42100000000005
+aF536.531
+aa(lp191
+S'partial(placeText,"overview4","If Number is 1 - The match ends.",350,300,"rgba(0,0,0,1)",1,"center","0px")'
+p192
+aF3.9279999999999973
+aF545.952
+aa(lp193
+S'partial(placeText,"overview5","If Number is not 1 - There match will continue.",450,300,"rgba(0,0,0,1)",1,"center","0px")'
+p194
+aF19.239000000000033
+aF549.88
+aa(lp195
+S'partial(placeText,"overview6","Expected number of periods is 100 (but may be different).",550,300,"rgba(0,0,0,1)",1,"center","0px")'
+p196
+aF4.499000000000024
+aF569.119
+aa(lp197
+S'partial(placeText,"overview7","This procedure has been performed on the computer,",650,300,"rgba(0,0,0,1)",1,"center","0px")'
+p198
+aF0.0
+aF573.618
+aa(lp199
+S'partial(placeText,"overview8","before the experiment.",725,300,"rgba(0,0,0,1)",1,"center","0px")'
+p200
+aF27.209999999999923
+aF573.618
+aa(lp201
+S'clearAll'
+p202
+aF0.0
+aF600.828
+aa(lp203
+S'partial(changeBackgroundColor,"rgba(255,0,0,.1)")'
+p204
+aF0.0
+aF600.828
+aa(lp205
+S'partial(placeText,"overview1","Payoffs",50,400,"rgba(100,0,0,1)",1,"center","0px")'
+p206
+aF1.245999999999981
+aF600.828
+aa(lp207
+S'partial(placeText,"overview2","Your payment will contain the following:",150,300,"rgba(0,0,0,1)",2,"left","200px")'
+p208
+aF4.062000000000012
+aF602.074
+aa(lp209
+S'partial(placeText,"overview3","1. $5 Show up fee",250,300,"rgba(0,0,0,1)",2,"left","250px")'
+p210
+aF5.105000000000018
+aF606.136
+aa(lp211
+S'partial(placeText,"overview4","2. Payment from randomly selected block of 30 periods",350,300,"rgba(0,0,0,1)",2,"left","250px")'
+p212
+aF6.675000000000068
+aF611.241
+aa(lp213
+S'partial(placeText,"overview5","3. Bonus payment for raffle tickets",450,300,"rgba(0,0,0,1)",2,"left","250px")'
+p214
+aF9.451999999999998
+aF617.916
+aa(lp215
+S'partial(placeText,"overview6","4. Payment for Three Additional Tasks",550,300,"rgba(0,0,0,1)",2,"left","250px")'
+p216
+aF8.488999999999919
+aF627.368
+aa(lp217
+S'partial(placeText,"overview7","Francs converted to dollars at the end.",650,300,"rgba(0,0,0,1)",2,"left","200px")'
+p218
+aF4.119000000000028
+aF635.857
+aa(lp219
+S'partial(placeText,"overview8","Paid in cash, in private.",750,300,"rgba(0,0,0,1)",2,"left","200px")'
+p220
+aF2.669999999999959
+aF639.976
+aa(lp221
+S'clearAll'
+p222
+aF0.0
+aF642.646
+aa(lp223
+S'partial(changeBackgroundColor,"rgba(0,0,255,.1)")'
+p224
+aF0.0
+aF642.646
+aa(lp225
+S'partial(placeText,"overview1","Random Block of 30 Periods",50,400,"rgba(0,0,100,1)",1,"center","0px")'
+p226
+aF4.743000000000052
+aF642.646
+aa(lp227
+S'partial(placeText,"overview2","Randomly select 1 period",200,300,"rgba(0,0,0,1)",2,"center","0px")'
+p228
+aF4.70799999999997
+aF647.389
+aa(lp229
+S'partial(placeText,"overview3","Block contains that period, and following 29",300,300,"rgba(0,0,0,1)",2,"center","0px")'
+p230
+aF6.226999999999975
+aF652.097
+aa(lp231
+S'partial(placeText,"overview4","Block can span multiple matches.",400,300,"rgba(0,0,0,1)",2,"center","0px")'
+p232
+aF4.352000000000089
+aF658.324
+aa(lp233
+S'partial(placeText,"overview5","If period is at end, then block loops to 1st period.",500,300,"rgba(0,0,0,1)",2,"center","0px")'
+p234
+aF11.333999999999946
+aF662.676
+aa(lp235
+S'partial(placeText,"overview6","Each period equally likely to be paid.",600,300,"rgba(0,0,0,1)",2,"center","0px")'
+p236
+aF12.774000000000001
+aF674.01
+aa(lp237
+S'partial(placeText,"overview7","Random period pre-selected, written on board.",700,300,"rgba(0,0,0,1)",2,"center","0px")'
+p238
+aF14.682000000000016
+aF686.784
+aa(lp239
+S'clearAll'
+p240
+aF0.0
+aF701.466
+aa(lp241
+S'partial(changeBackgroundColor,"rgba(255,0,0,.1)")'
+p242
+aF0.0
+aF701.466
+aa(lp243
+S'partial(placeText,"overview1","Random Block of 30 Periods: Examples",50,400,"rgba(100,0,0,1)",1,"center","0px")'
+p244
+aF5.317999999999984
+aF701.466
+aa(lp245
+S'partial(placeText,"overview2","Randomly selected period: Match #4 Period #14",200,300,"rgba(0,0,0,1)",2,"left","200px")'
+p246
+aF3.882000000000062
+aF706.784
+aa(lp247
+S'partial(placeText,"overview3","Block: Match #4 P14-P43",300,300,"rgba(0,0,0,1)",2,"left","200px")'
+p248
+aF10.237999999999943
+aF710.666
+aa(lp249
+S'partial(placeText,"overview4","Randomly selected period: Match #2 Period #91",450,300,"rgba(0,0,0,1)",2,"left","200px")'
+p250
+aF7.178999999999974
+aF720.904
+aa(lp251
+S'partial(placeText,"overview5","Block: Match #2 P91-P100 and Match #3 P1-P20",550,300,"rgba(0,0,0,1)",2,"left","200px")'
+p252
+aF12.926000000000045
+aF728.083
+aa(lp253
+S'partial(placeText,"overview6","Randomly selected period: Match #5 Period #81",700,300,"rgba(0,0,0,1)",2,"left","200px")'
+p254
+aF7.52699999999993
+aF741.009
+aa(lp255
+S'partial(placeText,"overview7","Block: Match #5 P81-P85 and Match #1 P1-P25",800,300,"rgba(0,0,0,1)",2,"left","200px")'
+p256
+aI-1
+aF748.536
+aa.

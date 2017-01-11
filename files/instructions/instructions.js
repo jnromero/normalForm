@@ -16,7 +16,9 @@ function setInstructionParameters(){
     	'myMatchPay': 180, 
     	'myTotalPay': 470, 
     	'theirMatchPay': 190, 
-    	'stage': 'noChoices', 
+        'stage': 'noChoices', 
+        'rowSelected': 'No', 
+        'colSelected': 'No', 
     	'page': 'game', 
     	'match': 2, 
     	'history': [[2, 1], [1, 1], [1, 1], [1, 2], [2, 1], [1, 2], [2, 2], [1, 2], [1, 1], [1, 1], [1, 1], [1, 1], [2, 2], [2, 2], [1, 2], [1, 1], [1, 2], [2, 1], [2, 2]]
@@ -41,6 +43,7 @@ function nextPeriod(){
 
 
 function finishPeriodInstructions(){
+    console.log("finishPeriodInstructions")
 	window.state["history"].push([1,1]);
 	window.state["othersChoice"]=1;
 	window.state["theirMatchPay"]=191;
@@ -52,15 +55,14 @@ function finishPeriodInstructions(){
 }
 
 function selectRowInstructions1(){
-	window.state["row"]=1;
-	window.state["stage"]="rowSelected";
+	window.state["rowSelected"]=1;
+    console.log(window.state);
 	updateStatusOnServer();
 	//statusManager();
 }
 
 function selectColInstructions1(){
-	window.state["col"]=2;
-	window.state["stage"]="bothSelected";
+	window.state["colSelected"]=2;
 	updateStatusOnServer();
 	//statusManager();
 }
@@ -68,6 +70,8 @@ function selectColInstructions1(){
 function moveToNextPeriodInstructions(){
 	window.state["period"]=window.state["period"]+1;
 	window.state["stage"]="noChoices";
+    window.state["colSelected"]="No";
+    window.state["rowSelected"]="No";
 	updateStatusOnServer();
 	//statusManager();
 }

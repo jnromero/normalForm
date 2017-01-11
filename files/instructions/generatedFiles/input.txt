@@ -1,0 +1,124 @@
+
+		[[2]] Welcome to [[1]] the [[1]] Economic Science [[1]] Laboratory. [[slnc 1000]] [[slnc 250]]
+
+		Please carefully watch these video instructions and follow along on the paper copy at your desk. [[slnc 1000]] [[slnc 500]]
+
+		 
+
+ [[slnc 500]] [[3]] Welcome [[slnc 500]] 
+ You are about to participate in an [[1]] experiment in the economics of decision-making. [[slnc 1000]] If you listen carefully, [[1]] you could earn a large amount of money, that will be paid to you in cash, in private, at the end of the experiment. [[slnc 1000]] 
+ 
+ It is important [[1]] that you remain silent, and do not look at other people's work. [[slnc 1000]] If you have any questions, or need any assistance of any kind, [[1]] please raise your hand and an experimenter will help you out. [[slnc 1000]] [[3]] During the experiment, [[1]] do not talk, laugh or exclaim out loud and be sure to [[1]] keep your eyes on your screen only. [[slnc 1000]] In addition, [[1]] please turn off your cell phones, etc. [[slnc 1000]] and put them away during the experiment. [[slnc 1000]] Anybody that violates these rules will be asked to leave and will not be paid. [[slnc 1000]] [[1]] We expect, and appreciate your cooperation. [[slnc 1000]] 
+
+ [[slnc 500]] [[3]] Agenda [[slnc 500]] 
+ 
+ [[1]] 
+1. [[slnc 1000]] [[slnc 500]] Instructions. [[slnc 1000]] [[1]] 
+2. [[slnc 1000]] [[slnc 500]] Quiz [[slnc 500]] (to make sure everyone understands the instructions) [[slnc 500]]. [[slnc 1000]] The quiz will consist of 12 questions. [[slnc 1000]] The experiment will not begin until everyone has correctly answered all questions. [[slnc 1000]] [[1]] 
+3. [[slnc 1000]] [[slnc 500]] Experiment. [[slnc 1000]] [[1]] 
+4. [[slnc 1000]] [[slnc 500]] Three additional tasks. [[slnc 1000]] [[1]] 
+5. [[slnc 1000]] [[slnc 500]] Survey. [[slnc 1000]] After you have completed the experiment, you will be asked to answer several survey questions using the computer. [[slnc 1000]] [[1]] 
+6. [[slnc 1000]] [[slnc 500]] Payment. [[slnc 1000]] After everyone has finished the survey, you will be paid in cash. [[slnc 1000]] 
+ 
+
+ [[slnc 500]] [[3]] Experiment Overview [[slnc 500]] 
+ In the experiment today you will be [[1]] matched into pairs, and will be asked to make choices. [[slnc 1000]] The choices made by you may [[1]] affect both your payoff, as well as [[1]] the payoff of the subject that you are matched with. [[slnc 1000]] Similarly, the choices of the subject that you are matched with may [[1]] affect their payoff and your payoff. [[slnc 1000]] 
+
+ [[slnc 500]] [[3]] Experiment Details [[slnc 500]] 
+ 
+ 
+In the experiment today, you will be working with a fictitious currency called Francs. [[slnc 1000]] You will be paid in US Dollars at the end of the experiment. [[slnc 1000]] 
+ [[1]] Exchange rate : [[slnc 500]] 20 Francs equals 1 dollar. [[slnc 1000]] 
+ 
+ This experiment consists of [[1]] five matches, each of which may have a different number of periods, and may have different payoffs. [[slnc 1000]] 
+At the beginning of each match, [[1]] you will be matched with one other subject that you have not been matched with before. [[slnc 1000]] The random pairing will ensure that if you have been paired with another participant before, then you will never be paired with this same participant in another match again. [[slnc 1000]] 
+You will remain [[1]] anonymous throughout the experiment. [[slnc 1000]] You will not know the identity of the subject that you are matched with, and the subject that you are matched with will not know your identity. [[slnc 1000]] 
+The choices made by you, and the subject that you are matched with, have no effect on the payoffs of other pairs of subjects, and vice versa. [[slnc 1000]] 
+You will remain matched with this [[1]] same subject until the end of the match. [[slnc 1000]] 
+After you and the subject that you are matched with have finished the match, please wait quietly for all pairs to finish their match. [[slnc 1000]] 
+Once all pairs have finished their match, you will be [[1]] randomly rematched with another subject that you have not been matched with yet, and the next match will begin. [[slnc 1000]] 
+ 
+
+ [[slnc 500]] [[4]] Experimental Interface [[slnc 500]] 
+ 
+ 
+Next, we will go over the experimental interface. [[slnc 1000]] The experimental interface consists of five components: [[slnc 500]] 
+ 
+1. [[slnc 1000]] [[slnc 500]] [[3]] The payoff table is displayed at the top left of the screen. [[slnc 1000]] The payoff table has your choices [[slnc 500]] (the rows, [[1]] U, and [[1]] D) [[slnc 500]], and the choices of the subject that you are matched with [[slnc 500]] (the columns, [[1]] L, and [[1]] R) [[slnc 500]]. [[slnc 1000]] For any combination of choices for you and the subject that you are matched with, there is a payoff. [[slnc 1000]] Your payoff is on the left, and the payoff for the subject that you are matched with is on the right. [[slnc 1000]] For example, if you [[1]] choose D, and the subject that you are matched with [[1]] chooses L, [[1]] then your payoff is 6, and [[1]] the payoff for the subject that you are matched with is 3. [[slnc 1000]] The payoff table in the experiment today will be different than the one displayed here. [[slnc 1000]] In addition, the payoffs will remain the same for all periods in a single match, but may change in different matches. [[slnc 1000]] 
+2. [[slnc 1000]] [[slnc 500]] [[3]] The summary of the current period is shown in the top right. [[slnc 1000]] 
+3. [[slnc 1000]] [[slnc 500]] [[1]] The summary of all periods is shown below that. [[slnc 1000]] 
+4. [[slnc 1000]] [[slnc 500]] [[4]] The history of play is displayed in the bottom half of the screen. [[slnc 1000]] 
+5. [[slnc 1000]] [[slnc 500]] [[4]] Finally, the current status is displayed across the middle of the screen. [[slnc 1000]] The current status tells you what to do at any point during the experiment. [[slnc 1000]] 
+ 
+ 
+
+ [[slnc 500]] [[2]] Specific Instructions for Each Period [[slnc 500]] 
+ 
+ 
+At any point during a period, you will see one of three status messages: [[slnc 500]] 
+ Status #1: [[slnc 500]] Please select My Choice [[slnc 500]] (U,D) [[slnc 500]] and your guess for Other's Choice [[slnc 500]] (L,R) [[slnc 500]]. [[slnc 1000]] 
+ 
+When you see this status message, you need to do two things. [[slnc 1000]] 
+ 
+1. [[slnc 1000]] [[slnc 500]] Select a row for your choice [[slnc 500]] (in this example either U, or D) [[slnc 500]]. [[slnc 1000]] [[1]] Once you have selected a row, it will be outlined, and the label 'My Choice' will be added. [[slnc 1000]] [[1]] My choice will also be updated on the period summary. [[slnc 1000]] 
+2. [[slnc 1000]] [[slnc 500]] Select the column that you think the subject that you are matched with will select [[slnc 500]] (in this example either L, or R) [[slnc 500]]. [[slnc 1000]] [[1]] Once you have selected a column, it will be outlined, and the label 'My Guess' will be added. [[slnc 1000]] [[1]] My guess will also be updated on the period summary. [[slnc 1000]] If you correctly guess the choice of the subject that you are matched with in a given period, then you will earn a raffle ticket. [[slnc 1000]] At the end of the experiment, one raffle ticket will be randomly selected, and the winner will receive a bonus of 5 dollars. [[slnc 1000]] Therefore, the more correct guesses you make, the more likely you are to win the 5 dollars bonus. [[slnc 1000]] 
+ 
+ 
+ [[1]] Status #2: [[slnc 500]] Please wait for the other subject to finish making their choices. [[slnc 1000]] 
+ 
+When you see this status message, please wait patiently for the subject that you are matched with to finish making their choices. [[slnc 1000]] 
+If the other subject makes their choices before you in a specific period, you might not see this status. [[slnc 1000]] 
+ 
+ [[1]] Status #3: [[slnc 500]] Click on the payoffs for this period [[slnc 500]] (in green) [[slnc 500]] in the game table to move to next period. [[slnc 1000]] 
+ 
+When you see this status message, all choices for the period have been made, and you can view the final results. [[slnc 1000]] 
+ [[1]] The column selected by the subject that you are matched with is highlighted and labeled 'Other's Choice'. [[slnc 1000]] If your guess about their choice was correct, then the column will be highlighted in yellow. [[slnc 1000]] 
+ [[1]] The entry of the payoff table that is at the intersection of the row that you selected, and the column that the subject that you are matched with selected, is highlighted in green. [[slnc 1000]] 
+This entry displays the payoffs for the current period. [[slnc 1000]] Your payoff for the period is displayed on the left, and the payoff of the subject that you are matched with is displayed on the right. [[slnc 1000]] 
+At this point, the period summary has been updated to include [[1]] the choice of the subject that you are matched with, [[1]] and the current payoffs for this period. [[slnc 1000]] These choices have also been added to the [[1]] history of play at the bottom of the screen. [[slnc 1000]] 
+ Finally, [[1]] the overall summary has been updated to include [[1]] the total payoffs including this period, as well as [[1]] the number of correct guesses you have made about the choice of the subject that you are matched with. [[slnc 1000]] 
+ [[1]] To move on to the next period, you need to click the payoffs for this period in the game table, which have been highlighted in [[1]] green. [[slnc 1000]] [[slnc 3000]] 
+ 
+ 
+
+ [[slnc 500]] [[3]] Number of Periods Per Match [[slnc 500]] 
+ 
+ 
+The number of periods in each match will be determined randomly using the following procedure. [[slnc 1000]] 
+ 
+At the end of each period, [[1]] a number will be chosen randomly from the set of numbers [[1]] {1,2,3, up to, 98, 99, 100}, where each number is equally likely. [[slnc 1000]] 
+ [[1]] If the number is 1, then the match will end. [[slnc 1000]] 
+ [[1]] If the number is not 1, then the match will continue. [[slnc 1000]] 
+The number will always be placed back into the set after it is drawn. [[slnc 1000]] 
+Thus, in any period there is a 1 percent CHANCE that the match will end, and a 99 percent CHANCE that the match will have another period. [[slnc 1000]] 
+Therefore, [[1]] the expected number of periods in each match will be 100. [[slnc 1000]] 
+ [[2]] This procedure has been performed on the computer before the experiment. [[slnc 1000]] Therefore, you will not see the number selected from {1,2,3, up to, 98, 99, 100}. [[slnc 1000]] 
+To ensure that the length of the match is not dependent on your play, the number of periods for each match has been written on the board before the experiment, and will be uncovered at the end of the experiment. [[slnc 1000]] 
+ 
+ 
+
+ [[slnc 500]] [[3]] Payoffs [[slnc 500]] 
+ 
+ 
+ [[1]] Your payment at the end of the experiment will contain the following: [[slnc 500]] 
+ [[1]] 
+1. [[slnc 1000]] [[slnc 500]] The 5 dollars show up fee. [[slnc 1000]] [[1]] 
+2. [[slnc 1000]] [[slnc 500]] Payment for a randomly selected block of 30 periods. [[slnc 1000]] [[1]] 
+3. [[slnc 1000]] [[slnc 500]] A bonus payment of 5 dollars if one of your raffle tickets is randomly selected at the end of the experiment. [[slnc 1000]] [[1]] 
+4. [[slnc 1000]] [[slnc 500]] Payment for the additional tasks after the main experiment. [[slnc 1000]] 
+ 
+At the end of the experiment, [[1]] your earnings in Francs will be converted into US Dollars and you will be [[1]] paid in cash, in private. [[slnc 1000]] 
+ [[3]] The randomly selected block of 30 periods will be determined as follows: [[slnc 500]] 
+ 
+ [[1]] One period from the experiment will be selected at random. [[slnc 1000]] 
+ [[1]] The block of 30 periods will contain this period, and the following 29 periods. [[slnc 1000]] 
+ [[1]] The block of 30 periods may span multiple matches. [[slnc 1000]] 
+ [[1]] If the randomly selected period is one of the last 29 periods of the experiment, then the block will loop around to the first period of the experiment, and continue from there. [[slnc 1000]] 
+ [[1]] Therefore, the chance of getting paid in every period of the experiment is the same. [[slnc 1000]] Each choice you make is therefore important because it has a chance of determining the amount of money you earn. [[slnc 1000]] 
+ [[1]] The randomly selected period has been drawn before the experiment. [[slnc 1000]] 
+To ensure that the randomly selected period is not dependent on your choices, it has been written on the board, and will be uncovered at the end of the experiment. [[slnc 1000]] 
+ [[3]] Here are some examples: [[slnc 500]] 
+ 
+First, a regular example. [[slnc 1000]] [[1]] If the random period is period 14 of match number 4, [[1]] then the block will contain periods 14 through 43 of match number 4. [[slnc 1000]] 
+Next, and example that spans multiple matches. [[slnc 1000]] [[1]] If match number 2 has 100 periods, and the randomly selected period is period 91 of match number 2, [[1]] then the block will contain periods 91 through 100 of match number 2, and periods 1 through 20 of match number 3. [[slnc 1000]] 
+Finally, an example that loops around to the beginning. [[slnc 1000]] [[1]] If match number 5 has 85 periods, and the randomly selected period is period 81 of match number 5, [[1]] then the block will contain periods 81 through 85 of match number 5, and periods 1 through 25 of match number 1. [[slnc 1000]]
