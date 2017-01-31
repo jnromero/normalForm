@@ -195,7 +195,8 @@ class experimentClass():
 
       self.data[subjectID].status['payment']="%.02f"%(self.data[subjectID].finalPayoffs['total'])
 
-      self.data[subjectID].status['page']="generic"
+      #self.data[subjectID].status['page']="generic"
+      self.data[subjectID].status['page']="questionnaire"
 
       self.data[subjectID].status['message']="subjectID: %s <br>"%(subjectID)
       self.data[subjectID].status['message']="Show Up Fee: $5 <br>"

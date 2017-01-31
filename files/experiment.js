@@ -455,9 +455,7 @@ function statusManager(){
     }
 
     else if(thisStatus["page"]=="questionnaire"){
-        pay=thisStatus["payment"];
-        sid=thisStatus["subjectID"];
-        showQuestionnaire(sid,pay);
+        runServerFunction(["showQuestionnaire"]);
     }
 
 }
