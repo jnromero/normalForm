@@ -1,15 +1,17 @@
 #!/usr/bin/python
 
-import pickle
-import os
-scriptPath=os.path.dirname(os.path.realpath(__file__))
-
-def defaultSettings(location,configFile,serverStartString):
+def setConfig(location):
 	config={}
 
 	config['packageFolder']="/steep/"
 	config['currentExperiment']="/normalForm/"
-	config['screenServerPort']=1234
+	config['instructionsFolder']="/files/instructions/"
+	config['instructionsTexFile']="/latex/instructions.tex"
+	config['quiz']="quiz.py"
+	config['instructions']="instructions.py"
+	config['questionnaire']="questionnaire.py"
+	config["location"]=location
+	config['screenServerPort']=15374
 
 	if location=="myComputer":
 		config['webServerRoot']="/Users/myUsername/experiments/"
@@ -29,30 +31,4 @@ def defaultSettings(location,configFile,serverStartString):
 	# 	config["domain"]="http://"+ip+":"+str(config['serverPort'])
 	# 	config["websocketURL"]="ws://"+ip+":"+str(config['webSocketPort'])
 	# 	config["screenServer"]="http://"+ip+":"+str(config['screenServerPort'])
-
-	config["location"]=location
-
-	config=setOtherFileLocations(config,serverStartString)
-	writeJavascriptConfigFile(config,configFile)
 	return config
-
-
-
-def setOtherFileLocations(config,serverStartString):
-	config['dataFolder']=config['currentExperiment']+"/data/"+serverStartString+"/"
-	if not os.path.exists(config['webServerRoot']+config['dataFolder']):
-		os.makedirs(config['webServerRoot']+config['dataFolder'])
-
-	config['configJsURL']=config['domain']+config['dataFolder']+"/config.js"
-	config['configJsPath']=config['webServerRoot']+config['dataFolder']+"/config.js"
-
-	config['dataFileURL']=config['domain']+config['dataFolder']+"/%s.pickle"%(serverStartString)
-	config['dataFilePath']=config['webServerRoot']+config['dataFolder']+"/%s.pickle"%(serverStartString)
-	return config
-
-def writeJavascriptConfigFile(config,configFile):
-	string="//Config File Location: %s\n"%(configFile)
-	string=string+"window.config=%s;"%(config)
-	file = open(config['configJsPath'],'w')
-	file.writelines(string)
-	file.close() 
