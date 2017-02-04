@@ -1,4 +1,4 @@
-from __future__ import print_function
+from __future__ import print_function,division,absolute_import   
 
 class ExperimentQuiz():
    def __init__(self):
@@ -113,7 +113,7 @@ class ExperimentQuiz():
          elif questionNumber==12:
             statement="How many periods does each match have?"
             location=[650,575]
-            options=['Random']+range(101)  
+            options=['Random']+list(range(101))
          self.quizQuestions[questionNumber]={}       
          self.quizQuestions[questionNumber]['statement']=statement
          self.quizQuestions[questionNumber]['location']=location

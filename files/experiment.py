@@ -1,4 +1,4 @@
-from __future__ import print_function
+from __future__ import print_function,division,absolute_import   
 import random
 from twisted.internet import reactor
 from twisted.internet import task
@@ -41,7 +41,7 @@ class experimentClass():
       self.data['rawPays'][3]={1:{1:[20,0],2:[-1,-1]},2:{1:[-1,-1],2:[0,10]}}
       self.data['rawPays'][4]={1:{1:[20,0],2:[-1,-1]},2:{1:[-1,-1],2:[0,10]}}
 
-   def setMatchings(self):
+   def notAcceptingClientsAnymore(self):
       totalSubjects=len(self.data['subjectIDs'])
       if totalSubjects%2!=0:
          print("NEED MULTIPLE OF 2, CAN'T STOP ACCEPTING")
@@ -50,7 +50,7 @@ class experimentClass():
       else:
          thisMatchSubjects=self.data['subjectIDs'][:]
          groups=[]
-         for groupNumber in range(totalSubjects/2):
+         for groupNumber in range(totalSubjects//2):
             groups.append(thisMatchSubjects[groupNumber*2:groupNumber*2+2])
 
          self.data['pays']={}
@@ -64,7 +64,7 @@ class experimentClass():
             self.data['matching'][match]={}
             self.data['order'][match]={}
             self.data['roles'][match]={}
-            for groupNumber in range(totalSubjects/2):
+            for groupNumber in range(totalSubjects//2):
                player1=thisMatchSubjects[2*groupNumber+0]
                player2=thisMatchSubjects[2*groupNumber+1]
                thesePays=self.data['rawPays'][match]
@@ -458,7 +458,6 @@ class subjectClass():
       self.status['match']=self.currentMatch
       self.status['history']=self.history[self.currentMatch]
       self.status['correctGuesses']=self.correctGuesses
-      print(self.correctGuesses)
       self.status['myMatchPay']=self.myMatchPayoffs[self.currentMatch]
       self.status['theirMatchPay']=self.opponentMatchPayoffs[self.currentMatch]
       self.status['myTotalPay']=self.totalPayoffs
